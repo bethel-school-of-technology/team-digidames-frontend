@@ -1,11 +1,12 @@
 import React from 'react'
+import CreateBookReport from '../CreateBookReport'
 
-const AllBookReports = ({ bookReportData }) => {
+const AllBookReports = ({ bookReportData, handleSubmit, handleTitleChange, handleAuthorChange, handleReportChange }) => {
 
-console.log(bookReportData)
 
 return(
 <div>
+    <CreateBookReport handleSubmit={handleSubmit} handleTitleChange={handleTitleChange} handleAuthorChange={handleAuthorChange} handleReportChange={handleReportChange}  />
     {bookReportData.map(bookReport => (
         <div key={bookReport.id}>
             <h3>{bookReport.title}</h3>
