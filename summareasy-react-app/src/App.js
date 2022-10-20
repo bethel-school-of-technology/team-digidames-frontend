@@ -7,6 +7,8 @@ import API from './UTILS/API';
 function App() {
 
 
+  const [ allBookReports, setAllBookReports ] = useState([]);
+
 useEffect(() => {
 
 getAllBookReports();
@@ -16,7 +18,9 @@ getAllBookReports();
 
 const getAllBookReports = () => {
   API.getAll().then(res => {
-    console.log(res.data);
+    //console.log(res.data);
+
+    setAllBookReports(res.data)
   })
 }
 
@@ -25,7 +29,7 @@ const getAllBookReports = () => {
   return (
     <div className="App">
       
-      <AllBookReports />
+      <AllBookReports bookReportData={allBookReports} />
       
     
     
