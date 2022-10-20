@@ -4,6 +4,7 @@ const CreateBookReport = ({ handleSubmit, handleTitleChange, handleAuthorChange,
 
 return(
 <div>
+    
     <form onSubmit={handleSubmit} className="form">
         <label htmlFor="title">Title of Book</label>
         <br />
