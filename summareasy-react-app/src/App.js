@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import AllBookReports from './Components/AllBookReports';
+import API from './UTILS/API';
+
 
 function App() {
+
+
+useEffect(() => {
+
+getAllBookReports();
+
+}, [])
+
+
+const getAllBookReports = () => {
+  API.getAll().then(res => {
+    console.log(res.data);
+  })
+}
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <AllBookReports />
+      
+    
+    
     </div>
   );
 }
