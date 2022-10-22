@@ -1,5 +1,6 @@
-import React from 'react'
-import CreateBookReport from '../CreateBookReport'
+import React from 'react';
+import CreateBookReport from '../CreateBookReport';
+
 
 const AllBookReports = ({ bookReportData, handleSubmit, handleTitleChange, handleAuthorChange, handleReportChange }) => {
 
@@ -18,5 +19,7 @@ return(
 </div>
 )
 }
+
+
 
 export default AllBookReports;
