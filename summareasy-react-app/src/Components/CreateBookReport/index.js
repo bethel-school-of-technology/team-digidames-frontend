@@ -60,14 +60,15 @@ class CreateBookReport extends React.Component{
                 <h4>Axios GET Request Example in React</h4>
                 <table classname="table table-bordered">
                     <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Salary</th>
+                        <th>Book Title</th>
+                        <th>Author</th>
+                        <th>Book Cover</th>
                         <th>Age</th>
                     </tr>
                     {books && books.map((book) => (
                         <tr>
                             <td>{book.volumeInfo.title}</td>
+                            <td>{book.volumeInfo.authors}</td>
                             <td><img src={book.volumeInfo.imageLinks.thumbnail}/></td>
                             {/* <td>{emp.employee_salary}</td>
                             <td>{emp.employee_age}</td> */}
