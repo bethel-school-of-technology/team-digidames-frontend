@@ -2,82 +2,92 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import AllBookReports from './Components/AllBookReports';
 import API from './UTILS/API';
-
+import OneBookReport from './Components/OneBookReport';
+import { Routes, Route, useNavigate } from "react-router-dom"
 
 function App() {
 
 
-  const [ allBookReports, setAllBookReports ] = useState([]);
+  const [allBookReports, setAllBookReports] = useState([]);
 
   const [newBookReport, setNewBookReport] = useState({
-    title:"",
-    author:"",
-    report:""
+    title: "",
+    author: "",
+    report: ""
 
 
   })
 
 
-useEffect(() => {
+  useEffect(() => {
 
-getAllBookReports();
+    getAllBookReports();
 
-}, [])
+  }, [])
 
 
-const getAllBookReports = () => {
-  API.getAll().then(res => {
-  
+  const getAllBookReports = () => {
+    API.getAll().then(res => {
 
-    setAllBookReports(res.data)
-  })
-};
 
-const handleTitleChange = (e) => {
+      setAllBookReports(res.data)
+    })
+  };
 
-  const{ value } = e.target;
+  const handleTitleChange = (e) => {
 
-  setNewBookReport({...newBookReport, title: value})
-  
-};
+    const { value } = e.target;
 
-const handleAuthorChange = (e) => {
+    setNewBookReport({ ...newBookReport, title: value })
 
-  const{ value } = e.target;
+  };
 
-  setNewBookReport({...newBookReport, author: value})
-  
-};
+  const handleAuthorChange = (e) => {
 
-const handleReportChange = (e) => {
+    const { value } = e.target;
 
-  const{ value } = e.target;
+    setNewBookReport({ ...newBookReport, author: value })
 
-  setNewBookReport({...newBookReport, report: value})
-  
-};
+  };
 
-const handleSubmit = (e) =>  {
-  e.preventDefault();
+  const handleReportChange = (e) => {
 
-  API.createBookReport(newBookReport).then(res => {
-    console.log(res);
-  })
-}
+    const { value } = e.target;
 
-return (
+    setNewBookReport({ ...newBookReport, report: value })
+
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    API.createBookReport(newBookReport).then(res => {
+      console.log(res);
+    })
+  }
+
+  return (
     <div className="App">
-      
-      <AllBookReports
-      bookReportData={allBookReports}
-      handleTitleChange={handleTitleChange}
-      handleAuthorChange={handleAuthorChange}
-      handleReportChange={handleReportChange}
-      handleSubmit={handleSubmit}
-      />
-      
-    
-    
+      <Routes>
+        <Route
+          path="/"
+            exact
+              element={
+                <AllBookReports
+                  bookReportData={allBookReports}
+                  handleTitleChange={handleTitleChange}
+                  handleAuthorChange={handleAuthorChange}
+                  handleReportChange={handleReportChange}
+                  handleSubmit={handleSubmit}
+                />
+              } 
+            />
+
+        <Route
+        path="/one-bookreport/:id" element={<OneBookReport />} />
+
+      </Routes>
+
     </div>
   );
 }

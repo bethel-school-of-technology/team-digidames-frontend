@@ -1,5 +1,4 @@
-import axios from 'axios'
-// import axios from 'axios'
+import axios from 'axios';
 
 const baseURL = "http://localhost:3000/BookReports"
 
@@ -11,6 +10,10 @@ const API = {
 
     createBookReport: (newBookReport) => {
         return axios.post(baseURL, newBookReport);
+    },
+
+    getBookReportById: (id) => {
+        return axios.get(`${baseURL}/${id}`);
     }
     
 
