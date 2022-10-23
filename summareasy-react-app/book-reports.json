@@ -39,9 +39,9 @@
       "id": 5
     },
     {
-      "title": "Testing Title",
-      "author": "Testing Author",
-      "report": "Testing Book Report",
+      "title": "Testing update Title",
+      "author": "Testing update Author",
+      "report": "Testing Update Book Report",
       "id": 6
     }
   ]

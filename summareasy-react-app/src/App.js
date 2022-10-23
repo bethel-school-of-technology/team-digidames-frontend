@@ -3,21 +3,21 @@ import './App.css';
 import AllBookReports from './Components/AllBookReports';
 import API from './UTILS/API';
 import OneBookReport from './Components/OneBookReport';
-import { Routes, Route, useNavigate } from "react-router-dom"
+import { Routes, Route, useNavigate } from "react-router-dom";
+import UpdateBookReport from "./Components/UpdateBookReport";
+
 
 function App() {
-
-
   const [allBookReports, setAllBookReports] = useState([]);
-
   const [newBookReport, setNewBookReport] = useState({
     title: "",
     author: "",
     report: ""
+  });
 
+  const [refresh, setRefresh] = useState({count: 0});
 
-  })
-
+  const navigate = useNavigate();
 
   useEffect(() => {
 
@@ -63,7 +63,21 @@ function App() {
 
     API.createBookReport(newBookReport).then(res => {
       console.log(res);
-    })
+    });
+  }
+
+  useEffect(() => {
+    getAllBookReports();
+  }, [refresh]);
+
+  const updateBookReport = (id) => {
+
+    API.updateBookReport(id, newBookReport).then(res => {
+      console.log(res);
+      setRefresh({...refresh, count: refresh.count +1});
+      navigate("/") //this navigates (useNavigat) to homepage ("/") after updating Book Report
+    });
+
   }
 
   return (
@@ -83,8 +97,16 @@ function App() {
               } 
             />
 
-        <Route
-        path="/one-bookreport/:id" element={<OneBookReport />} />
+        <Route path="/one-bookreport/:id" element={<OneBookReport />} />
+        <Route path="/update-bookreport/:id" element={<UpdateBookReport
+                  handleTitleChange={handleTitleChange}
+                  handleAuthorChange={handleAuthorChange}
+                  handleReportChange={handleReportChange}
+                  updateBookReport={updateBookReport}
+       
+        
+        
+        />} />
 
       </Routes>
 

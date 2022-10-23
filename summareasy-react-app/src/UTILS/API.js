@@ -14,6 +14,10 @@ const API = {
 
     getBookReportById: (id) => {
         return axios.get(`${baseURL}/${id}`);
+    },
+
+    updateBookReport: (id, updatedBookReport) => {
+        return axios.put(`${baseURL}/${id}`, updatedBookReport);
     }
     
 

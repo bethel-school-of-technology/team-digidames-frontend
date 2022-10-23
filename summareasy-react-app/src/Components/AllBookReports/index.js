@@ -28,6 +28,11 @@ const AllBookReports = ({
                             View Book Report{" "}
                         </a>
 
+                        <a className="btn" href={`update-bookreport/${bookReport.id}`}> 
+                            {" "}
+                            Update Book Report{" "}
+                        </a>
+
                     </div>
                 ))}
             </div>
