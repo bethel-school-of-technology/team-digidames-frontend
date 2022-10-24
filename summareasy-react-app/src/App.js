@@ -15,7 +15,7 @@ function App() {
     report: ""
   });
 
-  const [refresh, setRefresh] = useState({count: 0});
+  const [refresh, setRefresh] = useState({ count: 0 });
 
   const navigate = useNavigate();
 
@@ -74,10 +74,18 @@ function App() {
 
     API.updateBookReport(id, newBookReport).then(res => {
       console.log(res);
-      setRefresh({...refresh, count: refresh.count +1});
+      setRefresh({ ...refresh, count: refresh.count + 1 });
       navigate("/") //this navigates (useNavigat) to homepage ("/") after updating Book Report
     });
 
+  }
+
+  const handleDelete = (id) => {
+    API.deleteBookReport(id).then(res => {
+      console.log(res);
+      setRefresh({ ...refresh, count: refresh.count + 1 });
+      navigate("/") //this navigates (useNavigat) to homepage ("/") after deleting Book Report      
+    })
   }
 
   return (
@@ -85,28 +93,40 @@ function App() {
       <Routes>
         <Route
           path="/"
-            exact
-              element={
-                <AllBookReports
-                  bookReportData={allBookReports}
-                  handleTitleChange={handleTitleChange}
-                  handleAuthorChange={handleAuthorChange}
-                  handleReportChange={handleReportChange}
-                  handleSubmit={handleSubmit}
-                />
-              } 
+          exact
+          element={
+            <AllBookReports
+              bookReportData={allBookReports}
+              handleTitleChange={handleTitleChange}
+              handleAuthorChange={handleAuthorChange}
+              handleReportChange={handleReportChange}
+              handleSubmit={handleSubmit}
+              handleDelete={handleDelete}
             />
+          }
+        />
 
-        <Route path="/one-bookreport/:id" element={<OneBookReport />} />
-        <Route path="/update-bookreport/:id" element={<UpdateBookReport
-                  handleTitleChange={handleTitleChange}
-                  handleAuthorChange={handleAuthorChange}
-                  handleReportChange={handleReportChange}
-                  updateBookReport={updateBookReport}
-       
-        
-        
-        />} />
+        <Route
+          path="/one-bookreport/:id"
+          element={
+            <OneBookReport
+              handleDelete={handleDelete}
+            />
+          }
+        />
+
+        <Route
+          path="/update-bookreport/:id"
+          element={
+            <UpdateBookReport
+              handleTitleChange={handleTitleChange}
+              handleAuthorChange={handleAuthorChange}
+              handleReportChange={handleReportChange}
+              updateBookReport={updateBookReport}
+
+            />
+          }
+        />
 
       </Routes>
 

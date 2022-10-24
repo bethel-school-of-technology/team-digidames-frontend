@@ -1,44 +1,44 @@
 import React from 'react'
 import axios from 'axios';
 
- const CreateBookReport = ( { handleSubmit, handleTitleChange, handleAuthorChange, handleReportChange }) => {
+const CreateBookReport = ({ handleSubmit, handleTitleChange, handleAuthorChange, handleReportChange }) => {
 
- return(
- <div>
-    
-     <form onSubmit={handleSubmit} className="form">
-         <label htmlFor="title">Title of Book</label>
-         <br />
-         <input name="title" onChange={handleTitleChange}></input>
-         <br />
+    return (
+        <div>
 
-         <label htmlFor="author">Author of Book</label>
-         <br />
-        <input name="author" onChange={handleAuthorChange}></input>
-         <br />
+            <form onSubmit={handleSubmit} className="form">
+                <label htmlFor="title">Title of Book</label>
+                <br />
+                <input name="title" onChange={handleTitleChange}></input>
+                <br />
 
-         <label htmlFor="report">Book Report</label>
-         <br />
-         <textarea
-         rows="20"
-         cols="50"
-         name="report"
-         onChange={handleReportChange}
-         ></textarea>
-         <br />
-         <button className="btn" type="submit">
-         Submit Book Report
-         </button>
-    
+                <label htmlFor="author">Author of Book</label>
+                <br />
+                <input name="author" onChange={handleAuthorChange}></input>
+                <br />
 
-     </form>
+                <label htmlFor="report">Book Report</label>
+                <br />
+                <textarea
+                    rows="20"
+                    cols="50"
+                    name="report"
+                    onChange={handleReportChange}
+                ></textarea>
+                <br />
+                <button className="btn" type="submit">
+                    Submit Book Report
+                </button>
 
 
+            </form>
 
-     <h1>CreateBookReport Works!</h1>
- </div>
- )
- }
+
+
+            <h1>CreateBookReport Works!</h1>
+        </div>
+    )
+}
 
 // class CreateBookReport extends React.Component{
 //     state = {
@@ -63,7 +63,7 @@ import axios from 'axios';
 //                         <th>Book Title</th>
 //                         <th>Author</th>
 //                         <th>Book Cover</th>
-                        
+
 //                     </tr>
 //                     {books && books.map((book) => (
 //                         <tr>

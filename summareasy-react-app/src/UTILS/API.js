@@ -18,8 +18,13 @@ const API = {
 
     updateBookReport: (id, updatedBookReport) => {
         return axios.put(`${baseURL}/${id}`, updatedBookReport);
+    },
+
+    deleteBookReport: (id) => {
+        return axios.delete(`${baseURL}/${id}`);
+
     }
-    
+
 
 }
 
