@@ -7,7 +7,8 @@ const AllBookReports = ({
     handleSubmit,
     handleTitleChange,
     handleAuthorChange,
-    handleReportChange
+    handleReportChange,
+    handleDelete
 }) => {
 
     return (
@@ -23,15 +24,17 @@ const AllBookReports = ({
                     <div key={bookReport.id} className="one-bookReport">
                         <h3>{bookReport.title}</h3>
 
-                        <a className="btn" href={`one-bookreport/${bookReport.id}`}> 
+                        <a className="btn" href={`one-bookreport/${bookReport.id}`}>
                             {" "}
                             View Book Report{" "}
                         </a>
 
-                        <a className="btn" href={`update-bookreport/${bookReport.id}`}> 
+                        <a className="btn" href={`update-bookreport/${bookReport.id}`}>
                             {" "}
                             Update Book Report{" "}
                         </a>
+
+                        <button onClick={() => handleDelete(bookReport.id)}>Delete Book Report</button>
 
                     </div>
                 ))}
