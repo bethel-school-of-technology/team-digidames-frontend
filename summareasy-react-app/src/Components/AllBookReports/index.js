@@ -2,23 +2,46 @@ import React from 'react';
 import CreateBookReport from '../CreateBookReport';
 
 
-const AllBookReports = ({ bookReportData, handleSubmit, handleTitleChange, handleAuthorChange, handleReportChange }) => {
+const AllBookReports = ({
+    bookReportData,
+    handleSubmit,
+    handleTitleChange,
+    handleAuthorChange,
+    handleReportChange,
+    handleDelete
+}) => {
 
+    return (
+        <div className="container header">
+            <CreateBookReport
+                handleSubmit={handleSubmit}
+                handleTitleChange={handleTitleChange}
+                handleAuthorChange={handleAuthorChange}
+                handleReportChange={handleReportChange}
+            />
+            <div>
+                {bookReportData.map(bookReport => (
+                    <div key={bookReport.id} className="one-bookReport">
+                        <h3>{bookReport.title}</h3>
 
-return(
-<div>
-    <CreateBookReport handleSubmit={handleSubmit} handleTitleChange={handleTitleChange} handleAuthorChange={handleAuthorChange} handleReportChange={handleReportChange}  />
-    {bookReportData.map(bookReport => (
-        <div key={bookReport.id}>
-            <h3>{bookReport.title}</h3>
+                        <a className="btn" href={`one-bookreport/${bookReport.id}`}>
+                            {" "}
+                            View Book Report{" "}
+                        </a>
+
+                        <a className="btn" href={`update-bookreport/${bookReport.id}`}>
+                            {" "}
+                            Update Book Report{" "}
+                        </a>
+
+                        <button onClick={() => handleDelete(bookReport.id)}>Delete Book Report</button>
+
+                    </div>
+                ))}
+            </div>
         </div>
-    ) )}
-  
-    <h1>AllBookReports Works!</h1>
-
-</div>
-)
-}
+    );
+};
 
 
 
