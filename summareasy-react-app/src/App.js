@@ -2,82 +2,134 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import AllBookReports from './Components/AllBookReports';
 import API from './UTILS/API';
+import OneBookReport from './Components/OneBookReport';
+import { Routes, Route, useNavigate } from "react-router-dom";
+import UpdateBookReport from "./Components/UpdateBookReport";
 
 
 function App() {
-
-
-  const [ allBookReports, setAllBookReports ] = useState([]);
-
+  const [allBookReports, setAllBookReports] = useState([]);
   const [newBookReport, setNewBookReport] = useState({
-    title:"",
-    author:"",
-    report:""
+    title: "",
+    author: "",
+    report: ""
+  });
+
+  const [refresh, setRefresh] = useState({ count: 0 });
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+
+    getAllBookReports();
+
+  }, [])
 
 
-  })
+  const getAllBookReports = () => {
+    API.getAll().then(res => {
 
 
-useEffect(() => {
+      setAllBookReports(res.data)
+    })
+  };
 
-getAllBookReports();
+  const handleTitleChange = (e) => {
 
-}, [])
+    const { value } = e.target;
 
+    setNewBookReport({ ...newBookReport, title: value })
 
-const getAllBookReports = () => {
-  API.getAll().then(res => {
-  
+  };
 
-    setAllBookReports(res.data)
-  })
-};
+  const handleAuthorChange = (e) => {
 
-const handleTitleChange = (e) => {
+    const { value } = e.target;
 
-  const{ value } = e.target;
+    setNewBookReport({ ...newBookReport, author: value })
 
-  setNewBookReport({...newBookReport, title: value})
-  
-};
+  };
 
-const handleAuthorChange = (e) => {
+  const handleReportChange = (e) => {
 
-  const{ value } = e.target;
+    const { value } = e.target;
 
-  setNewBookReport({...newBookReport, author: value})
-  
-};
+    setNewBookReport({ ...newBookReport, report: value })
 
-const handleReportChange = (e) => {
+  };
 
-  const{ value } = e.target;
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  setNewBookReport({...newBookReport, report: value})
-  
-};
+    API.createBookReport(newBookReport).then(res => {
+      console.log(res);
+    });
+  }
 
-const handleSubmit = (e) =>  {
-  e.preventDefault();
+  useEffect(() => {
+    getAllBookReports();
+  }, [refresh]);
 
-  API.createBookReport(newBookReport).then(res => {
-    console.log(res);
-  })
-}
+  const updateBookReport = (id) => {
 
-return (
+    API.updateBookReport(id, newBookReport).then(res => {
+      console.log(res);
+      setRefresh({ ...refresh, count: refresh.count + 1 });
+      navigate("/") //this navigates (useNavigat) to homepage ("/") after updating Book Report
+    });
+
+  }
+
+  const handleDelete = (id) => {
+    API.deleteBookReport(id).then(res => {
+      console.log(res);
+      setRefresh({ ...refresh, count: refresh.count + 1 });
+      navigate("/") //this navigates (useNavigat) to homepage ("/") after deleting Book Report      
+    })
+  }
+
+  return (
     <div className="App">
-      
-      <AllBookReports
-      bookReportData={allBookReports}
-      handleTitleChange={handleTitleChange}
-      handleAuthorChange={handleAuthorChange}
-      handleReportChange={handleReportChange}
-      handleSubmit={handleSubmit}
-      />
-      
-    
-    
+      <Routes>
+        <Route
+          path="/"
+          exact
+          element={
+            <AllBookReports
+              bookReportData={allBookReports}
+              handleTitleChange={handleTitleChange}
+              handleAuthorChange={handleAuthorChange}
+              handleReportChange={handleReportChange}
+              handleSubmit={handleSubmit}
+              handleDelete={handleDelete}
+            />
+          }
+        />
+
+        <Route
+          path="/one-bookreport/:id"
+          element={
+            <OneBookReport
+              handleDelete={handleDelete}
+            />
+          }
+        />
+
+        <Route
+          path="/update-bookreport/:id"
+          element={
+            <UpdateBookReport
+              handleTitleChange={handleTitleChange}
+              handleAuthorChange={handleAuthorChange}
+              handleReportChange={handleReportChange}
+              updateBookReport={updateBookReport}
+
+            />
+          }
+        />
+
+      </Routes>
+
     </div>
   );
 }
