@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import AllBookReports from './Components/AllBookReports';
@@ -18,22 +17,18 @@ function App() {
   });
 
   const [refresh, setRefresh] = useState({ count: 0 });
-
   const navigate = useNavigate();
 
   useEffect(() => {
-
     getAllBookReports();
-
-  }, [])
-
+  }, []);
 
   const getAllBookReports = () => {
     API.getAll().then(res => {
       setAllBookReports(res.data)
     });
   };
-
+  
   useEffect(() => {
     getAllBookReports();
   }, [refresh]);
@@ -117,64 +112,8 @@ function App() {
 
         </Routes>
       </BookReportContext.Provider>
-
     </div>
   );
 }
 
 export default App;
-
-
-
-
-  // const handleTitleChange = (e) => {
-
-  //   const { value } = e.target;
-
-  //   setNewBookReport({ ...newBookReport, title: value })
-
-  // };
-
-  // const handleAuthorChange = (e) => {
-
-  //   const { value } = e.target;
-
-  //   setNewBookReport({ ...newBookReport, author: value })
-
-  // };
-
-  // const handleReportChange = (e) => {
-
-  //   const { value } = e.target;
-
-  //   setNewBookReport({ ...newBookReport, report: value })
-
-  // };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-  //   API.createBookReport(newBookReport).then(res => {
-  //     console.log(res);
-  //   });
-  // }
-
- 
-
-  // const updateBookReport = (id) => {
-
-  //   API.updateBookReport(id, newBookReport).then(res => {
-  //     console.log(res);
-  //     setRefresh({ ...refresh, count: refresh.count + 1 });
-  //     navigate("/") //this navigates (useNavigat) to homepage ("/") after updating Book Report
-  //   });
-
-  // }
-
-  // const handleDelete = (id) => {
-  //   API.deleteBookReport(id).then(res => {
-  //     console.log(res);
-  //     setRefresh({ ...refresh, count: refresh.count + 1 });
-  //     navigate("/") //this navigates (useNavigat) to homepage ("/") after deleting Book Report      
-  //   })
-  // }
