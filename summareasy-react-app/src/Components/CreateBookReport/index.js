@@ -1,20 +1,26 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import axios from 'axios';
+import BookReportContext from '../../UTILS/BookReportContext';
 
-const CreateBookReport = ({ handleSubmit, handleTitleChange, handleAuthorChange, handleReportChange }) => {
-
+const CreateBookReport = () => {
+        const context = useContext(BookReportContext);
+        
     return (
         <div>
 
-            <form onSubmit={handleSubmit} className="form">
+            <form onSubmit={context.handleSubmit} className="form">
                 <label htmlFor="title">Title of Book</label>
                 <br />
-                <input name="title" onChange={handleTitleChange}></input>
+                <input name="title" onChange={context.handleTitleChange}></input>
                 <br />
 
                 <label htmlFor="author">Author of Book</label>
                 <br />
-                <input name="author" onChange={handleAuthorChange}></input>
+                <input name="author" onChange={context.handleAuthorChange}></input>
+                <br />
+                <label htmlFor="user">Written By</label>
+                <br />
+                <input name="user" onChange={context.handleUserChange}></input>
                 <br />
 
                 <label htmlFor="report">Book Report</label>
@@ -23,10 +29,10 @@ const CreateBookReport = ({ handleSubmit, handleTitleChange, handleAuthorChange,
                     rows="20"
                     cols="50"
                     name="report"
-                    onChange={handleReportChange}
+                    onChange={context.handleReportChange}
                 ></textarea>
                 <br />
-                <button className="btn" type="submit">
+                <button onClick={context.handleSubmit} className="btn" type="button">
                     Submit Book Report
                 </button>
 
