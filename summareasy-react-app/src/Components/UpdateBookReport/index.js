@@ -1,9 +1,8 @@
 import React from "react";
 import { useParams } from 'react-router-dom'
 import BookReportContext from '../../UTILS/BookReportContext';
-import { useContext } from "react";
-
-const UpdateBookReport = () => {
+import { useContext } from 'react';
+const UpdateBookReport = ({ }) => {
 
     let { id } = useParams();
     const context = useContext(BookReportContext);
@@ -27,6 +26,7 @@ const UpdateBookReport = () => {
                 <label htmlFor="writtenBy">Update Written By</label>
                 <br />
                 <input name="writtenBy" onChange={context.handleWrittenByChange}></input>
+
                 <br />
 
                 <label htmlFor="report">Update Book Report</label>
@@ -44,8 +44,9 @@ const UpdateBookReport = () => {
                     value="Submit"
                     onClick={() => context.updateBookReport(id)}
                 >
-                    Update Book Report
+                    Update 
                 </button>
+                <a href={`/`}>Back</a>
 
 
             </form>
