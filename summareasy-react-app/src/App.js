@@ -8,13 +8,12 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import UpdateBookReport from "./Components/UpdateBookReport";
 import BookReportContext from './UTILS/BookReportContext';
 
-
 function App() {
   const [allBookReports, setAllBookReports] = useState([]);
   const [newBookReport, setNewBookReport] = useState({
     title: "",
     author: "",
-    writtenBy: "",
+    writtenBy:"",
     report: ""
   });
 
@@ -86,11 +85,12 @@ function App() {
       });
     }
 
+
   }
 
   return (
     <div className="App">
-       <BookReportContext.Provider value={contextObject}>
+      <BookReportContext.Provider value={contextObject}>
         <Routes>
           <Route
             path="/"

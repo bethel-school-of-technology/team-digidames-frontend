@@ -34,8 +34,8 @@ const OneBookReport = () => {
             <h3>Author: {bookReport.author}</h3>
             <h3>Book Report Written By: {bookReport.writtenBy}</h3>
             <p>{bookReport.report}</p>
-            <button onClick={() => context.handleDelete(bookReport.id)}>Delete </button>
-            <a href={`/update-bookreport/${bookReport.id}`}>Update </a>
+            <button onClick={() => context.handleDelete(bookReport.id)}>Delete Book Report</button>
+            <a href={`/update-bookreport/${bookReport.id}`}>Update Book Report</a>
             {/* <a href={`/`}>Back</a> */}
         </div>
     );
