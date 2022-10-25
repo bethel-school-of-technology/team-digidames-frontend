@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import API from '../../UTILS/API';
 import { useParams } from 'react-router-dom';
-import BookReportContext from '../../UTILS/BookReportContext';
-import { useContext } from 'react';
 
 
-const OneBookReport = () => {
+
+const OneBookReport = ({ handleDelete }) => {
 
     const [bookReport, setBookReport] = useState({});
     const { id } = useParams();
-    const context = useContext(BookReportContext);
 
 
     useEffect(() => {
@@ -34,9 +32,8 @@ const OneBookReport = () => {
             <h3>Author: {bookReport.author}</h3>
             <h3>Book Report Written By: {bookReport.writtenBy}</h3>
             <p>{bookReport.report}</p>
-            <button onClick={() => context.handleDelete(bookReport.id)}>Delete </button>
-            <a href={`/update-bookreport/${bookReport.id}`}>Update </a>
-            <a href={`/`}>Back</a>
+            <button onClick={() => handleDelete(bookReport.id)}>Delete Book Report</button>
+            <a href={`/update-bookreport/${bookReport.id}`}>Update Book Report</a>
         </div>
     );
 }
