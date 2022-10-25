@@ -6,6 +6,9 @@ import OneBookReport from './Components/OneBookReport';
 import { Routes, Route, useNavigate } from "react-router-dom";
 import UpdateBookReport from "./Components/UpdateBookReport";
 import BookReportContext from './UTILS/BookReportContext';
+import LandingPage from './Components/LandingPage';
+import CreateBookReport from './Components/CreateBookReport';
+import Dashboard from './Components/Dashboard';
 
 function App() {
   const [allBookReports, setAllBookReports] = useState([]);
@@ -68,7 +71,7 @@ function App() {
       API.updateBookReport(id, newBookReport).then(res => {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
-        navigate("/") //this navigates (useNavigat) to homepage ("/") after updating Book Report
+        navigate("/all-book-reports") //this navigates (useNavigat) to homepage ("/") after updating Book Report
       });
     },
 
@@ -76,7 +79,7 @@ function App() {
       API.deleteBookReport(id).then(res => {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
-        navigate("/") //this navigates (useNavigat) to homepage ("/") after deleting Book Report      
+        navigate("/all-book-reports") //this navigates (useNavigat) to homepage ("/") after deleting Book Report      
       });
     }
 
@@ -87,9 +90,32 @@ function App() {
     <div className="App">
       <BookReportContext.Provider value={contextObject}>
         <Routes>
-                 
-          <Route
+        <Route
             path="/"
+            exact
+            element={
+              <LandingPage
+                bookReportData={allBookReports} />
+            }
+          />
+          <Route
+            path="/Dashboard"
+            exact
+            element={
+              <Dashboard
+                bookReportData={allBookReports} />
+            }
+          />
+          <Route
+            path="/Create"
+            exact
+            element={
+              <CreateBookReport
+                bookReportData={allBookReports} />
+            }
+          />
+          <Route
+            path="/all-book-reports"
             exact
             element={
               <AllBookReports
