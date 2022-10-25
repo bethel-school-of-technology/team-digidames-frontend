@@ -4,12 +4,6 @@ import { useContext } from "react";
 import axios from 'axios';
 
 const CreateBookReport = () => {
-    
-    
-    
-    
-    
-    
     const context = useContext(BookReportContext);
         
     return (
