@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import API from '../../UTILS/API';
 import { useParams } from 'react-router-dom';
 import BookReportContext from '../../UTILS/BookReportContext';
-import { useContext } from 'react';
+import { useContext } from "react";
 
 
 const OneBookReport = () => {
@@ -36,7 +36,7 @@ const OneBookReport = () => {
             <p>{bookReport.report}</p>
             <button onClick={() => context.handleDelete(bookReport.id)}>Delete </button>
             <a href={`/update-bookreport/${bookReport.id}`}>Update </a>
-            <a href={`/`}>Back</a>
+            {/* <a href={`/`}>Back</a> */}
         </div>
     );
 }

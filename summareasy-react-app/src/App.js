@@ -14,8 +14,8 @@ function App() {
   const [newBookReport, setNewBookReport] = useState({
     title: "",
     author: "",
-    user: "",
-    body: ""
+    writtenBy: "",
+    report: ""
   });
 
   const [refresh, setRefresh] = useState({ count: 0 });
@@ -32,7 +32,7 @@ function App() {
   const getAllBookReports = () => {
     API.getAll().then(res => {
       setAllBookReports(res.data)
-    })
+    });
   };
 
   useEffect(() => {
@@ -44,76 +44,78 @@ function App() {
     handleSubmit: (e) => {
       e.preventDefault();
       API.createBookReport(newBookReport).then((res) => {
-        console.log(res );
+        console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
-        document.querySelector(".forms").requestFullscreen();
+        document.querySelector(".forms").reset();
       });
-      navigate("/") 
     },
+
     handleTitleChange: (e) => {
       const { value } = e.target;
-      
       setNewBookReport({ ...newBookReport, title: value });
     },
+
     handleAuthorChange: (e) => {
       const { value } = e.target;
-      setNewBookReport({...newBookReport, author: value });
-
+      setNewBookReport({ ...newBookReport, author: value });
     },
-    handleUserChange: (e) => {
+
+    handleWrittenByChange: (e) => {
       const { value } = e.target;
-      console.log(value);
-      setNewBookReport({...newBookReport, user: value });
-
+      setNewBookReport({ ...newBookReport, writtenBy: value });
     },
+
     handleReportChange: (e) => {
       const { value } = e.target;
-      
-      setNewBookReport({ ...newBookReport, body: value });
-    }, 
-    updateBookReport: (id) =>{
-     API.updateBookReport(id, newBookReport).then(res => {
-      console.log(res);
-      setRefresh({ ...refresh, count: refresh.count + 1 });
-      navigate("/") //this navigates (useNavigat) to homepage ("/") after updating Book Report
-    });
-  },
-  handleDelete:  (id) => {
-    API.deleteBookReport(id).then(res => {
-      console.log(res);
-      setRefresh({ ...refresh, count: refresh.count + 1 });
-      navigate("/") //this navigates (useNavigat) to homepage ("/") after deleting Book Report      
-    });
-  }
+      setNewBookReport({ ...newBookReport, report: value });
+    },
+
+    updateBookReport: (id) => {
+      API.updateBookReport(id, newBookReport).then(res => {
+        console.log(res);
+        setRefresh({ ...refresh, count: refresh.count + 1 });
+        navigate("/") //this navigates (useNavigat) to homepage ("/") after updating Book Report
+      });
+    },
+
+    handleDelete: (id) => {
+      API.deleteBookReport(id).then(res => {
+        console.log(res);
+        setRefresh({ ...refresh, count: refresh.count + 1 });
+        navigate("/") //this navigates (useNavigat) to homepage ("/") after deleting Book Report      
+      });
+    }
+
   }
 
   return (
     <div className="App">
-      <BookReportContext.Provider  value={contextObject}>
-      <Routes>
-        <Route
-          path="/"
-          exact
-          element={
-            <AllBookReports bookReportData={allBookReports}/>
-          }
-        />
+       <BookReportContext.Provider value={contextObject}>
+        <Routes>
+          <Route
+            path="/"
+            exact
+            element={
+              <AllBookReports
+                bookReportData={allBookReports} />
+            }
+          />
 
-        <Route
-          path="/one-bookreport/:id"
-          element={
-            <OneBookReport />
-          }
-        />
+          <Route
+            path="/one-bookreport/:id"
+            element={
+              <OneBookReport />
+            }
+          />
 
-        <Route
-          path="/update-bookreport/:id"
-          element={
-            <UpdateBookReport />
-          }
-        />
+          <Route
+            path="/update-bookreport/:id"
+            element={
+              <UpdateBookReport />
+            }
+          />
 
-      </Routes>
+        </Routes>
       </BookReportContext.Provider>
 
     </div>
