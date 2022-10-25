@@ -7,6 +7,8 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import UpdateBookReport from "./Components/UpdateBookReport";
 import BookReportContext from './UTILS/BookReportContext';
 import LandingPage from './Components/LandingPage';
+import CreateBookReport from './Components/CreateBookReport';
+import Dashboard from './Components/Dashboard';
 
 function App() {
   const [allBookReports, setAllBookReports] = useState([]);
@@ -93,6 +95,22 @@ function App() {
             exact
             element={
               <LandingPage
+                bookReportData={allBookReports} />
+            }
+          />
+          <Route
+            path="/Dashboard"
+            exact
+            element={
+              <Dashboard
+                bookReportData={allBookReports} />
+            }
+          />
+          <Route
+            path="/Create"
+            exact
+            element={
+              <CreateBookReport
                 bookReportData={allBookReports} />
             }
           />

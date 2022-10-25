@@ -38,7 +38,8 @@ const CreateBookReport = () => {
                 <button className="btn" type="submit">
                     Add Book Report
                 </button>
-                <a href={`/all-book-reports`}>Cancel</a>
+                
+                <a href={`/Dashboard`}>Cancel</a>
 
 
             </form>

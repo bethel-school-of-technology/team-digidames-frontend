@@ -10,6 +10,12 @@ const LandingPage = () => {
             <div>
                
                     <h1>LandingPage Works</h1>
+                    <button>
+                        Sign Up
+                    </button>
+                    <button>
+                        <a href={`/Dashboard`} >Sign In</a>
+                    </button>
                         
                     </div>
                 

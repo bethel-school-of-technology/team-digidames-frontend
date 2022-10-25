@@ -1,5 +1,5 @@
 import React from 'react';
-import CreateBookReport from '../CreateBookReport';
+// import CreateBookReport from '../CreateBookReport';
 import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from "react";
 
@@ -9,23 +9,26 @@ const AllBookReports = ({ bookReportData }) => {
   const context = useContext(BookReportContext);
     return (
         <div className="container header">
-            <CreateBookReport />
+            {/* <CreateBookReport /> */}
             <div>
+                <h1>View Book Reports</h1>
                 {bookReportData.map((bookReport) => (
                     <div key={bookReport.id} className="one-bookReport">
                         <h3>{bookReport.title}</h3>
 
                         <a className="btn" href={`one-bookreport/${bookReport.id}`}>
                             {" "}
-                            View Book Report{" "}
+                            View {" "}
                         </a>
 
                         <a className="btn" href={`update-bookreport/${bookReport.id}`}>
                             {" "}
-                            Update Book Report{" "}
+                            Update {" "}
                         </a>
+                        
 
-                        <button onClick={() => context.handleDelete(bookReport.id)}>Delete Book Report</button>
+                        <button onClick={() => context.handleDelete(bookReport.id)}>Delete</button>
+                        <a href={`/Dashboard`} >Back</a>
 
                     </div>
                 ))}
