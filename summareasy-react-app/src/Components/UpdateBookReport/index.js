@@ -24,6 +24,11 @@ const UpdateBookReport = () => {
                 <input name="author" onChange={context.handleAuthorChange}></input>
                 <br />
 
+                <label htmlFor="writtenBy">Update Written By</label>
+                <br />
+                <input name="writtenBy" onChange={context.handleWrittenByChange}></input>
+                <br />
+
                 <label htmlFor="report">Update Book Report</label>
                 <br />
                 <textarea
