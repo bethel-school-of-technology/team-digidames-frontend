@@ -10,6 +10,9 @@ import LandingPage from './Components/LandingPage';
 import CreateBookReport from './Components/CreateBookReport';
 import Dashboard from './Components/Dashboard';
 import Login from './Components/Login/Login';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function App() {
   const [allBookReports, setAllBookReports] = useState([]);
@@ -108,7 +111,7 @@ function App() {
                 bookReportData={allBookReports} />
             }
           /> 
-          
+ 
           <Route
             path="/Dashboard"
             exact

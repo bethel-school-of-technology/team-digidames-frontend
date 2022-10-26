@@ -3,12 +3,16 @@ import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from "react";
 import axios from 'axios';
 
+
 const CreateBookReport = () => {
 
     const context = useContext(BookReportContext);
 
     return (
         <div>
+            <div className='header'>
+                
+            </div>
 
             <form onSubmit={context.handleSubmit} className="form">
                 <label htmlFor="title">Title of Book</label>
