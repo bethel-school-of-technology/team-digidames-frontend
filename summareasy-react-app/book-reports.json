@@ -51,6 +51,13 @@
       "writtenBy": "me",
       "report": "This is a different test",
       "id": 7
+    },
+    {
+      "title": "",
+      "author": "",
+      "writtenBy": "",
+      "report": "",
+      "id": 8
     }
   ]
 }
