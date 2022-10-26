@@ -14,7 +14,7 @@ const LandingPage = () => {
                         Sign Up
                     </button>
                     <button>
-                        <a href={`/Dashboard`} >Sign In</a>
+                        <a href={`/login`} >Sign In</a>
                     </button>
                         
                     </div>
