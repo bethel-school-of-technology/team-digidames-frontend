@@ -9,6 +9,8 @@ import BookReportContext from './UTILS/BookReportContext';
 import LandingPage from './Components/LandingPage';
 import CreateBookReport from './Components/CreateBookReport';
 import Dashboard from './Components/Dashboard';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   const [allBookReports, setAllBookReports] = useState([]);
@@ -98,6 +100,7 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
+          
           <Route
             path="/Dashboard"
             exact

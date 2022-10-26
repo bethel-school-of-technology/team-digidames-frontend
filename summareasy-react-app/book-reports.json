@@ -37,6 +37,20 @@
       "writtenBy": "Lisa",
       "report": "Testing to see if the functionality works.",
       "id": 5
+    },
+    {
+      "title": "A New Report",
+      "author": "uknown",
+      "writtenBy": "me",
+      "report": "this is a test",
+      "id": 6
+    },
+    {
+      "title": "A different Test",
+      "author": "unknown",
+      "writtenBy": "me",
+      "report": "This is a different test",
+      "id": 7
     }
   ]
 }
