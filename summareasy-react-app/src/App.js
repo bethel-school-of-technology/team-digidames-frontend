@@ -9,7 +9,9 @@ import BookReportContext from './UTILS/BookReportContext';
 import LandingPage from './Components/LandingPage';
 import CreateBookReport from './Components/CreateBookReport';
 import Dashboard from './Components/Dashboard';
+import Login from './Components/Login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {
@@ -100,7 +102,16 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
-          
+
+        <Route
+            path="/login"
+            exact
+            element={
+              <Login
+                bookReportData={allBookReports} />
+            }
+          /> 
+ 
           <Route
             path="/Dashboard"
             exact
