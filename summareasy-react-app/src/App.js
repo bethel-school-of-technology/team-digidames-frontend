@@ -11,6 +11,7 @@ import CreateBookReport from './Components/CreateBookReport';
 import Dashboard from './Components/Dashboard';
 import Login from './Components/Login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import APIBookData from './Components/APIBookData';
 
 
 
@@ -120,6 +121,15 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
+          <Route
+            path="/ApiBookData"
+            exact
+            element={
+              <APIBookData
+                bookReportData={allBookReports} />
+            }
+          />
+
           <Route
             path="/Create"
             exact
