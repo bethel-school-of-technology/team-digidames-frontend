@@ -16,6 +16,30 @@ class APIBookData extends React.Component{
         });
     }
 
+    createBook(bookInfo) {
+        console.log(bookInfo)
+
+        // if (email !== '' && password !== '') {
+        //     const req = {
+        //         email,
+        //         password
+        //     };
+
+            axios.post('http://localhost:3000/books', bookInfo).then(result => {
+                // const token = result.data.accessToken;
+                // localStorage.setItem('myJWT', token);
+                // localStorage.setItem('userId', result.user.id);
+                // localStorage.setItem('email', result.user.email);
+                console.log(result.data);
+                // redirect to book report form
+
+            })
+        //}
+    
+    };
+
+
+
     render() {
         const { books } = this.state;
         return (
@@ -33,6 +57,7 @@ class APIBookData extends React.Component{
                             <td>{book.volumeInfo.title}</td>
                             <td>{book.volumeInfo.authors}</td>
                             <td><img src={book.volumeInfo.imageLinks.thumbnail}/></td>
+                            <td><button type='button' onClick={() => this.createBook(book)}>Write report</button></td>
 
                         </tr>
                     ))}
