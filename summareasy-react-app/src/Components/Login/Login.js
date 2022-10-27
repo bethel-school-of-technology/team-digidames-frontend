@@ -4,22 +4,24 @@ import { useState } from "react";
 
 const Login = () => {
 
-    const [username, setUsername] = useState("");
+    const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
     const signIn = (e) => {
         e.preventDefault();
         console.log('Sign in!');
 
-        if (username !== '' && password !== '') {
+        if (email !== '' && password !== '') {
             const req = {
-                username,
+                email,
                 password
             };
 
-            axios.post('http://localhost:3000/users/login', req).then(result => {
-                const token = result.data.jwt;
+            axios.post('http://localhost:3000/login', req).then(result => {
+                const token = result.data.accessToken;
                 localStorage.setItem('myJWT', token);
+                localStorage.setItem('userId', result.user.id);
+                localStorage.setItem('email', result.user.email);
                 console.log(result.data);
 
             })
@@ -35,14 +37,14 @@ const Login = () => {
             <form onSubmit={ signIn }> 
                 <h1>Sign In</h1>
                
-                <label htmlFor="username">Username</label>
+                <label htmlFor="email">Email</label>
                 <br />
-                <input type="text" name="username" onChange={ e => setUsername(e.target.value) }></input> 
+                <input type="text" name="email" onChange={ e => setEmail(e.target.value) }></input> 
                 <br />
 
                 <label htmlFor="password">Password</label>
                 <br />
-                <input type="text" name="password" onChange={ e => setPassword(e.target.value) }></input>
+                <input type="password" name="password" onChange={ e => setPassword(e.target.value) }></input>
                 <br />
                 <button>Sign In</button>
                 <br />
