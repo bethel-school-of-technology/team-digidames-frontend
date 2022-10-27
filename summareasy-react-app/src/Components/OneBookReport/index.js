@@ -5,11 +5,14 @@ import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from "react";
 
 
+
+
 const OneBookReport = () => {
 
     const [bookReport, setBookReport] = useState({});
     const { id } = useParams();
     const context = useContext(BookReportContext);
+   
 
 
     useEffect(() => {
@@ -37,7 +40,10 @@ const OneBookReport = () => {
             <button onClick={() => context.handleDelete(bookReport.id)}>Delete Book Report</button>
             <a href={`/update-bookreport/${bookReport.id}`}>Update Book Report</a>
             <a href={`/all-book-reports`}>Back</a>
+            <a href="mailto:`{Email}`?subject={bookReport.title}&body={bookReport.report}">Click to Send an Email</a>
+            
         </div>
+
     );
 }
 

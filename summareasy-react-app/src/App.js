@@ -11,7 +11,7 @@ import CreateBookReport from './Components/CreateBookReport';
 import Dashboard from './Components/Dashboard';
 import Login from './Components/Login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import FunctionalComponent from './Components/FunctionalComponent';
 
 
 function App() {
@@ -112,6 +112,15 @@ function App() {
             }
           /> 
  
+        <Route
+            path="/functional"
+            exact
+            element={
+              <FunctionalComponent
+                bookReportData={allBookReports} />
+            }
+          />
+
           <Route
             path="/Dashboard"
             exact
