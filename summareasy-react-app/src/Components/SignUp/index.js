@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const SignUp = () => {
@@ -11,6 +12,9 @@ const SignUp = () => {
     //     lastName:""
 
     // })
+
+    // let { createUser } = useContext(UserContext);
+    let navigate = useNavigate();
 
 
     const [email, setEmail] = useState("");
@@ -31,12 +35,13 @@ const SignUp = () => {
             };
 
             axios.post('http://localhost:3000/users', createNewUser).then(result => {
-                // const token = result.data.accessToken;
-                // localStorage.setItem('myJWT', token);
-                // localStorage.setItem('userId', result.user.id);
-                // localStorage.setItem('email', result.user.email);
+                 const token = result.data.accessToken;
+                 localStorage.setItem('myJWT', token);
+                 localStorage.setItem('userId', result.data.user.id);
+                 localStorage.setItem('email', result.data.user.email);
                 console.log(result.data);
                 // redirect to book report form
+                navigate("/dashboard")
 
             })
 

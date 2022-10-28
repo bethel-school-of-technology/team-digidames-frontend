@@ -189,6 +189,27 @@
       "email": "jp@gmail.com",
       "password": "$2a$10$eY.54t0qD8Bt7Vk1zRM.MuuUqlqjA/2MO.UPXvgUKdpBIAL8BfMNm",
       "id": 2
+    },
+    {
+      "email": "test1@gmail.com",
+      "password": "$2a$10$0hbcsVj3zbAGLVlWu7Wfg.4PpVHfi/JS4vBENyeN2ibZNXIGE47t2",
+      "firstName": "test1",
+      "lastName": "test1",
+      "id": 3
+    },
+    {
+      "email": "test2@gmail.com",
+      "password": "$2a$10$ViC.vv6Wl3gpsfbyBYs1M.W8ccpRSWU1u4EasEtB/BRtEWRaN51DS",
+      "firstName": "Lori1",
+      "lastName": "Hutchins",
+      "id": 4
+    },
+    {
+      "email": "test22@gmail.com",
+      "password": "$2a$10$nDytOGqmYFSb.R1k64uvfORIYLlrTSCfTLewRhQ/J23lMk.v3TEp2",
+      "firstName": "Jan",
+      "lastName": "Pevny",
+      "id": 5
     }
   ],
   "BookReports": [
