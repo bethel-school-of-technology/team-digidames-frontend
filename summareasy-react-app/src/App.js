@@ -12,6 +12,7 @@ import Dashboard from './Components/Dashboard';
 import Login from './Components/Login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import APIBookData from './Components/APIBookData';
+import SignUp from './Components/SignUp';
 
 
 
@@ -109,6 +110,15 @@ function App() {
             exact
             element={
               <Login
+                bookReportData={allBookReports} />
+            }
+          /> 
+
+          <Route
+            path="/register"
+            exact
+            element={
+              <SignUp
                 bookReportData={allBookReports} />
             }
           /> 
