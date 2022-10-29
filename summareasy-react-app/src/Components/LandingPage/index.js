@@ -6,31 +6,31 @@ const LandingPage = () => {
 
     return (
         <div className='background'>
-        <div className='header'>
-    
-        <div className='buttons'>
-        <button>
-            Sign Up
-        </button>
-        <button >
+            <div className='header'>
 
-        <a href={`/login`} >Sign In</a>
+                <div className='buttons'>
+                    <button >
+                        <a href={`/register`} >Sign Up</a>
+                    </button>
+                    <button >
 
-        </button>
-        </div>
-            </div> 
-          
-        <div className="App">
-        </div>
-            <div>
-               
-                    <h1>LandingPage Works</h1>
-                    
-                        
-                    </div>
-                    
+                        <a href={`/login`} >Sign In</a>
+
+                    </button>
+                </div>
             </div>
-      
+
+            <div className="App">
+            </div>
+            <div>
+
+                <h1>LandingPage Works</h1>
+
+
+            </div>
+
+        </div>
+
     );
 };
 
