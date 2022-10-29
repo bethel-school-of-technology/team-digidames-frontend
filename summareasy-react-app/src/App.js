@@ -14,6 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import APIBookData from './Components/APIBookData';
 import SignUp from './Components/SignUp';
 import LoggedOut from './Components/LoggedOut';
+import AboutUs from './Components/AboutUs';
 
 
 
@@ -102,6 +103,15 @@ function App() {
             exact
             element={
               <LandingPage
+                bookReportData={allBookReports} />
+            }
+          />
+
+          <Route
+            path="/about"
+            exact
+            element={
+              <AboutUs
                 bookReportData={allBookReports} />
             }
           />
