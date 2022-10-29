@@ -1,0 +1,276 @@
+{
+  "books": [
+    {
+      "kind": "books#volume",
+      "id": "H8ON-dTgQQYC",
+      "etag": "oqWWLsMHfYo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/H8ON-dTgQQYC",
+      "volumeInfo": {
+        "title": "The Hobbit",
+        "subtitle": "An Unexpected Journey : Visual Companion",
+        "authors": [
+          "Jude Fisher"
+        ],
+        "publisher": "Houghton Mifflin Harcourt",
+        "publishedDate": "2012",
+        "description": "A visual companion to the film \"The Hobbit: An Unexpected Journey\" offers insights into the world of Middle-Earth and includes character profiles, bestiaries, and notes on the places of Middle-Earth.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780547898568"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0547898568"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 111,
+        "printType": "BOOK",
+        "categories": [
+          "Art"
+        ],
+        "averageRating": 4.5,
+        "ratingsCount": 8,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.0.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=H8ON-dTgQQYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=H8ON-dTgQQYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=H8ON-dTgQQYC&printsec=frontcover&dq=hobbit&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=H8ON-dTgQQYC&dq=hobbit&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Hobbit.html?hl=&id=H8ON-dTgQQYC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Hobbit-sample-pdf.acsm?id=H8ON-dTgQQYC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=H8ON-dTgQQYC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "A visual companion to the film &quot;The Hobbit: An Unexpected Journey&quot; offers insights into the world of Middle-Earth and includes character profiles, bestiaries, and notes on the places of Middle-Earth."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "mBSsCgAAQBAJ",
+      "etag": "Bkzq6wzhiFc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/mBSsCgAAQBAJ",
+      "volumeInfo": {
+        "title": "Bilbo's Journey",
+        "subtitle": "Discovering the Hidden Meaning of the Hobbit",
+        "authors": [
+          "Joseph Pearce"
+        ],
+        "publisher": "TAN Books",
+        "publishedDate": "2012-10-31",
+        "description": "Discover the Christian meaning in The Hobbit. In Bilbo's Journey go beyond the dragons, dwarves, and elves, and discover the surprisingly deep meaning of J.R.R. Tolkien's classic novel The Hobbit. Bilbo's quest to find and slay the dragon Smaug is a riveting tale of daring and heroism, but as renowned Tolkien scholar Joseph Pearce shows, it is not simply Bilbo's journey, it is our journey too. It is the Christian journey of self-sacrifice out of love for others, and abandonment to providence and grace. In Bilbo's Journey: Discovering the Hidden Meaning of The Hobbit you will relive the excitement of Tolkien's classic tale, while discovering the profound Christian meaning that makes The Hobbit a truly timeless adventure. The audiobook edition of Bilbo's Journey is read by Kevin O'Brien.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781618901224"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1618901222"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 120,
+        "printType": "BOOK",
+        "categories": [
+          "Literary Criticism"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.2.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=mBSsCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=mBSsCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=mBSsCgAAQBAJ&printsec=frontcover&dq=hobbit&hl=&cd=8&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=mBSsCgAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=mBSsCgAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 5.98,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 5.98,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=mBSsCgAAQBAJ&rdid=book-mBSsCgAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 5980000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 5980000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Bilbo_s_Journey-sample-epub.acsm?id=mBSsCgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Bilbo_s_Journey-sample-pdf.acsm?id=mBSsCgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=mBSsCgAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "The audiobook edition of Bilbo&#39;s Journey is read by Kevin O&#39;Brien."
+      }
+    }
+  ],
+  "users": [
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$wqhNmEUBDmkKNSnyqRFcDe3WH/zQSPRr..r99nky4T4J/a1qorlNu",
+      "id": 1
+    },
+    {
+      "email": "jp@gmail.com",
+      "password": "$2a$10$eY.54t0qD8Bt7Vk1zRM.MuuUqlqjA/2MO.UPXvgUKdpBIAL8BfMNm",
+      "id": 2
+    },
+    {
+      "email": "test1@gmail.com",
+      "password": "$2a$10$0hbcsVj3zbAGLVlWu7Wfg.4PpVHfi/JS4vBENyeN2ibZNXIGE47t2",
+      "firstName": "test1",
+      "lastName": "test1",
+      "id": 3
+    },
+    {
+      "email": "test2@gmail.com",
+      "password": "$2a$10$ViC.vv6Wl3gpsfbyBYs1M.W8ccpRSWU1u4EasEtB/BRtEWRaN51DS",
+      "firstName": "Lori1",
+      "lastName": "Hutchins",
+      "id": 4
+    },
+    {
+      "email": "test22@gmail.com",
+      "password": "$2a$10$nDytOGqmYFSb.R1k64uvfORIYLlrTSCfTLewRhQ/J23lMk.v3TEp2",
+      "firstName": "Jan",
+      "lastName": "Pevny",
+      "id": 5
+    },
+    {
+      "email": "mhutchins@yahoo.com",
+      "password": "$2a$10$yFODARHeGOzViBr7R.kY9ejvB.DLetOJy20QShO7atEQwCVKdJOHG",
+      "firstName": "Marty",
+      "lastName": "Hutchins",
+      "id": 6
+    },
+    {
+      "email": "khutchins@yahoo.com",
+      "password": "$2a$10$f1Fcih0gDUryae8xAVgYc.7QPRGQSHDZLeEkglh0OHZkJ8xw9Em82",
+      "firstName": "Kaleb",
+      "lastName": "Hutchins",
+      "id": 7
+    }
+  ],
+  "BookReports": [
+    {
+      "title": "Reading is Fun",
+      "author": "Dr. Seuss",
+      "writtenBy": "Lisa",
+      "cover": "",
+      "report": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae justo iaculis, efficitur nibh non, dictum neque. In euismod, ex ac convallis lobortis, nulla ante lacinia leo, eget rutrum nisl leo non enim. Ut ex diam, gravida quis sem et, elementum molestie mauris. Aenean feugiat porttitor dui a volutpat. Duis iaculis hendrerit enim, nec malesuada felis tincidunt eget. Nullam nec accumsan metus. Donec accumsan, est sit amet interdum pretium, mi mi eleifend risus, non pretium lectus mauris nec ante. Aliquam in diam id ante ultricies dictum. Praesent placerat, sem vitae interdum laoreet, erat dolor congue dolor, ac efficitur leo metus auctor orci. Aenean ullamcorper, lacus eu interdum cursus, tellus felis rhoncus nisl, eu gravida urna magna nec enim. Donec arcu orci, semper nec ante ac, tempus aliquet elit. Aenean sed massa nec eros varius pellentesque non non tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac fermentum nulla. Morbi ipsum libero, lobortis et malesuada id, scelerisque vitae elit. Maecenas laoreet leo eu leo mattis, quis semper tellus egestas. Sed pellentesque, nibh ut vestibulum tempus, turpis nisi sagittis nisl, ullamcorper bibendum mi lectus at turpis.",
+      "id": 1
+    },
+    {
+      "title": "Busy, Busy Town",
+      "author": "Richard Scarry",
+      "writtenByy": "Lisa",
+      "cover": "",
+      "report": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae justo iaculis, efficitur nibh non, dictum neque. In euismod, ex ac convallis lobortis, nulla ante lacinia leo, eget rutrum nisl leo non enim. Ut ex diam, gravida quis sem et, elementum molestie mauris. Aenean feugiat porttitor dui a volutpat. Duis iaculis hendrerit enim, nec malesuada felis tincidunt eget. Nullam nec accumsan metus. Donec accumsan, est sit amet interdum pretium, mi mi eleifend risus, non pretium lectus mauris nec ante. Aliquam in diam id ante ultricies dictum. Praesent placerat, sem vitae interdum laoreet, erat dolor congue dolor, ac efficitur leo metus auctor orci. Aenean ullamcorper, lacus eu interdum cursus, tellus felis rhoncus nisl, eu gravida urna magna nec enim. Donec arcu orci, semper nec ante ac, tempus aliquet elit. Aenean sed massa nec eros varius pellentesque non non tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac fermentum nulla. Morbi ipsum libero, lobortis et malesuada id, scelerisque vitae elit. Maecenas laoreet leo eu leo mattis, quis semper tellus egestas. Sed pellentesque, nibh ut vestibulum tempus, turpis nisi sagittis nisl, ullamcorper bibendum mi lectus at turpis.",
+      "id": 2
+    },
+    {
+      "title": "God Gave Us You",
+      "author": "Lisa Tawn Bergren",
+      "writtenBy": "Lisa",
+      "cover": "",
+      "report": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae justo iaculis, efficitur nibh non, dictum neque. In euismod, ex ac convallis lobortis, nulla ante lacinia leo, eget rutrum nisl leo non enim. Ut ex diam, gravida quis sem et, elementum molestie mauris. Aenean feugiat porttitor dui a volutpat. Duis iaculis hendrerit enim, nec malesuada felis tincidunt eget. Nullam nec accumsan metus. Donec accumsan, est sit amet interdum pretium, mi mi eleifend risus, non pretium lectus mauris nec ante. Aliquam in diam id ante ultricies dictum. Praesent placerat, sem vitae interdum laoreet, erat dolor congue dolor, ac efficitur leo metus auctor orci. Aenean ullamcorper, lacus eu interdum cursus, tellus felis rhoncus nisl, eu gravida urna magna nec enim. Donec arcu orci, semper nec ante ac, tempus aliquet elit. Aenean sed massa nec eros varius pellentesque non non tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac fermentum nulla. Morbi ipsum libero, lobortis et malesuada id, scelerisque vitae elit. Maecenas laoreet leo eu leo mattis, quis semper tellus egestas. Sed pellentesque, nibh ut vestibulum tempus, turpis nisi sagittis nisl, ullamcorper bibendum mi lectus at turpis.",
+      "id": 3
+    },
+    {
+      "title": "You Are Special",
+      "author": "Max Lucado",
+      "writtenBy": "Lisa",
+      "report": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae justo iaculis, efficitur nibh non, dictum neque. In euismod, ex ac convallis lobortis, nulla ante lacinia leo, eget rutrum nisl leo non enim. Ut ex diam, gravida quis sem et, elementum molestie mauris. Aenean feugiat porttitor dui a volutpat. Duis iaculis hendrerit enim, nec malesuada felis tincidunt eget. Nullam nec accumsan metus. Donec accumsan, est sit amet interdum pretium, mi mi eleifend risus, non pretium lectus mauris nec ante. Aliquam in diam id ante ultricies dictum. Praesent placerat, sem vitae interdum laoreet, erat dolor congue dolor, ac efficitur leo metus auctor orci. Aenean ullamcorper, lacus eu interdum cursus, tellus felis rhoncus nisl, eu gravida urna magna nec enim. Donec arcu orci, semper nec ante ac, tempus aliquet elit. Aenean sed massa nec eros varius pellentesque non non tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac fermentum nulla. Morbi ipsum libero, lobortis et malesuada id, scelerisque vitae elit. Maecenas laoreet leo eu leo mattis, quis semper tellus egestas. Sed pellentesque, nibh ut vestibulum tempus, turpis nisi sagittis nisl, ullamcorper bibendum mi lectus at turpis.",
+      "id": 4
+    },
+    {
+      "title": "I Prayed for You",
+      "author": "Jean Fischer",
+      "writtenBy": "Lisa",
+      "report": "Testing to see if the functionality works.",
+      "id": 5
+    },
+    {
+      "title": "A New Report",
+      "author": "uknown",
+      "writtenBy": "me",
+      "report": "this is a test",
+      "id": 6
+    }
+  ]
+}

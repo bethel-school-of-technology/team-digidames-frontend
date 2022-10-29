@@ -1,6 +1,82 @@
 .App {
   text-align: center;
   background-color: rgb(174, 152, 219);
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+ 
+  
+}
+.background {
+  background-image: url(./images/schoolbus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  
+  background-attachment: fixed;
+}
+.icon-buttons{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+ 
+  text-decoration: none;
+  flex-direction: row;
+  padding-top: 150px;
+ 
+}
+.btn{
+  text-decoration: none;
+}
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  padding-right: 20px;
+}
+.start{
+  height: 1px;
+  width: 1px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+
+}
+.edit{
+  height: 1px;
+  width: 1px;
+  padding-top: 100px;
+  text-decoration: none;
+}
+.signout{
+  display:flex;
+  /* flex-flow: row nowrap; */
+  align-items: center;
+  justify-content: flex-end;
+  align-content: space-around;
+  padding: 50px;
+  
+}
+.list{
+  list-style: none;
+}
+.header > h3{
+  text-align: center;
+}
+
+
+
+.header{
+  background-color:#f39a3a;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 100px;
+  border-bottom: 1px solid black;
+  
+
 }
 
 .App-logo {
@@ -16,7 +92,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 00vh;
   display: flex;
   flex-direction: column;
   align-items: center;

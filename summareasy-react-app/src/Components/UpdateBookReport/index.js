@@ -2,7 +2,9 @@ import React from "react";
 import { useParams } from 'react-router-dom'
 import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from 'react';
-const UpdateBookReport = ({ }) => {
+
+
+const UpdateBookReport = ({}) => {
 
     let { id } = useParams();
     const context = useContext(BookReportContext);
@@ -46,7 +48,7 @@ const UpdateBookReport = ({ }) => {
                 >
                     Update 
                 </button>
-                <a href={`/`}>Back</a>
+                <a href={`/all-book-reports`}>Back</a>
 
 
             </form>

@@ -6,6 +6,16 @@ import OneBookReport from './Components/OneBookReport';
 import { Routes, Route, useNavigate } from "react-router-dom";
 import UpdateBookReport from "./Components/UpdateBookReport";
 import BookReportContext from './UTILS/BookReportContext';
+import LandingPage from './Components/LandingPage';
+import CreateBookReport from './Components/CreateBookReport';
+import Dashboard from './Components/Dashboard';
+import Login from './Components/Login/Login';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import APIBookData from './Components/APIBookData';
+import SignUp from './Components/SignUp';
+import LoggedOut from './Components/LoggedOut';
+
+
 
 function App() {
   const [allBookReports, setAllBookReports] = useState([]);
@@ -68,7 +78,7 @@ function App() {
       API.updateBookReport(id, newBookReport).then(res => {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
-        navigate("/") //this navigates (useNavigat) to homepage ("/") after updating Book Report
+        navigate("/all-book-reports") //this navigates (useNavigat) to homepage ("/") after updating Book Report
       });
     },
 
@@ -76,7 +86,7 @@ function App() {
       API.deleteBookReport(id).then(res => {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
-        navigate("/") //this navigates (useNavigat) to homepage ("/") after deleting Book Report      
+        navigate("/all-book-reports") //this navigates (useNavigat) to homepage ("/") after deleting Book Report      
       });
     }
 
@@ -87,9 +97,69 @@ function App() {
     <div className="App">
       <BookReportContext.Provider value={contextObject}>
         <Routes>
-                 
-          <Route
+        <Route
             path="/"
+            exact
+            element={
+              <LandingPage
+                bookReportData={allBookReports} />
+            }
+          />
+
+        <Route
+            path="/login"
+            exact
+            element={
+              <Login
+                bookReportData={allBookReports} />
+            }
+          />
+
+        <Route
+            path="/loggedout"
+            exact
+            element={
+              <LoggedOut
+                bookReportData={allBookReports} />
+            }
+          /> 
+
+          <Route
+            path="/register"
+            exact
+            element={
+              <SignUp
+                bookReportData={allBookReports} />
+            }
+          /> 
+ 
+          <Route
+            path="/Dashboard"
+            exact
+            element={
+              <Dashboard
+                bookReportData={allBookReports} />
+            }
+          />
+          <Route
+            path="/ApiBookData"
+            exact
+            element={
+              <APIBookData
+                bookReportData={allBookReports} />
+            }
+          />
+
+          <Route
+            path="/Create/:bookId"
+            exact
+            element={
+              <CreateBookReport
+                bookReportData={allBookReports} />
+            }
+          />
+          <Route
+            path="/all-book-reports"
             exact
             element={
               <AllBookReports
