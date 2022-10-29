@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-
+import Footer from '../Footer';
 
 const LandingPage = () => {
 
@@ -28,7 +28,7 @@ const LandingPage = () => {
 
 
             </div>
-
+            <Footer />
         </div>
 
     );

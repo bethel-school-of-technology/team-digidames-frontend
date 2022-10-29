@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import Footer from "../Footer";
 
 const SignUp = () => {
 
@@ -66,6 +66,7 @@ const SignUp = () => {
                 <br />
 
             </form>
+            <Footer />
         </div>
     );
 }

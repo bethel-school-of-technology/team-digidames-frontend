@@ -2,7 +2,7 @@ import React from 'react'
 import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from "react";
 import axios from 'axios';
-
+import Footer from '../Footer';
 
 const CreateBookReport = () => {
 
@@ -50,7 +50,7 @@ const CreateBookReport = () => {
 
 
 
-            <h1>CreateBookReport Works!</h1>
+            <Footer />
         </div>
     )
 }

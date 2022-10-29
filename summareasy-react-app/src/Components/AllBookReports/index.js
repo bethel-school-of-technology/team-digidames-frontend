@@ -2,6 +2,7 @@ import React from 'react';
 // import CreateBookReport from '../CreateBookReport';
 import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from "react";
+import Footer from '../Footer';
 
 
 const AllBookReports = ({ bookReportData }) => {
@@ -33,6 +34,7 @@ const AllBookReports = ({ bookReportData }) => {
                     </div>
                 ))}
             </div>
+            <Footer />
         </div>
     );
 };

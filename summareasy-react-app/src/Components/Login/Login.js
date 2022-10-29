@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import Footer from "../Footer";
 
 
 const Login = () => {
@@ -26,30 +27,31 @@ const Login = () => {
 
             })
         }
-    
+
     };
 
-//TODO handle actual sign in - How do we do this without an official backend
+    //TODO handle actual sign in - How do we do this without an official backend
 
     return (
         <div>
-        
-            <form onSubmit={ signIn }> 
+
+            <form onSubmit={signIn}>
                 <h1>Sign In</h1>
-               
+
                 <label htmlFor="email">Email</label>
                 <br />
-                <input type="text" name="email" onChange={ e => setEmail(e.target.value) }></input> 
+                <input type="text" name="email" onChange={e => setEmail(e.target.value)}></input>
                 <br />
 
                 <label htmlFor="password">Password</label>
                 <br />
-                <input type="password" name="password" onChange={ e => setPassword(e.target.value) }></input>
+                <input type="password" name="password" onChange={e => setPassword(e.target.value)}></input>
                 <br />
                 <button>Sign In</button>
                 <br />
-         
+
             </form>
+            <Footer />
         </div>
     );
 

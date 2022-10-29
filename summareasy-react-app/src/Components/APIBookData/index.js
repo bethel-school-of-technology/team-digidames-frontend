@@ -2,6 +2,7 @@ import React from 'react'
 //import BookReportContext from '../../UTILS/BookReportContext';
 //import { useContext } from "react";
 import axios from 'axios';
+import Footer from '../Footer';
 
 class APIBookData extends React.Component{
     state = {
@@ -62,6 +63,7 @@ class APIBookData extends React.Component{
                         </tr>
                     ))}
                 </table>
+                <Footer />
             </>
         )
     }

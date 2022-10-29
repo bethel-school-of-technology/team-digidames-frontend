@@ -3,6 +3,7 @@ import API from '../../UTILS/API';
 import { useParams } from 'react-router-dom';
 import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from "react";
+import Footer from '../Footer';
 
 
 const OneBookReport = () => {
@@ -37,7 +38,9 @@ const OneBookReport = () => {
             <button onClick={() => context.handleDelete(bookReport.id)}>Delete Book Report</button>
             <a href={`/update-bookreport/${bookReport.id}`}>Update Book Report</a>
             <a href={`/all-book-reports`}>Back</a>
+            <Footer />
         </div>
+        
     );
 }
 

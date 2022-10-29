@@ -2,9 +2,10 @@ import React from "react";
 import { useParams } from 'react-router-dom'
 import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from 'react';
+import Footer from "../Footer";
 
 
-const UpdateBookReport = ({}) => {
+const UpdateBookReport = ({ }) => {
 
     let { id } = useParams();
     const context = useContext(BookReportContext);
@@ -46,13 +47,13 @@ const UpdateBookReport = ({}) => {
                     value="Submit"
                     onClick={() => context.updateBookReport(id)}
                 >
-                    Update 
+                    Update
                 </button>
                 <a href={`/all-book-reports`}>Back</a>
 
 
             </form>
-
+            <Footer />
         </div>
     );
 
