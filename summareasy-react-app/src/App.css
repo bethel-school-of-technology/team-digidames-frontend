@@ -115,3 +115,11 @@
     transform: rotate(360deg);
   }
 }
+
+.aboutUsLink {
+color: black;
+}
+.aboutUsLink:hover {
+  color: whitesmoke;
+ 
+  }
