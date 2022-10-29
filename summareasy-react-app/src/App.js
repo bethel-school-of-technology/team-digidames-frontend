@@ -13,6 +13,7 @@ import Login from './Components/Login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import APIBookData from './Components/APIBookData';
 import SignUp from './Components/SignUp';
+import LoggedOut from './Components/LoggedOut';
 
 
 
@@ -110,6 +111,15 @@ function App() {
             exact
             element={
               <Login
+                bookReportData={allBookReports} />
+            }
+          />
+
+        <Route
+            path="/loggedout"
+            exact
+            element={
+              <LoggedOut
                 bookReportData={allBookReports} />
             }
           /> 

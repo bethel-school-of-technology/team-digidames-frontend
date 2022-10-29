@@ -16,6 +16,8 @@ const SignUp = () => {
         e.preventDefault();
         console.log('Signed Up!');
 
+
+
         if (email !== '' && password !== '' & firstName !== '' && lastName !== '') {
             const createNewUser = {
                 email,
