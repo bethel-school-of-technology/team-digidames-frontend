@@ -1,4 +1,5 @@
 import babydinowaving from "../../images/babydinowaving.jpg";
+import Footer from "../Footer";
 
 const LoggedOut = () => {
 
@@ -7,7 +8,7 @@ const LoggedOut = () => {
 
 
     return (
-        
+        <>
         <div>
             <h1>Successfully Signed Out!</h1>
             <h1>See you next time. Bye!</h1>
@@ -19,6 +20,9 @@ const LoggedOut = () => {
                 style={{ padding: "10px" }}
             ></img>
         </div>
+        <Footer />
+
+        </>
     );
 
 }
