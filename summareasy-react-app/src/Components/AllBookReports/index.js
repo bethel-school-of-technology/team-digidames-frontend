@@ -4,6 +4,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from "react";
 import Footer from '../Footer';
+import NavBar from '../NavBar';
+import back from '../../images/back2.png'
 
 
 const AllBookReports = ({ bookReportData }) => {
@@ -11,41 +13,35 @@ const AllBookReports = ({ bookReportData }) => {
     const context = useContext(BookReportContext);
     return (
         <>
+            <NavBar />
             <Container>
-                <Row><h1>View Book Reports</h1></Row>
-                <Row>
+                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(119,148,73)' }}><h1>Your Book Reports</h1></Row>
+                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(255,182,0)' }}>
                     <div className="container header">
                         {/* <CreateBookReport /> */}
                         <div>
 
-
                             {bookReportData.map((bookReport) => (
 
                                 <div key={bookReport.id} className="one-bookReport">
-                                    <Row>
+                                    <Row style={{ padding: '25px', margin: "30px", textAlign: 'center', backgroundColor: 'rgba(119,148,73)' }}>
                                         <Col>
                                             <h3>{bookReport.title}</h3>
                                         </Col>
 
                                         <Col>
-                                            <a className="btn" href={`one-bookreport/${bookReport.id}`}>
-                                                {" "}
-                                                View {" "}
-                                            </a>
-                                        </Col>
-
-
-                                        <Col>
-                                            <a className="btn" href={`update-bookreport/${bookReport.id}`}>
-                                                {" "}
-                                                Update {" "}
-                                            </a>
+                                            <a class="button" href={`one-bookreport/${bookReport.id}`}>{" "}View{" "}</a>
                                         </Col>
 
                                         <Col>
-                                            <button onClick={() => context.handleDelete(bookReport.id)}>Delete</button>
+                                            <a class="button" href={`update-bookreport/${bookReport.id}`}>{" "}Update{" "}</a>
                                         </Col>
 
+                                        <Col>
+                                            <button onClick={() => context.handleDelete(bookReport.id)} class="button">Delete</button>
+                                        </Col>
+
+                                        <hr></hr>
                                     </Row>
 
 
@@ -57,7 +53,13 @@ const AllBookReports = ({ bookReportData }) => {
 
                     </div>
                 </Row>
-                <Row><a href={`/Dashboard`} >Back</a> </Row>
+                <Row><a href={`/Dashboard`} margin="15px">
+                <img
+                alt="go back to Dashboard"
+                src={back}
+                width="200"
+                style={{ paddingTop: "20px", paddingBottom: "40px" }}
+            ></img></a> </Row>
             </Container>
             <Footer />
         </>
@@ -67,16 +69,3 @@ const AllBookReports = ({ bookReportData }) => {
 
 
 export default AllBookReports;
-
-
-
-{/* <Row key={i} style={{paddingBottom: '100px', paddingRight: '100px'}}>
-<Col xs='12' sm='12' md='5' lg='5' xl='6'>
-    <img variant="top" src={image} style={{padding: '10px'}} width= '350px' alt='digidameteammate'/>
-    <h4 style={{fontSize: '28px', fontWeight: 'bold', fontFamily: 'Teko'}}>{name}</h4>
-</Col>
-<Col xs='12' sm='12' md='7' lg='7' xl='6'>
-    <p style={{fontSize: '28px', textAlign: 'center', fontWeight: 'bold', fontFamily: 'Teko'}}>{role}</p>
-    <p style={{fontSize: '22px', textAlign: 'center', fontFamily: 'Teko'}}>{about}</p>
-</Col>
-</Row> */}

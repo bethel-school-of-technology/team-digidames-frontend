@@ -15,6 +15,7 @@ import APIBookData from './Components/APIBookData';
 import SignUp from './Components/SignUp';
 import LoggedOut from './Components/LoggedOut';
 import AboutUs from './Components/AboutUs';
+import NavBar from './Components/NavBar';
 
 
 
@@ -23,7 +24,7 @@ function App() {
   const [newBookReport, setNewBookReport] = useState({
     title: "",
     author: "",
-    writtenBy:"",
+    writtenBy: "",
     report: ""
   });
 
@@ -39,7 +40,7 @@ function App() {
       setAllBookReports(res.data)
     });
   };
-  
+
   useEffect(() => {
     getAllBookReports();
   }, [refresh]);
@@ -98,7 +99,7 @@ function App() {
     <div className="App">
       <BookReportContext.Provider value={contextObject}>
         <Routes>
-        <Route
+          <Route
             path="/"
             exact
             element={
@@ -116,7 +117,7 @@ function App() {
             }
           />
 
-        <Route
+          <Route
             path="/login"
             exact
             element={
@@ -125,14 +126,14 @@ function App() {
             }
           />
 
-        <Route
+          <Route
             path="/loggedout"
             exact
             element={
               <LoggedOut
                 bookReportData={allBookReports} />
             }
-          /> 
+          />
 
           <Route
             path="/register"
@@ -141,8 +142,8 @@ function App() {
               <SignUp
                 bookReportData={allBookReports} />
             }
-          /> 
- 
+          />
+
           <Route
             path="/Dashboard"
             exact
@@ -190,6 +191,15 @@ function App() {
               <UpdateBookReport />
             }
           />
+
+          <Route
+            path="/NavBar"
+            element={
+              <NavBar />
+            }
+          />
+
+
 
         </Routes>
       </BookReportContext.Provider>
