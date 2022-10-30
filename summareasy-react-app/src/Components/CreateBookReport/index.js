@@ -2,7 +2,7 @@ import React from 'react'
 import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from "react";
 import axios from 'axios';
-
+import bye from '../../images/bye.png'
 
 const CreateBookReport = () => {
 
@@ -11,8 +11,11 @@ const CreateBookReport = () => {
     return (
         <div>
             <div className='header'>
-                
+            <div className='signout' >
+                       <a href={`/`} > <img src={bye} alt='' height={150} width={150}/></a>
+                    </div>
             </div>
+            
 
             <form onSubmit={context.handleSubmit} className="form">
                 <label htmlFor="title">Title of Book</label>
@@ -50,7 +53,7 @@ const CreateBookReport = () => {
 
 
 
-            <h1>CreateBookReport Works!</h1>
+            
         </div>
     )
 }

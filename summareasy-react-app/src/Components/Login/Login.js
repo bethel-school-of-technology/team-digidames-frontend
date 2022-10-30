@@ -1,11 +1,13 @@
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const Login = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
     const signIn = (e) => {
         e.preventDefault();
@@ -20,9 +22,10 @@ const Login = () => {
             axios.post('http://localhost:3000/login', req).then(result => {
                 const token = result.data.accessToken;
                 localStorage.setItem('myJWT', token);
-                localStorage.setItem('userId', result.user.id);
-                localStorage.setItem('email', result.user.email);
+                localStorage.setItem('userId', result.data.user.id);
+                localStorage.setItem('email', result.data.user.email);
                 console.log(result.data);
+                navigate('/dashboard');
 
             })
         }
