@@ -12,6 +12,7 @@ import Dashboard from './Components/Dashboard';
 import Login from './Components/Login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import APIBookData from './Components/APIBookData';
+import Register from './Components/Register';
 
 
 
@@ -103,6 +104,14 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
+           <Route
+            path="/register"
+            exact
+            element={
+              <Register
+                bookReportData={allBookReports} />
+            }
+          /> 
 
         <Route
             path="/login"

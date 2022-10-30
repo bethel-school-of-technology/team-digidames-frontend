@@ -179,6 +179,22 @@
       }
     }
   ],
+  "register": [
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "",
+      "id": 1
+    },
+    {
+      "firstName": "J",
+      "lastName": "M",
+      "email": "jm@gmail.com",
+      "password": "test1",
+      "id": 2
+    }
+  ],
   "users": [
     {
       "email": "test@gmail.com",
