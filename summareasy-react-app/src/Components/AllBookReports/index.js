@@ -54,12 +54,14 @@ const AllBookReports = ({ bookReportData }) => {
                     </div>
                 </Row>
                 <Row><a href={`/Dashboard`} margin="15px">
-                <img
-                alt="go back to Dashboard"
-                src={back}
-                width="200"
-                style={{ paddingTop: "20px", paddingBottom: "40px" }}
-            ></img></a> </Row>
+                    <img
+                        alt="go back to Dashboard"
+                        src={back}
+                        width="200"
+                        style={{ paddingTop: "20px", paddingBottom: "40px" }}
+                    ></img>
+                    </a>
+                </Row>
             </Container>
             <Footer />
         </>
