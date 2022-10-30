@@ -29,7 +29,7 @@ const LandingPage = () => {
                     </div>
                 </Row>
 
-                <Row style={{ fontSize: '80px', padding: '100px', fontFamily: 'Amaranth' }}>
+                <Row style={{ fontSize: '80px', padding: '60px', fontFamily: 'Amaranth' }}>
 
                     <h1>Welcome to Summareasy</h1>
 

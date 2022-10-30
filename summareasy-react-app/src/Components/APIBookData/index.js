@@ -1,9 +1,11 @@
 import React from 'react'
+import { Col, Container, Row } from 'react-bootstrap';
 //import BookReportContext from '../../UTILS/BookReportContext';
 //import { useContext } from "react";
 import axios from 'axios';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
+
 
 class APIBookData extends React.Component{
     state = {
@@ -47,9 +49,13 @@ class APIBookData extends React.Component{
         return (
             <>
             <NavBar />
-                <h4>Axios GET Request Example in React</h4>
+            <Container>
+                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(119,148,73)', fontFamily: 'Amaranth' }}>
+                <h1>What book would you like to write about?</h1>
+                </Row>
+                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(0,0,0)', color: 'white', fontFamily: 'Amaranth', fontSize: '24px' }}>
                 <table classname="table table-bordered">
-                    <tr>
+                    <tr style={{ textAlign: 'center', backgroundColor: 'rgba(119,148,73)', color: 'white', fontFamily: 'Amaranth' }}>
                         <th>Book Title</th>
                         <th>Author</th>
                         <th>Book Cover</th>
@@ -65,6 +71,8 @@ class APIBookData extends React.Component{
                         </tr>
                     ))}
                 </table>
+                </Row>
+                </Container>
                 <Footer />
             </>
         )
