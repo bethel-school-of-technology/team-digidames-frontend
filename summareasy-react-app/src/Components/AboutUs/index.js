@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import logo from '../../images/Logo.png';
 import lori from '../../images/Lori2.jpg';
 import jess from '../../images/JessPlaceHolder.jpg';
+import back from '../../images/back2.png'
 import Footer from '../Footer';
 
 import "../../App.css";
@@ -68,6 +69,15 @@ function AboutUs() {
                 {displayTeam()}
             </Col>
         </Row>
+        <Row><a href={`/Dashboard`} margin="15px">
+                    <img
+                        alt="go back to Dashboard"
+                        src={back}
+                        width="200"
+                        style={{ paddingTop: "20px", paddingBottom: "40px" }}
+                    ></img>
+                    </a>
+                </Row>
     </Container>
     <Footer />
     </>
