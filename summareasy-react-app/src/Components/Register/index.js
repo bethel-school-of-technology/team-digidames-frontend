@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 const Register = () => {
@@ -7,6 +8,7 @@ const Register = () => {
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
     const register = (e) => {
         e.preventDefault();
@@ -20,14 +22,15 @@ const Register = () => {
                 password
             };
 
-            axios.post('http://localhost:3000/register', req).then(result => {
+            axios.post('http://localhost:3000/users', req).then(result => {
                 
                 const token = result.data.accessToken;
                 localStorage.setItem('myJWT', token);
-                localStorage.setItem('userId', result.register.id);
-                localStorage.setItem('email', result.register.email);
-                localStorage.setItem('firstName', result.register.firstName);
+                localStorage.setItem('userId', result.data.user.id);
+                localStorage.setItem('email', result.data.user.email);
+                localStorage.setItem('firstName', result.data.user.firstName);
                 console.log(result.data);
+                navigate('/dashboard');
 
             })
         }

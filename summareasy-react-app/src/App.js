@@ -140,7 +140,7 @@ function App() {
           />
 
           <Route
-            path="/Create/:bookId"
+            path="/Create"
             exact
             element={
               <CreateBookReport
