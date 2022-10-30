@@ -162,7 +162,7 @@ function App() {
           />
 
           <Route
-            path="/Create/:bookId"
+            path="/Create" //will need to use google bookId to create reports ( path="/Create/:bookId" )
             exact
             element={
               <CreateBookReport

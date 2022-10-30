@@ -69,7 +69,8 @@ function AboutUs() {
                 {displayTeam()}
             </Col>
         </Row>
-        <Row><a href={`/Dashboard`} margin="15px">
+        <Row>
+            <a href={`/Dashboard`} margin="15px">
                     <img
                         alt="go back to Dashboard"
                         src={back}

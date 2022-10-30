@@ -1,7 +1,10 @@
 import axios from "axios";
+import { Col, Container, Row } from 'react-bootstrap';
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../Footer";
+import NavBar from "../NavBar";
+import car from '../../images/car2.png'
 
 const SignUp = () => {
 
@@ -39,35 +42,56 @@ const SignUp = () => {
     };
 
     return (
-        <div>
-            <form onSubmit={signUp}>
-                <h1>Sign Up</h1>
+        <>
+            <NavBar />
+            <Container>
+                <Row>
+                    <Col>
+                        <img
+                            alt=""
+                            src={car}
+                            width="850"
+                            style={{ padding: "10px" }}
+                        ></img>
+                    </Col>
+                    <Col style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(255,182,0)', fontFamily: 'Amaranth' }}>
+                        <form onSubmit={signUp}>
+                            <h1>Sign Up</h1>
+                            <br />
+                            
+                            <label htmlFor="firstName">First Name</label>
+                            <br />
+                            <input type="text" name="firstName" onChange={e => setFirstName(e.target.value)}></input>
+                            <br />
+                            <br />
+                            <label htmlFor="lastName">Last Name</label>
+                            <br />
+                            <input type="text" name="lastName" onChange={e => setLastName(e.target.value)}></input>
+                            <br />
+                            <br />
+                            <label htmlFor="email">Email</label>
+                            <br />
+                            <input type="text" name="email" onChange={e => setEmail(e.target.value)}></input>
+                            <br />
+                            <br />
+                            <label htmlFor="password">Password</label>
+                            <br />
+                            <input type="password" name="password" onChange={e => setPassword(e.target.value)}></input>
+                            <br />
+                            <br />
+                            <button>Sign Up</button>
+                            <br />
 
-                <label htmlFor="firstName">First Name</label>
-                <br />
-                <input type="text" name="firstName" onChange={e => setFirstName(e.target.value)}></input>
-                <br />
+                        </form>
+                    </Col>
+                    <Col>
 
-                <label htmlFor="lastName">Last Name</label>
-                <br />
-                <input type="text" name="lastName" onChange={e => setLastName(e.target.value)}></input>
-                <br />
-
-                <label htmlFor="email">Email</label>
-                <br />
-                <input type="text" name="email" onChange={e => setEmail(e.target.value)}></input>
-                <br />
-
-                <label htmlFor="password">Password</label>
-                <br />
-                <input type="password" name="password" onChange={e => setPassword(e.target.value)}></input>
-                <br />
-                <button>Sign Up</button>
-                <br />
-
-            </form>
+                    </Col>
+                </Row>
+            </Container>
             <Footer />
-        </div>
+
+        </>
     );
 }
 
