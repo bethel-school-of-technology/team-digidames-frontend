@@ -1,42 +1,64 @@
+@import url(https://fonts.googleapis.com/css2?family=Amaranth:ital@0;1&family=Teko:wght@500&display=swap);
+
 .App {
   text-align: center;
   background-color: rgb(174, 152, 219);
   margin: 0px;
   height: 100%;
   width: 100%;
- 
-  
+
+
 }
-.background {
+
+/* .background {
   background-image: url(./images/schoolbus.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  
+
   background-attachment: fixed;
-}
-.icon-buttons{
+} */
+
+.icon-buttons {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
- 
+
   text-decoration: none;
   flex-direction: row;
   padding-top: 150px;
- 
+
 }
-.btn{
+
+.btn {
   text-decoration: none;
 }
-.buttons{
+
+.button {
+  font: bold 20px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+
+
+
+.buttons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
   padding-right: 20px;
 }
-.start{
+
+.start {
   height: 1px;
   width: 1px;
   margin-bottom: 50px;
@@ -45,39 +67,43 @@
   align-items: baseline;
 
 }
-.edit{
+
+.edit {
   height: 1px;
   width: 1px;
   padding-top: 100px;
   text-decoration: none;
 }
-.signout{
-  display:flex;
+
+.signout {
+  display: flex;
   /* flex-flow: row nowrap; */
   align-items: center;
   justify-content: flex-end;
   align-content: space-around;
   padding: 50px;
-  
+
 }
-.list{
+
+.list {
   list-style: none;
 }
-.header > h3{
+
+.header>h3 {
   text-align: center;
 }
 
 
 
-.header{
-  background-color:#f39a3a;
+/* .header {
+  background-color: #f39a3a;
   height: 200px;
   width: 100%;
   margin-bottom: 100px;
   border-bottom: 1px solid black;
-  
 
-}
+
+} */
 
 .App-logo {
   height: 40vmin;
@@ -90,7 +116,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 00vh;
   display: flex;
@@ -99,7 +125,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #61dafb;
@@ -109,7 +135,36 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+.aboutUsLink {
+  color: black;
+}
+
+.aboutUsLink:hover {
+  color: whitesmoke;
+}
+
+.color-nav {
+  background-color:  rgb(174, 152, 219);
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+ 
+  
+}
+/* 
+.nav-link {
+  font-family: 'Amaranth', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color:black;
+} 
+ .nav-drop-item {
+
+ }
+*/

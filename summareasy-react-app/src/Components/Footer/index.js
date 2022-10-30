@@ -1,5 +1,8 @@
 import React from "react";
 import sun from "../../images/sun.jpg.png"
+import { Col, Container, Row } from 'react-bootstrap';
+import "../../App.css";
+
 function Footer() {
     let today = new Date();
     let day = today.getDate();
@@ -7,15 +10,25 @@ function Footer() {
     let year = today.getFullYear();
 
     return (
-        <footer>   
-            <p ><span>Summareasy &copy; 2022 </span>
-            <img
-                alt=""
-                src={sun}
-                width="50"
-                style={{ padding: "10px" }}
-            ></img>
-            <span>Today is { month }/{day}/{ year }</span></p> 
+        <footer >
+            <Row style={{fontFamily:'Amaranth', fontSize:'25px', padding: '19px', color: 'rgba(0,0,0)'}}>
+                <Col>
+                    <img
+                        alt=""
+                        src={sun}
+                        width="50"
+                        style={{ padding: "10px" }}
+                    ></img>
+                
+                    <span>Summareasy &copy; 2022 </span>
+                </Col>
+                <Col>
+                    <span>Today is {month}/{day}/{year}</span>
+                </Col>
+                <Col>
+                    <span><a href={`/about`} class='aboutUsLink'>About DigiDames</a></span>
+                </Col>
+            </Row>
         </footer>
     )
 }

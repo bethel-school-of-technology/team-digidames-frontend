@@ -1,5 +1,7 @@
 import babydinowaving from "../../images/babydinowaving.jpg";
 import Footer from "../Footer";
+import NavBar from "../NavBar";
+import { Col, Container, Row } from 'react-bootstrap';
 
 const LoggedOut = () => {
 
@@ -9,18 +11,30 @@ const LoggedOut = () => {
 
     return (
         <>
-        <div>
-            <h1>Successfully Signed Out!</h1>
-            <h1>See you next time. Bye!</h1>
-            <h1>Thank you!</h1>
-            <img
-                alt=""
-                src={babydinowaving}
-                width="600"
-                style={{ padding: "10px" }}
-            ></img>
-        </div>
-        <Footer />
+            <NavBar />
+            <Container style={{ fontSize: '80px', padding: '100px', fontFamily: 'Amaranth' }}>
+                <Row >
+
+                    <h1>Successfully Signed Out!</h1>
+                </Row>
+
+                <Row>
+                    <h1>See you next time. Bye!</h1>
+                </Row>
+
+                <Row>
+                    <img
+                        alt=""
+                        src={babydinowaving}
+                        width="600"
+                        style={{ padding: "10px" }}
+                    ></img>
+                </Row>
+                <Row>
+                    <h1>Thank you!</h1>
+                </Row>
+            </Container>
+            <Footer />
 
         </>
     );
