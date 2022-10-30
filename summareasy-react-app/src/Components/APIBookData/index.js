@@ -3,6 +3,7 @@ import React from 'react'
 //import { useContext } from "react";
 import axios from 'axios';
 import Footer from '../Footer';
+import NavBar from '../NavBar';
 
 class APIBookData extends React.Component{
     state = {
@@ -45,6 +46,7 @@ class APIBookData extends React.Component{
         const { books } = this.state;
         return (
             <>
+            <NavBar />
                 <h4>Axios GET Request Example in React</h4>
                 <table classname="table table-bordered">
                     <tr>

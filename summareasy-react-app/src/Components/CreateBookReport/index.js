@@ -3,12 +3,16 @@ import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from "react";
 import axios from 'axios';
 import Footer from '../Footer';
+import NavBar from '../NavBar';
 
 const CreateBookReport = () => {
 
     const context = useContext(BookReportContext);
 
     return (
+        <>
+        <NavBar />
+        
         <div>
             <div className='header'>
                 
@@ -52,6 +56,7 @@ const CreateBookReport = () => {
 
             <Footer />
         </div>
+        </>
     )
 }
 
