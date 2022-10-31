@@ -29,6 +29,11 @@ const OneBookReport = () => {
 
     return (
         <div>
+            <div className='header'>
+                <div className='signout'>
+                    
+                </div>
+            </div>
             <h5>View One Book Report Page</h5>
             <h1>{bookReport.title}</h1>
             <h3>Author: {bookReport.author}</h3>

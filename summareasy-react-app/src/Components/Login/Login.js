@@ -8,6 +8,7 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
+    
 
     const signIn = (e) => {
         e.preventDefault();
@@ -31,6 +32,8 @@ const Login = () => {
         }
     
     };
+    
+
 
 //TODO handle actual sign in - How do we do this without an official backend
 
