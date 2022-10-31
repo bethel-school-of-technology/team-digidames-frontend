@@ -3,6 +3,7 @@ import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from "react";
 import axios from 'axios';
 import bye from '../../images/bye.png'
+import SignOut from '../LogOut/Logout';
 
 const CreateBookReport = () => {
 
@@ -12,7 +13,7 @@ const CreateBookReport = () => {
         <div>
             <div className='header'>
             <div className='signout' >
-                       <a href={`/`} > <img src={bye} alt='' height={150} width={150}/></a>
+                        <img src={bye} alt='' height={150} width={150} onClick={SignOut}/>
                     </div>
             </div>
             
@@ -97,4 +98,4 @@ const CreateBookReport = () => {
 //     }
 
 // }
-export default CreateBookReport;
+export default CreateBookReport ;

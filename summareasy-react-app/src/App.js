@@ -13,6 +13,7 @@ import Login from './Components/Login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import APIBookData from './Components/APIBookData';
 import Register from './Components/Register';
+import LogOut from './Components/LogOut/Logout';
 
 
 
@@ -49,7 +50,7 @@ function App() {
       API.createBookReport(newBookReport).then((res) => {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
-        document.querySelector(".forms").reset();
+        document.querySelector(".form").reset();
       });
     },
 
@@ -118,6 +119,14 @@ function App() {
             exact
             element={
               <Login
+                bookReportData={allBookReports} />
+            }
+          /> 
+          <Route
+            path="/logout"
+            exact
+            element={
+              <LogOut
                 bookReportData={allBookReports} />
             }
           /> 

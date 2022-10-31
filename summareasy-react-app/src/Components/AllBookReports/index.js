@@ -2,6 +2,7 @@ import React from 'react';
 // import CreateBookReport from '../CreateBookReport';
 import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from "react";
+import SignOut from '../LogOut/Logout';
 
 
 const AllBookReports = ({ bookReportData }) => {
@@ -10,6 +11,9 @@ const AllBookReports = ({ bookReportData }) => {
     return (
         <div className="container header">
             {/* <CreateBookReport /> */}
+            <div className='header'>
+            <button onClick={SignOut}>Sign Out</button>
+            </div>
             <div>
                 <h1>View Book Reports</h1>
                 {bookReportData.map((bookReport) => (

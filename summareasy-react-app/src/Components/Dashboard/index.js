@@ -3,6 +3,7 @@ import '../../App.css';
 import start from '../../images/start.jpg'
 import edit from '../../images/edit.png'
 import bye from '../../images/bye.png'
+import SignOut from '../LogOut/Logout';
 
 
 
@@ -10,8 +11,8 @@ const Dashboard = () => {
 
     return (
         <div className= "header">
-           <div className='signout' >
-                       <a href={`/`} > <img src={bye} alt='' height={150} width={150}/></a>
+           <div className='signout' onClick={SignOut} >
+                       <a href={`/logout`} > <img src={bye} alt='' height={150} width={150}/></a>
                     </div>
             <div>
                
