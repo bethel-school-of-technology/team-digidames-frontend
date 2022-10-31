@@ -26,7 +26,7 @@ const LoggedOut = () => {
                     <img
                         alt=""
                         src={babydinowaving}
-                        width="600"
+                        width="200px"
                         style={{ padding: "10px" }}
                     ></img>
                 </Row>

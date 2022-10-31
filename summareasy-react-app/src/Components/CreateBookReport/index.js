@@ -16,7 +16,7 @@ const CreateBookReport = () => {
         <>
             <NavBar />
 
-            <Container style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(119,148,73)', fontFamily: 'Amaranth' }}>
+            <Container style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(39,208,241)', fontFamily: 'Amaranth' }}>
                 <Row style={{ padding: '15px'}}>
                     <h1> What was the book about?</h1>
                 </Row>

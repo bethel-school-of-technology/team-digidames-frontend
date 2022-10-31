@@ -16,7 +16,8 @@ import SignUp from './Components/SignUp';
 import LoggedOut from './Components/LoggedOut';
 import AboutUs from './Components/AboutUs';
 import NavBar from './Components/NavBar';
-
+import EmailedConfirm from './Components/EmailedConfirm';
+import PrintedConfirm from './Components/PrintedConfirm';
 
 
 function App() {
@@ -131,6 +132,24 @@ function App() {
             exact
             element={
               <LoggedOut
+                bookReportData={allBookReports} />
+            }
+          />
+          <Route
+            path="/emailedconfirm"
+            exact
+            element={
+              <EmailedConfirm
+                bookReportData={allBookReports} />
+            }
+          />
+          
+
+          <Route
+            path="/printedconfirm"
+            exact
+            element={
+              <PrintedConfirm
                 bookReportData={allBookReports} />
             }
           />

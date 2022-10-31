@@ -47,7 +47,7 @@ const Dashboard = () => {
                         <a href={`/all-book-reports`} padding='100px' ><img src={edit} alt='' height={200} /></a>
                     </Col>
                 </Row>
-                <Row style={{ padding: '150px' }}>
+                <Row style={{ padding: '50px' }}>
                     <a href={`/loggedout`} padding='100px' ><img src={bye} alt='' width={400} /></a>
 
                 </Row>
