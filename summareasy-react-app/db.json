@@ -210,13 +210,6 @@
       "firstName": "jj",
       "lastName": "jj",
       "id": 5
-    },
-    {
-      "email": "gg@mail.com",
-      "password": "$2a$10$cBeDDgjNGiaExbVk98qZdODul/LY7ctTaK2mMRgJ2NIPfUjqvEF7W",
-      "firstName": "Ginna",
-      "lastName": "Giovanni",
-      "id": 6
     }
   ],
   "BookReports": [
@@ -273,18 +266,11 @@
       "id": 7
     },
     {
-      "title": "Hello",
-      "author": "test",
-      "writtenBy": "yes",
-      "report": "ok",
+      "title": "",
+      "author": "",
+      "writtenBy": "",
+      "report": "",
       "id": 8
-    },
-    {
-      "title": "Can a different user see",
-      "author": "LM",
-      "writtenBy": "JM",
-      "report": "test",
-      "id": 9
     }
   ]
 }
