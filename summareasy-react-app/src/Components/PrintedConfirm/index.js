@@ -1,4 +1,3 @@
-import emailedIcon from "../../images/emailed.png";
 import Footer from "../Footer";
 import NavBar from "../NavBar";
 import { Col, Container, Row } from 'react-bootstrap';
