@@ -18,6 +18,7 @@ import AboutUs from './Components/AboutUs';
 import NavBar from './Components/NavBar';
 import EmailedConfirm from './Components/EmailedConfirm';
 import PrintedConfirm from './Components/PrintedConfirm';
+import DeletedConfirm from './Components/DeletedConfirm';
 
 
 function App() {
@@ -89,7 +90,7 @@ function App() {
       API.deleteBookReport(id).then(res => {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
-        navigate("/all-book-reports") //this navigates (useNavigat) to homepage ("/") after deleting Book Report      
+        navigate("/deletedconfirm") //this navigates (useNavigat) to delete confirmation page ("/") after deleting Book Report      
       });
     }
 
@@ -143,7 +144,16 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
-          
+
+          <Route
+            path="/deletedconfirm"
+            exact
+            element={
+              <DeletedConfirm
+                bookReportData={allBookReports} />
+            }
+          />
+
 
           <Route
             path="/printedconfirm"
