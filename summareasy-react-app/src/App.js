@@ -14,6 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import APIBookData from './Components/APIBookData';
 import Register from './Components/Register';
 import LogOut from './Components/LogOut/Logout';
+import EmailContactForm from './Components/Email';
 
 
 
@@ -149,7 +150,7 @@ function App() {
           />
 
           <Route
-            path="/Create"
+            path="/Create/:id"
             exact
             element={
               <CreateBookReport
@@ -164,6 +165,14 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
+          <Route
+            path="/email/:id"
+            element={
+              <EmailContactForm/>
+            }
+          />
+           
+         
 
           <Route
             path="/one-bookreport/:id"
