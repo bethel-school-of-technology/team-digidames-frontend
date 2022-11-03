@@ -56,6 +56,7 @@ class APIBookData extends React.Component{
                 <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(0,0,0)', color: 'white', fontFamily: 'Amaranth', fontSize: '24px' }}>
                 <table classname="table table-bordered">
                     <tr style={{ textAlign: 'center', backgroundColor: 'rgba(119,148,73)', color: 'white', fontFamily: 'Amaranth' }}>
+                        <th>Book ID</th>
                         <th>Book Title</th>
                         <th>Author</th>
                         <th>Book Cover</th>
@@ -63,6 +64,7 @@ class APIBookData extends React.Component{
                     </tr>
                     {books && books.map((book) => (
                         <tr>
+                            <td>{book.id}</td>
                             <td>{book.volumeInfo.title}</td>
                             <td>{book.volumeInfo.authors}</td>
                             <td><img src={book.volumeInfo.imageLinks.thumbnail}/></td>
