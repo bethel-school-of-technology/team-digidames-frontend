@@ -10,9 +10,7 @@ import SignOut from '../LogOut/Logout';
 
 // import SignOut from '../LogOut/Logout';
 
-import Footer from '../Footer';
-import NavBar from '../NavBar';
-import back from '../../images/back2.png'
+
 
 
 

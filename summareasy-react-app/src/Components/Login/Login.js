@@ -1,12 +1,13 @@
 import axios from "axios";
-import { useState, useNavigate } from "react";
+import { useState } from "react";
 import { Col, Container, Row } from 'react-bootstrap';
 import Footer from "../Footer";
 import NavBar from "../NavBar";
 import tree from '../../images/tree.png'
 import sun from '../../images/sun.jpg.png'
 import babyDinos from '../../images/babydinos.png'
-import boulder3 from '../../images/boulder3.png'
+import { useNavigate } from "react-router-dom";
+// import boulder3 from '../../images/boulder3.png'
 
 
 const Login = () => {

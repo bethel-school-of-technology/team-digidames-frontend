@@ -9,7 +9,10 @@ import NavBar from '../NavBar';
 import back from '../../images/back2.png';
 
 
-// import EmailContactForm from '../Email';
+
+
+
+
 
 
 
@@ -19,12 +22,7 @@ const OneBookReport = () => {
     const [bookReport, setBookReport] = useState({});
     const { id } = useParams();
     const context = useContext(BookReportContext);
-
-    // const [firstName, getFirstName] = useState(""); 
-    // const [userId, getUserId] = useState("");
-    // const [email, getEmail] = useState("");
-    // const navigate = useNavigate();
-    // const [extractBookReport, getBookReportById] =  useState("");
+ 
 
     useEffect(() => {
         const getBookReport = () => {
@@ -37,7 +35,7 @@ const OneBookReport = () => {
 
         getBookReport();
 
-    }, [bookReport, id])
+    }, [])
 
 
 
@@ -45,7 +43,7 @@ const OneBookReport = () => {
         <>
             <NavBar />
 
-            <Container style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(255,255,255)' }}>
+            <Container  style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(255,255,255)' }}>
                 <Row style={{ margin:'10px', padding: '25px', textAlign: 'center', backgroundColor: 'rgba(255,182,0)' }}>
                     <h1>{bookReport.title}</h1>
                 </Row>
@@ -60,6 +58,7 @@ const OneBookReport = () => {
                 </Row>
                 <Row style={{ padding: '25px'}}>
 
+                
                     <Col>
                         <a href={`/update-bookreport/${bookReport.id}`} class="button">Update Book Report</a>
                     </Col>
@@ -68,6 +67,7 @@ const OneBookReport = () => {
                         <button onClick={() => context.handleDelete(bookReport.id)} class="button">Delete Book Report</button>
                     </Col>
                 </Row>
+           
 
                 <Col>
                     <a href={`/all-book-reports`} margin="15px">
@@ -78,9 +78,12 @@ const OneBookReport = () => {
                             style={{ paddingTop: "20px", paddingBottom: "40px" }}
                         ></img>
                     </a>
+                    
                 </Col>
+               
+               
 
-
+                
             </Container>
             <Footer />
         </>

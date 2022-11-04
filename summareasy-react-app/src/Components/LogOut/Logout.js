@@ -14,7 +14,7 @@ const SignOut = () => {
     localStorage.clear();
     useEffect(() =>{
         if(signedOut){
-            navigate("/logout")
+            navigate("/loggedout")
         }
     })
 

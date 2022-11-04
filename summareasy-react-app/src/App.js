@@ -22,6 +22,8 @@ import NavBar from './Components/NavBar';
 import EmailedConfirm from './Components/EmailedConfirm';
 import PrintedConfirm from './Components/PrintedConfirm';
 import DeletedConfirm from './Components/DeletedConfirm';
+
+
 //import SearchBar from './Components/SearchBar';
 
 
@@ -103,8 +105,10 @@ function App() {
 
   return (
     <div className="App">
+     
       <BookReportContext.Provider value={contextObject}>
         <Routes>
+        
           <Route
             path="/"
             exact
@@ -139,6 +143,50 @@ function App() {
                 bookReportData={allBookReports} />
             }
           /> 
+            <Route
+            path="/loggedout"
+            exact
+            element={
+              <LoggedOut
+                bookReportData={allBookReports} />
+            }
+          />
+          <Route
+            path="/emailedconfirm"
+            exact
+            element={
+              <EmailedConfirm
+                bookReportData={allBookReports} />
+            }
+          />
+
+          <Route
+            path="/deletedconfirm"
+            exact
+            element={
+              <DeletedConfirm
+                bookReportData={allBookReports} />
+            }
+          />
+
+
+          <Route
+            path="/printedconfirm"
+            exact
+            element={
+              <PrintedConfirm
+                bookReportData={allBookReports} />
+            }
+          />
+
+          <Route
+            path="/register"
+            exact
+            element={
+              <SignUp
+                bookReportData={allBookReports} />
+            }
+          />
           <Route
             path="/logout"
             exact
