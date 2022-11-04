@@ -103,7 +103,7 @@ function App() {
 
   return (
     <div className="App">
-      
+
       <BookReportContext.Provider value={contextObject}>
         <Routes>
 
@@ -115,6 +115,14 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
+          <Route
+            path="/register"
+            exact
+            element={
+              <Register
+                bookReportData={allBookReports} />
+            }
+          /> 
           <Route
             path="/about"
             exact
