@@ -260,39 +260,32 @@
       "id": 2
     },
     {
-      "email": "test1@gmail.com",
-      "password": "$2a$10$0hbcsVj3zbAGLVlWu7Wfg.4PpVHfi/JS4vBENyeN2ibZNXIGE47t2",
-      "firstName": "test1",
-      "lastName": "test1",
+      "email": "lm@gmail.com",
+      "password": "$2a$10$tHyGDOCTzdZTQx.tTgXxue/Wq3vIGyjdikqx1d6wjJnOwNuW5ZxJi",
+      "firstName": "Leah",
+      "lastName": "Menos",
       "id": 3
     },
     {
-      "email": "test2@gmail.com",
-      "password": "$2a$10$ViC.vv6Wl3gpsfbyBYs1M.W8ccpRSWU1u4EasEtB/BRtEWRaN51DS",
-      "firstName": "Lori1",
-      "lastName": "Hutchins",
+      "email": "sj@mail.com",
+      "password": "$2a$10$7faB/xP1Yg9XYevWFf0Tcutqp0gbvzVKM.bXFCvG8NbXPmBKbIHZW",
+      "firstName": "ss",
+      "lastName": "jj",
       "id": 4
     },
     {
-      "email": "test22@gmail.com",
-      "password": "$2a$10$nDytOGqmYFSb.R1k64uvfORIYLlrTSCfTLewRhQ/J23lMk.v3TEp2",
-      "firstName": "Jan",
-      "lastName": "Pevny",
+      "email": "jj@fakemail.com",
+      "password": "$2a$10$AM.tF29ztq7LiHG2pWQajuo2/FdtqEAJpFQBWQGIcnTu8A9uhJ9QG",
+      "firstName": "jj",
+      "lastName": "jj",
       "id": 5
     },
     {
-      "email": "mhutchins@yahoo.com",
-      "password": "$2a$10$yFODARHeGOzViBr7R.kY9ejvB.DLetOJy20QShO7atEQwCVKdJOHG",
-      "firstName": "Marty",
-      "lastName": "Hutchins",
+      "email": "gg@mail.com",
+      "password": "$2a$10$cBeDDgjNGiaExbVk98qZdODul/LY7ctTaK2mMRgJ2NIPfUjqvEF7W",
+      "firstName": "Ginna",
+      "lastName": "Giovanni",
       "id": 6
-    },
-    {
-      "email": "khutchins@yahoo.com",
-      "password": "$2a$10$f1Fcih0gDUryae8xAVgYc.7QPRGQSHDZLeEkglh0OHZkJ8xw9Em82",
-      "firstName": "Kaleb",
-      "lastName": "Hutchins",
-      "id": 7
     }
   ],
   "BookReports": [

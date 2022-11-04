@@ -6,12 +6,30 @@ import { useContext } from "react";
 import Footer from '../Footer';
 import NavBar from '../NavBar';
 import back from '../../images/back2.png'
+import SignOut from '../LogOut/Logout';
+
+// import SignOut from '../LogOut/Logout';
+
+
+
 
 
 const AllBookReports = ({ bookReportData }) => {
 
     const context = useContext(BookReportContext);
     return (
+
+        // <div className="container header">
+        //     {/* <CreateBookReport /> */}
+        //     <div className='header'>
+        //     <button onClick={SignOut}>Sign Out</button>
+        //     </div>
+        //     <div>
+        //         <h1>View Book Reports</h1>
+        //         {bookReportData.map((bookReport) => (
+        //             <div key={bookReport.id} className="one-bookReport">
+        //                 <h3>{bookReport.title}</h3>
+
         <div style={{ backgroundColor: 'rgba(174, 152, 219)' }}>
             <NavBar />
             <Container>
@@ -20,6 +38,7 @@ const AllBookReports = ({ bookReportData }) => {
                     <div className="container header">
                         {/* <CreateBookReport /> */}
                         <div>
+
 
                             {bookReportData.map((bookReport) => (
 

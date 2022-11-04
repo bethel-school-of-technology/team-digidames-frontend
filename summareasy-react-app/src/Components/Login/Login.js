@@ -6,13 +6,16 @@ import NavBar from "../NavBar";
 import tree from '../../images/tree.png'
 import sun from '../../images/sun.jpg.png'
 import babyDinos from '../../images/babydinos.png'
-import boulder3 from '../../images/boulder3.png'
+import { useNavigate } from "react-router-dom";
+// import boulder3 from '../../images/boulder3.png'
 
 
 const Login = () => {
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
+    
 
     const signIn = (e) => {
         e.preventDefault();
@@ -27,14 +30,16 @@ const Login = () => {
             axios.post('http://localhost:3000/login', req).then(result => {
                 const token = result.data.accessToken;
                 localStorage.setItem('myJWT', token);
-                localStorage.setItem('userId', result.user.id);
-                localStorage.setItem('email', result.user.email);
+                localStorage.setItem('userId', result.data.user.id);
+                localStorage.setItem('email', result.data.user.email);
                 console.log(result.data);
+                navigate('/dashboard');
 
             })
         }
-
     };
+    
+
 
     //TODO handle actual sign in - How do we do this without an official backend
 

@@ -12,6 +12,9 @@ import Dashboard from './Components/Dashboard';
 import Login from './Components/Login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import APIBookData from './Components/APIBookData';
+import Register from './Components/Register';
+import LogOut from './Components/LogOut/Logout';
+import EmailContactForm from './Components/Email';
 import SignUp from './Components/SignUp';
 import LoggedOut from './Components/LoggedOut';
 import AboutUs from './Components/AboutUs';
@@ -19,6 +22,8 @@ import NavBar from './Components/NavBar';
 import EmailedConfirm from './Components/EmailedConfirm';
 import PrintedConfirm from './Components/PrintedConfirm';
 import DeletedConfirm from './Components/DeletedConfirm';
+
+
 //import SearchBar from './Components/SearchBar';
 
 
@@ -55,7 +60,7 @@ function App() {
       API.createBookReport(newBookReport).then((res) => {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
-        document.querySelector(".forms").reset();
+        document.querySelector(".form").reset();
       });
     },
 
@@ -100,8 +105,10 @@ function App() {
 
   return (
     <div className="App">
+     
       <BookReportContext.Provider value={contextObject}>
         <Routes>
+        
           <Route
             path="/"
             exact
@@ -110,6 +117,14 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
+           <Route
+            path="/register"
+            exact
+            element={
+              <Register
+                bookReportData={allBookReports} />
+            }
+          /> 
 
           <Route
             path="/about"
@@ -127,9 +142,8 @@ function App() {
               <Login
                 bookReportData={allBookReports} />
             }
-          />
-
-          <Route
+          /> 
+            <Route
             path="/loggedout"
             exact
             element={
@@ -164,16 +178,15 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
-
           <Route
-            path="/register"
+            path="/logout"
             exact
             element={
-              <SignUp
+              <LogOut
                 bookReportData={allBookReports} />
             }
-          />
-
+          /> 
+ 
           <Route
             path="/Dashboard"
             exact
@@ -192,7 +205,7 @@ function App() {
           />
 
           <Route
-            path="/Create" //will need to use google bookId to create reports ( path="/Create/:bookId" )
+            path="/Create" //will need to use google bookId to create reports ( path="/Create/:id" )
             exact
             element={
               <CreateBookReport
@@ -207,6 +220,14 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
+          <Route
+            path="/email/:id"
+            element={
+              <EmailContactForm/>
+            }
+          />
+           
+         
 
           <Route
             path="/one-bookreport/:id"
