@@ -15,7 +15,14 @@ import APIBookData from './Components/APIBookData';
 import Register from './Components/Register';
 import LogOut from './Components/LogOut/Logout';
 import EmailContactForm from './Components/Email';
-
+import SignUp from './Components/SignUp';
+import LoggedOut from './Components/LoggedOut';
+import AboutUs from './Components/AboutUs';
+import NavBar from './Components/NavBar';
+import EmailedConfirm from './Components/EmailedConfirm';
+import PrintedConfirm from './Components/PrintedConfirm';
+import DeletedConfirm from './Components/DeletedConfirm';
+//import SearchBar from './Components/SearchBar';
 
 
 function App() {
@@ -23,7 +30,7 @@ function App() {
   const [newBookReport, setNewBookReport] = useState({
     title: "",
     author: "",
-    writtenBy:"",
+    writtenBy: "",
     report: ""
   });
 
@@ -39,7 +46,7 @@ function App() {
       setAllBookReports(res.data)
     });
   };
-  
+
   useEffect(() => {
     getAllBookReports();
   }, [refresh]);
@@ -87,7 +94,7 @@ function App() {
       API.deleteBookReport(id).then(res => {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
-        navigate("/all-book-reports") //this navigates (useNavigat) to homepage ("/") after deleting Book Report      
+        navigate("/deletedconfirm") //this navigates (useNavigat) to delete confirmation page ("/") after deleting Book Report      
       });
     }
 
@@ -98,7 +105,7 @@ function App() {
     <div className="App">
       <BookReportContext.Provider value={contextObject}>
         <Routes>
-        <Route
+          <Route
             path="/"
             exact
             element={
@@ -115,7 +122,16 @@ function App() {
             }
           /> 
 
-        <Route
+          <Route
+            path="/about"
+            exact
+            element={
+              <AboutUs
+                bookReportData={allBookReports} />
+            }
+          />
+
+          <Route
             path="/login"
             exact
             element={
@@ -150,7 +166,7 @@ function App() {
           />
 
           <Route
-            path="/Create/:id"
+            path="/Create" //will need to use google bookId to create reports ( path="/Create/:id" )
             exact
             element={
               <CreateBookReport
@@ -187,6 +203,22 @@ function App() {
               <UpdateBookReport />
             }
           />
+
+          <Route
+            path="/NavBar"
+            element={
+              <NavBar />
+            }
+          />
+
+          {/* <Route
+            path="/SearchBar"
+            element={
+              <SearchBar />
+            }
+          /> */}
+
+
 
         </Routes>
       </BookReportContext.Provider>

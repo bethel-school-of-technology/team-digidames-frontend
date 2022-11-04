@@ -1,44 +1,47 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import '../../App.css';
-import start from '../../images/start.jpg'
-import edit from '../../images/edit.png'
-import bye from '../../images/bye.png'
-import SignOut from '../LogOut/Logout';
+import start from '../../images/start.png';
+import view from '../../images/View1.png';
+import bye from '../../images/bye.png';
 
+import Footer from '../Footer';
+import NavBar from '../NavBar';
 
 
 const Dashboard = () => {
 
     return (
-        <div className= "header">
-           <div className='signout' onClick={SignOut} >
-                       <a href={`/logout`} > <img src={bye} alt='' height={150} width={150}/></a>
-                    </div>
-            <div>
-               
-                    
-                    <div className='icon-buttons'>
-                    <ul className='list' >
-                    <li className='start'>
-                    
-                        <a href={`/Create`} >  <img src={start} alt=''  width={175} height={150}/></a>
-                    </li>
-                    
-                    <li className='edit'>
-                       <a href={`/all-book-reports`} ><img src={edit} alt=''  width={150} height={150}/></a>
-                    </li>
-                    
-                    
-                    </ul>
-                    </div>
-                    
-                    
-                    
-                        
-                    </div>
-                
-            </div>
-      
+
+        <div style={{backgroundColor:'rgba(144,186,249)'}} >
+            <NavBar />
+            <Container style={{ backgroundColor: 'rgba(164,210,104)'}}>
+
+
+                <Row style={{ fontSize: '80px', padding: '25px', fontFamily: 'Amaranth' }}>
+
+                    <h1>What would you like to do?</h1>
+
+                </Row>
+                <Row>
+                    <Col style={{ padding: '25px' }}>
+                        <a href={`/Create`} >  <img src={start} alt='' height={300} /></a>
+                    </Col>
+
+                    <Col style={{ padding: '25px' }}>
+                        <a href={`/all-book-reports`} padding='100px' ><img src={view} alt='' height={260} /></a>
+                    </Col>
+                </Row>
+                <Row style={{ padding: '25px' }}>
+                    <a href={`/loggedout`} padding='100px' ><img src={bye} alt='' width={300} /></a>
+
+                </Row>
+
+
+            </Container>
+            <Footer />
+        </div>
+
     );
 };
 
