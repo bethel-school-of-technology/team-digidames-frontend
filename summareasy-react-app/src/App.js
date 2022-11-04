@@ -12,6 +12,9 @@ import Dashboard from './Components/Dashboard';
 import Login from './Components/Login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import APIBookData from './Components/APIBookData';
+import Register from './Components/Register';
+import LogOut from './Components/LogOut/Logout';
+import EmailContactForm from './Components/Email';
 import SignUp from './Components/SignUp';
 import LoggedOut from './Components/LoggedOut';
 import AboutUs from './Components/AboutUs';
@@ -100,8 +103,10 @@ function App() {
 
   return (
     <div className="App">
+      
       <BookReportContext.Provider value={contextObject}>
         <Routes>
+
           <Route
             path="/"
             exact
@@ -110,7 +115,6 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
-
           <Route
             path="/about"
             exact
@@ -119,7 +123,6 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
-
           <Route
             path="/login"
             exact
@@ -128,7 +131,6 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
-
           <Route
             path="/loggedout"
             exact
@@ -145,7 +147,6 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
-
           <Route
             path="/deletedconfirm"
             exact
@@ -155,7 +156,6 @@ function App() {
             }
           />
 
-
           <Route
             path="/printedconfirm"
             exact
@@ -164,12 +164,19 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
-
           <Route
             path="/register"
             exact
             element={
               <SignUp
+                bookReportData={allBookReports} />
+            }
+          />
+          <Route
+            path="/logout"
+            exact
+            element={
+              <LogOut
                 bookReportData={allBookReports} />
             }
           />
@@ -190,7 +197,6 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
-
           <Route
             path="/Create" //will need to use google bookId to create reports ( path="/Create/:bookId" )
             exact
@@ -207,6 +213,13 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
+          <Route
+            path="/email/:id"
+            element={
+              <EmailContactForm />
+            }
+          />
+
 
           <Route
             path="/one-bookreport/:id"
@@ -221,22 +234,18 @@ function App() {
               <UpdateBookReport />
             }
           />
-
           <Route
             path="/NavBar"
             element={
               <NavBar />
             }
           />
-
           {/* <Route
             path="/SearchBar"
             element={
               <SearchBar />
             }
           /> */}
-
-
 
         </Routes>
       </BookReportContext.Provider>
