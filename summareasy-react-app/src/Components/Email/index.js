@@ -12,7 +12,7 @@ const EmailContactForm = () => {
 
 const sendEmail = (e) => {
    e.preventDefault(); // prevents the page from reloading when you hit “Send”
- 
+    console.log(form.current.author.value);
    emailjs.sendForm('service_yzd6ykk', 'template_q2ux90h', form.current, 'w2acWniWNw96Kt5do')
      .then((result) => {
          // show the user a success message
@@ -30,7 +30,7 @@ const sendEmail = (e) => {
         })
     }
     getBookReport();
- }, [bookReport, id])
+ }, []); //bookReport, id
  return (
     
    <form ref={form} onSubmit={sendEmail}>
