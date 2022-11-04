@@ -12,7 +12,7 @@ const AllBookReports = ({ bookReportData }) => {
 
     const context = useContext(BookReportContext);
     return (
-        <>
+        <div style={{ backgroundColor: 'rgba(174, 152, 219)' }}>
             <NavBar />
             <Container>
                 <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(119,148,73)' }}><h1>Your Book Reports</h1></Row>
@@ -64,7 +64,7 @@ const AllBookReports = ({ bookReportData }) => {
                 </Row>
             </Container>
             <Footer />
-        </>
+        </div>
     );
 };
 

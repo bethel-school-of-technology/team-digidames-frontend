@@ -19,6 +19,7 @@ import NavBar from './Components/NavBar';
 import EmailedConfirm from './Components/EmailedConfirm';
 import PrintedConfirm from './Components/PrintedConfirm';
 import DeletedConfirm from './Components/DeletedConfirm';
+//import SearchBar from './Components/SearchBar';
 
 
 function App() {
@@ -227,6 +228,13 @@ function App() {
               <NavBar />
             }
           />
+
+          {/* <Route
+            path="/SearchBar"
+            element={
+              <SearchBar />
+            }
+          /> */}
 
 
 

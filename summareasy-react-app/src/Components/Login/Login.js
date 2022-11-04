@@ -40,8 +40,10 @@ const Login = () => {
 
     return (
         <>
-            <NavBar />
+             <NavBar />  
             <Container style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(144,186,249)' }}>
+
+
                 <Row>
                     <Col>
                         <img

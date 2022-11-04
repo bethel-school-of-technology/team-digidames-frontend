@@ -34,7 +34,7 @@ const OneBookReport = () => {
         <>
             <NavBar />
 
-            <Container style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(119,148,73)' }}>
+            <Container style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(255,255,255)' }}>
                 <Row style={{ margin:'10px', padding: '25px', textAlign: 'center', backgroundColor: 'rgba(255,182,0)' }}>
                     <h1>{bookReport.title}</h1>
                 </Row>
