@@ -4,14 +4,18 @@ import '../../App.css';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
 import schoolBus from '../../images/schoolbus.png';
+import logo from '../../images/Logo.png'
 
 
 const LandingPage = () => {
 
     return (
         <>
-            <NavBar />
+
             <Container>
+                <Row>
+
+                </Row>
                 <Row>
 
                     <div className='header'>
@@ -31,14 +35,16 @@ const LandingPage = () => {
 
                 <Row style={{ fontSize: '80px', padding: '60px', fontFamily: 'Amaranth' }}>
 
+                    <a href={`/`} >  <img src={logo} alt='' height={200} /></a>
+                </Row>
+                <Row>
                     <h1>Welcome to Summareasy</h1>
-
                 </Row>
 
                 <Row style={{ fontSize: '24px', padding: '30px', fontFamily: 'Amaranth' }}>
-           <h4>
-            Write something about what Summareasy can do and direct end-user to Register.
-           </h4>
+                    <h4>
+                        Write something about what Summareasy can do and direct end-user to Register.
+                    </h4>
                 </Row>
 
                 <Row>

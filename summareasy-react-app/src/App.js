@@ -16,7 +16,10 @@ import SignUp from './Components/SignUp';
 import LoggedOut from './Components/LoggedOut';
 import AboutUs from './Components/AboutUs';
 import NavBar from './Components/NavBar';
-
+import EmailedConfirm from './Components/EmailedConfirm';
+import PrintedConfirm from './Components/PrintedConfirm';
+import DeletedConfirm from './Components/DeletedConfirm';
+//import SearchBar from './Components/SearchBar';
 
 
 function App() {
@@ -88,7 +91,7 @@ function App() {
       API.deleteBookReport(id).then(res => {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
-        navigate("/all-book-reports") //this navigates (useNavigat) to homepage ("/") after deleting Book Report      
+        navigate("/deletedconfirm") //this navigates (useNavigat) to delete confirmation page ("/") after deleting Book Report      
       });
     }
 
@@ -131,6 +134,33 @@ function App() {
             exact
             element={
               <LoggedOut
+                bookReportData={allBookReports} />
+            }
+          />
+          <Route
+            path="/emailedconfirm"
+            exact
+            element={
+              <EmailedConfirm
+                bookReportData={allBookReports} />
+            }
+          />
+
+          <Route
+            path="/deletedconfirm"
+            exact
+            element={
+              <DeletedConfirm
+                bookReportData={allBookReports} />
+            }
+          />
+
+
+          <Route
+            path="/printedconfirm"
+            exact
+            element={
+              <PrintedConfirm
                 bookReportData={allBookReports} />
             }
           />
@@ -198,6 +228,13 @@ function App() {
               <NavBar />
             }
           />
+
+          {/* <Route
+            path="/SearchBar"
+            element={
+              <SearchBar />
+            }
+          /> */}
 
 
 

@@ -5,7 +5,7 @@ import Footer from "../Footer";
 import NavBar from "../NavBar";
 import tree from '../../images/tree.png'
 import sun from '../../images/sun.jpg.png'
-import babyDino from '../../images/babydino.png'
+import babyDinos from '../../images/babydinos.png'
 import boulder3 from '../../images/boulder3.png'
 
 
@@ -40,8 +40,10 @@ const Login = () => {
 
     return (
         <>
-            <NavBar />
+             <NavBar />  
             <Container style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(144,186,249)' }}>
+
+
                 <Row>
                     <Col>
                         <img
@@ -74,24 +76,29 @@ const Login = () => {
                         </form>
                     </Col>
                     <Col>
+
+
                         <img
                             alt=""
                             src={sun}
-                            width="150"
-                            style={{ padding: "10px" }}
+                            width="250"
+                            style={{ padding: "30px" }}
                         ></img>
                         <br></br>
-                        <img
+                        {/* <img
                             alt=""
                             src={babyDino}
                             width="150"
                             
-                        ></img>
-                        <img
+                        ></img> */}
+                       
+                       
+                       <img
                             alt=""
-                            src={boulder3}
-                            width="300"                            
-                            justify-content="right"
+                            src={babyDinos}
+                            width="500"
+                            style={{ padding: "30px" }}  
+
                             
                         ></img>
                     </Col>

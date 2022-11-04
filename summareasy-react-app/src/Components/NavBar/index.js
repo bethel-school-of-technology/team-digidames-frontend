@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" variant="dark" className="color-nav">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
         <img
               src={logo}
               width="300"             
@@ -32,8 +32,7 @@ function NavBar() {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href={`/register`} className="nav-link">Sign Up</Nav.Link>
-            <Nav.Link href={`/login`} className="nav-link">Sign In</Nav.Link>
+
             <Nav.Link href={`/loggedout`} className="nav-link"><img src={bye} width="125px"></img></Nav.Link>
           </Nav>
         </Navbar.Collapse>

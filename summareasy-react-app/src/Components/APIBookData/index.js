@@ -9,8 +9,9 @@ import NavBar from '../NavBar';
 
 class APIBookData extends React.Component{
     state = {
-        books: []
+        books: [],
     }
+    searchQuery = '';
     componentDidMount() {
         axios.get(`https://www.googleapis.com/books/v1/volumes?q=hobbit`)
         .then(response => {
@@ -42,20 +43,49 @@ class APIBookData extends React.Component{
     
     };
 
+    handleSubmit() {
+            console.log(this.searchQuery);
+    }
+
+    handleSearchChange (query) {
+        this.setState('searchQuery',)
+    }
+
+
+
+
+
 
 
     render() {
         const { books } = this.state;
+        let searching = false;
         return (
-            <>
+            <div style={{ backgroundColor: 'rgba(144,186,249)' }}>
             <NavBar />
             <Container>
-                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(119,148,73)', fontFamily: 'Amaranth' }}>
+                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(144,186,249)', fontFamily: 'Amaranth' }}>
                 <h1>What book would you like to write about?</h1>
                 </Row>
-                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(0,0,0)', color: 'white', fontFamily: 'Amaranth', fontSize: '24px' }}>
-                <table classname="table table-bordered">
+                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(52,52,52)', color: 'white', fontFamily: 'Amaranth', fontSize: '24px' }}>
+
+                <h2>Search</h2>
+        <form onSubmit={this.handleSubmit} className="form">
+                        
+                        <input name="search" onChange={this.handleSearchChange}></input>
+                       
+                        <button class="button" type="submit">
+                            Search
+                        </button>
+                    
+                    </form>
+
+                {
+                    searching
+                    ? 
+                    <table classname="table table-bordered">
                     <tr style={{ textAlign: 'center', backgroundColor: 'rgba(119,148,73)', color: 'white', fontFamily: 'Amaranth' }}>
+                        <th>Book ID</th>
                         <th>Book Title</th>
                         <th>Author</th>
                         <th>Book Cover</th>
@@ -63,6 +93,7 @@ class APIBookData extends React.Component{
                     </tr>
                     {books && books.map((book) => (
                         <tr>
+                            <td>{book.id}</td>
                             <td>{book.volumeInfo.title}</td>
                             <td>{book.volumeInfo.authors}</td>
                             <td><img src={book.volumeInfo.imageLinks.thumbnail}/></td>
@@ -70,14 +101,19 @@ class APIBookData extends React.Component{
 
                         </tr>
                     ))}
-                </table>
+                </table> : <></>
+                }
+
+                
                 </Row>
                 </Container>
                 <Footer />
-            </>
+            </div>
         )
     }
 
 }
+
+
 
 export default APIBookData;
