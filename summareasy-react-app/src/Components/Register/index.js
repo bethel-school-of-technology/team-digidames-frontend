@@ -1,7 +1,10 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { Col, Container, Row } from 'react-bootstrap';
+import Footer from "../Footer";
+import NavBar from "../NavBar";
+import car from '../../images/car2.png'
 
 const Register = () => {
     const [firstName, setFirstName] = useState("");
@@ -40,32 +43,56 @@ const Register = () => {
 //TODO handle actual sign in - How do we do this without an official backend
 
     return (
-        <div>
-        
-            <form onSubmit={ register }> 
-                <h1>Register</h1>
-                <label htmlFor="firstName">First Name</label>
-                <br />
-                <input type="text" name="name" onChange={ e => setFirstName(e.target.value) }></input> 
-                <br />
-                <label htmlFor="lastName">Last Name</label>
-                <br />
-                <input type="text" name="lastName" onChange={ e => setLastName(e.target.value) }></input> 
-                <br />
-                <label htmlFor="email">Email</label>
-                <br />
-                <input type="text" name="email" onChange={ e => setEmail(e.target.value) }></input> 
-                <br />
+        <>
+            <NavBar />
+            <Container>
+                <Row>
+                    <Col>
+                        <img
+                            alt=""
+                            src={car}
+                            width="850"
+                            style={{ padding: "10px" }}
+                        ></img>
+                    </Col>
+                    <Col style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(255,182,0)', fontFamily: 'Amaranth' }}>
+                        <form onSubmit={register}>
+                            <h1>Sign Up</h1>
+                            <br />
+                            
+                            <label htmlFor="firstName">First Name</label>
+                            <br />
+                            <input type="text" name="firstName" onChange={e => setFirstName(e.target.value)}></input>
+                            <br />
+                            <br />
+                            <label htmlFor="lastName">Last Name</label>
+                            <br />
+                            <input type="text" name="lastName" onChange={e => setLastName(e.target.value)}></input>
+                            <br />
+                            <br />
+                            <label htmlFor="email">Email</label>
+                            <br />
+                            <input type="text" name="email" onChange={e => setEmail(e.target.value)}></input>
+                            <br />
+                            <br />
+                            <label htmlFor="password">Password</label>
+                            <br />
+                            <input type="password" name="password" onChange={e => setPassword(e.target.value)}></input>
+                            <br />
+                            <br />
+                            <button>Sign Up</button>
+                            <br />
 
-                <label htmlFor="password">Password</label>
-                <br />
-                <input type="password" name="password" onChange={ e => setPassword(e.target.value) }></input>
-                <br />
-                <button>Sign In</button>
-                <br />
-         
-            </form>
-        </div>
+                        </form>
+                    </Col>
+                    <Col>
+
+                    </Col>
+                </Row>
+            </Container>
+            <Footer />
+
+        </>
     );
 
 }
