@@ -8,17 +8,25 @@ import NavBar from '../NavBar';
 
 
 class APIBookData extends React.Component{
-    state = {
-        books: [],
+    constructor(props) {
+        super(props);
+        this.state = {
+            books: [],
+            searchQuery: '',
+        }
+
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSearchChange = this.handleSearchChange.bind(this);
     }
+
     searchQuery = '';
     componentDidMount() {
-        axios.get(`https://www.googleapis.com/books/v1/volumes?q=hobbit`)
-        .then(response => {
-            const books = response.data.items;
-            console.log(books)
-            this.setState({ books });
-        });
+        // axios.get(`https://www.googleapis.com/books/v1/volumes?q=hobbit`)
+        // .then(response => {
+        //     const books = response.data.items;
+        //     console.log(books)
+        //     this.setState({ books });
+        // });
     }
 
     createBook(bookInfo) {
@@ -43,12 +51,22 @@ class APIBookData extends React.Component{
     
     };
 
-    handleSubmit() {
-            console.log(this.searchQuery);
+    handleSubmit(e) {
+        console.log(this.state.searchQuery);
+        e.preventDefault();
+        axios.get(`https://www.googleapis.com/books/v1/volumes?q=${this.state.searchQuery}`)
+            .then(response => {
+                const books = response.data.items;
+                console.log(books)
+                this.setState({ books });
+            });
     }
 
-    handleSearchChange (query) {
-        this.setState('searchQuery',)
+    handleSearchChange (event) {
+
+        this.setState({ searchQuery: event.target.value})
+        console.log(this.state);
+
     }
 
 
@@ -81,7 +99,7 @@ class APIBookData extends React.Component{
                     </form>
 
                 {
-                    searching
+                    this.state.books.length > 0
                     ? 
                     <table classname="table table-bordered">
                     <tr style={{ textAlign: 'center', backgroundColor: 'rgba(119,148,73)', color: 'white', fontFamily: 'Amaranth' }}>
