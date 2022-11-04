@@ -178,15 +178,6 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
-
-          <Route
-            path="/register"
-            exact
-            element={
-              <SignUp
-                bookReportData={allBookReports} />
-            }
-          />
           <Route
             path="/logout"
             exact
