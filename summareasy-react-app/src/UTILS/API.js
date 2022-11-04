@@ -2,6 +2,7 @@ import axios from 'axios';
 
 const baseURL = "http://localhost:3000/BookReports"
 
+
 const API = {
 
     getAll: () => {
@@ -24,7 +25,7 @@ const API = {
         return axios.delete(`${baseURL}/${id}`);
 
     }
-
+   
 
 }
 
