@@ -2,8 +2,8 @@ import deleted from "../../images/Delete.png";
 import Footer from "../Footer";
 import NavBar from "../NavBar";
 import { Col, Container, Row } from 'react-bootstrap';
-import start from '../../images/start.jpg';
-import edit from '../../images/edit.png';
+import start from '../../images/start.png';
+import view from '../../images/View1.png';
 import bye from '../../images/bye.png';
 
 const DeletedConfirm = () => {
@@ -31,16 +31,16 @@ const DeletedConfirm = () => {
                 
 
                 <Row>
-                    <Col style={{ padding: '50px' }}>
-                        <a href={`/Create`} >  <img src={start} alt='' height={200} /></a>
+                    <Col style={{ padding: '25px' }}>
+                        <a href={`/Create`} >  <img src={start} alt='' height={260} /></a>
                     </Col>
 
-                    <Col style={{ padding: '50px' }}>
-                        <a href={`/all-book-reports`} padding='100px' ><img src={edit} alt='' height={200} /></a>
+                    <Col style={{ padding: '25px' }}>
+                        <a href={`/all-book-reports`} padding='100px' ><img src={view} alt='' height={225} /></a>
                     </Col>
                 </Row>
-                <Row style={{ padding: '50px' }}>
-                    <a href={`/loggedout`} padding='100px' ><img src={bye} alt='' width={350} /></a>
+                <Row style={{ padding: '25px' }}>
+                    <a href={`/loggedout`} padding='100px' ><img src={bye} alt='' width={250} /></a>
 
                 </Row>
 

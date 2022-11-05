@@ -246,6 +246,80 @@
       "searchInfo": {
         "textSnippet": "This charming pocket-sized edition contains the complete unabridged text and features the original cover illustration, painted by J.R.R. Tolkien himself. The perfect gift for little Hobbits everywhere!"
       }
+    },
+    {
+      "kind": "books#volume",
+      "id": "XuO0tAEACAAJ",
+      "etag": "abLXI5EcXww",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/XuO0tAEACAAJ",
+      "volumeInfo": {
+        "title": "The Middle-Earth Treasury",
+        "subtitle": "The Hobbit and the Lord of the Rings",
+        "authors": [
+          "J. R. R. Tolkien"
+        ],
+        "publisher": "HarperCollins",
+        "publishedDate": "2017-10-05",
+        "description": "Deluxe boxed gift set of pocket edition hardbacks featuring J.R.R. Tolkien's most popular works, which together tell the tale of Bilbo and Frodo Baggins and of the War of the Ring. When they were first published, The Hobbit and The Lord of the Rings became instant classics. Treasured by readers young and old, these works of sweeping fantasy, steeped in unrivalled magic and otherworldliness have sold more than 150 million copies around the world. This new boxed set, published to mark the 80th anniversary of the publication of The Hobbit, offers readers a new opportunity to discover Tolkien's remarkable world of Middle-earth and to follow the complete story of Bilbo Baggins and the Hobbits' part in the epic quest for the Ring - beginning with Bilbo's fateful visit from Gandalf and culminating in the dramatic climax between Frodo and Gollum atop Mount Doom and Bilbo's departure to the Grey Havens.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0008260184"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780008260187"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 912,
+        "printType": "BOOK",
+        "categories": [
+          "Fantasy fiction, English"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=XuO0tAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=XuO0tAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=XuO0tAEACAAJ&dq=Lord+of+the+rings&hl=&cd=7&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=XuO0tAEACAAJ&dq=Lord+of+the+rings&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Middle_Earth_Treasury.html?hl=&id=XuO0tAEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=XuO0tAEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Deluxe boxed gift set of pocket edition hardbacks featuring J.R.R. Tolkien&#39;s most popular works, which together tell the tale of Bilbo and Frodo Baggins and of the War of the Ring."
+      }
     }
   ],
   "users": [
@@ -286,6 +360,13 @@
       "firstName": "Ginna",
       "lastName": "Giovanni",
       "id": 6
+    },
+    {
+      "email": "jan.pevny@bethel.com",
+      "password": "$2a$10$yLa1LyQ23bWK13Fp1Fj06ONAiONT/RwgcDdvpxNv4L35f7jNVTLxC",
+      "firstName": "Jan",
+      "lastName": "Pevny",
+      "id": 7
     }
   ],
   "BookReports": [

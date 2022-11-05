@@ -23,15 +23,6 @@ const CreateBookReport = () => {
 
                 <Row>
                     <Col>
-                        <img
-                            alt=""
-                            src={dinosaur}
-                            width="550"
-                            style={{ paddingTop: "160px" }}
-                        ></img>
-                    </Col>
-
-                    <Col>
                         <form onSubmit={context.handleSubmit} className="form">
                             <label htmlFor="title">Title of Book</label>
                             <br />
@@ -63,7 +54,14 @@ const CreateBookReport = () => {
                         
                         </form>
                     </Col>
-
+                    <Col>
+                        <img
+                            alt=""
+                            src={dinosaur}
+                            width="550"
+                            style={{ paddingTop: "160px" }}
+                        ></img>
+                    </Col>
                 </Row>
                 <Row><a href={`/Dashboard`} margin="15px">
                     <img
