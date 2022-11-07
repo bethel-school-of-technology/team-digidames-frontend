@@ -23,7 +23,7 @@ const CreateBookReport = () => {
                 <Row style={{ padding: '15px' }}>
                     <h4>Book Title: {localStorage.getItem("myBookTitle")}</h4>
                     <h4>Book Author: {localStorage.getItem("myBookAuthor")}</h4>
-                    <h4>Book Cover {localStorage.getItem("myBookCover")}</h4>
+                    <h4>Book Cover <img src={localStorage.getItem("myBookCover")}></img></h4>
                 </Row>
 
 
