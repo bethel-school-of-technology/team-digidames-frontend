@@ -17,9 +17,15 @@ const CreateBookReport = () => {
             <NavBar />
 
             <Container style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(39,208,241)', fontFamily: 'Amaranth' }}>
-                <Row style={{ padding: '15px'}}>
+                <Row style={{ padding: '15px' }}>
                     <h1> What was the book about?</h1>
                 </Row>
+                <Row style={{ padding: '15px' }}>
+                    <h4>Book Title: {localStorage.getItem("myBookTitle")}</h4>
+                    <h4>Book Author: {localStorage.getItem("myBookAuthor")}</h4>
+                    <h4>Book Cover {localStorage.getItem("myBookCover")}</h4>
+                </Row>
+
 
                 <Row>
                     <Col>
@@ -51,7 +57,7 @@ const CreateBookReport = () => {
                             <button class="button" type="submit">
                                 Add Book Report
                             </button>
-                        
+
                         </form>
                     </Col>
                     <Col>
@@ -70,7 +76,7 @@ const CreateBookReport = () => {
                         width="200"
                         style={{ paddingTop: "20px", paddingBottom: "40px" }}
                     ></img>
-                    </a>
+                </a>
                 </Row>
             </Container>
 
@@ -119,4 +125,4 @@ const CreateBookReport = () => {
 //     }
 
 // }
-export default CreateBookReport ;
+export default CreateBookReport;

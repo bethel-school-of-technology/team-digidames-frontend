@@ -39,7 +39,7 @@ class APIBookData extends React.Component{
         //     };
 
             axios.post('http://localhost:3000/books', bookInfo).then(result => {
-                // const token = result.data.accessToken;
+                
                  localStorage.setItem('myBookTitle', result.data.volumeInfo.title);
                  localStorage.setItem('myBookAuthor', result.data.volumeInfo.authors);
                  localStorage.setItem('myBookCover', result.data.volumeInfo.imageLinks.thumbnail);

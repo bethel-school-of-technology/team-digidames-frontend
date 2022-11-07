@@ -872,6 +872,179 @@
       "searchInfo": {
         "textSnippet": "It is easy to see how this is the backbone of the most popular course at Harvard today.&quot; --Martin E. P. Seligman, author of Authentic Happiness Can You Learn to Be Happy?"
       }
+    },
+    {
+      "kind": "books#volume",
+      "id": "4lB8DAAAQBAJ",
+      "etag": "8N24wpW6FgY",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/4lB8DAAAQBAJ",
+      "volumeInfo": {
+        "title": "Happy",
+        "subtitle": "Why More or Less Everything is Absolutely Fine",
+        "authors": [
+          "Derren Brown"
+        ],
+        "publisher": "Random House",
+        "publishedDate": "2016-09-22",
+        "description": "The Sunday Times Bestseller 'Really brilliant and just crammed with wisdom and insight. It will genuinely make a difference to me and the way I think about myself.' Stephen Fry ___ Everyone says they want to be happy. But that's much more easily said than done. What does being happy actually mean? And how do you even know when you feel it? In Happy Derren Brown explores changing concepts of happiness - from the surprisingly modern wisdom of the Stoics and Epicureans in classical times right up until today, when the self-help industry has attempted to claim happiness as its own. He shows how many of self-help's suggested routes to happiness and success - such as positive thinking, self-belief and setting goals - can be disastrous to follow and, indeed, actually cause anxiety. Happy aims to reclaim happiness and to enable us to appreciate the good things in life, in all their transient glory. By taking control of the stories we tell ourselves, by remembering that 'everything's fine' even when it might not feel that way, we can allow ourselves to flourish and to live more happily. ___ What readers are saying: ***** 'Immensely positive and life-affirming' ***** 'This is the blue print to a good life' ***** 'Thought provoking and potentially life-changing.'",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781473526853"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "147352685X"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 576,
+        "printType": "BOOK",
+        "categories": [
+          "Self-Help"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 4,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.11.12.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=4lB8DAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=4lB8DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=4lB8DAAAQBAJ&printsec=frontcover&dq=happy&hl=&cd=4&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=4lB8DAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=4lB8DAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 15.5,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 15.5,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=4lB8DAAAQBAJ&rdid=book-4lB8DAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 15500000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 15500000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Happy-sample-epub.acsm?id=4lB8DAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=4lB8DAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "By taking control of the stories we tell ourselves, by remembering that &#39;everything&#39;s fine&#39; even when it might not feel that way, we can allow ourselves to flourish and to live more happily. ___ What readers are saying: ***** &#39;Immensely ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ZmHuzgEACAAJ",
+      "etag": "9b2ixlOSJss",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ZmHuzgEACAAJ",
+      "volumeInfo": {
+        "title": "The Joyful Book",
+        "authors": [
+          "Todd Parr"
+        ],
+        "publisher": "LB Kids",
+        "publishedDate": "2022-10-11",
+        "description": "Lighting candles is joyful. Playing outside is joyful. Singing holiday songs is joyful. Learning new traditions is joyful. Whether it's celebrating a holiday, sharing a meal, or learning new things, The Joyful Book inspires readers of all ages to spread the joy near and far, to loved ones and friends. With his renowned blend of warmth, humor, and heart, Todd Parr encourages young readers to look for ways that joy surrounds them in some of the world's most widely celebrated holidays, from Hanukkah to Kwanzaa to Lunar New Year.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0316427853"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780316427852"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 22,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ZmHuzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ZmHuzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=ZmHuzgEACAAJ&dq=joyful&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=ZmHuzgEACAAJ&dq=joyful&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Joyful_Book.html?hl=&id=ZmHuzgEACAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ZmHuzgEACAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Learning new traditions is joyful. Whether it&#39;s celebrating a holiday, sharing a meal, or learning new things, The Joyful Book inspires readers of all ages to spread the joy near and far, to loved ones and friends."
+      }
     }
   ],
   "users": [
