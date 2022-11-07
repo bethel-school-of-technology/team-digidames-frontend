@@ -40,9 +40,10 @@ class APIBookData extends React.Component{
 
             axios.post('http://localhost:3000/books', bookInfo).then(result => {
                 // const token = result.data.accessToken;
-                // localStorage.setItem('myJWT', token);
-                // localStorage.setItem('userId', result.user.id);
-                // localStorage.setItem('email', result.user.email);
+                 localStorage.setItem('myBookTitle', result.data.volumeInfo.title);
+                 localStorage.setItem('myBookAuthor', result.data.volumeInfo.authors);
+                 localStorage.setItem('myBookCover', result.data.volumeInfo.imageLinks.thumbnail);
+                
                 console.log(result.data);
                 // redirect to book report form
 
@@ -87,12 +88,12 @@ class APIBookData extends React.Component{
                 </Row>
                 <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(52,52,52)', color: 'white', fontFamily: 'Amaranth', fontSize: '24px' }}>
 
-                <h2>Search</h2>
+                <h2>Search for Book</h2>
         <form onSubmit={this.handleSubmit} className="form">
                         
                         <input name="search" onChange={this.handleSearchChange}></input>
                        
-                        <button class="button" type="submit">
+                        <button class="button" type="submit" style={{padding: "7px", margin: "5px"}} >
                             Search
                         </button>
                     
@@ -103,15 +104,16 @@ class APIBookData extends React.Component{
                     ? 
                     <table classname="table table-bordered">
                     <tr style={{ textAlign: 'center', backgroundColor: 'rgba(119,148,73)', color: 'white', fontFamily: 'Amaranth' }}>
-                        <th>Book ID</th>
+                        {/* <th>Book ID</th> */}
                         <th>Book Title</th>
                         <th>Author</th>
                         <th>Book Cover</th>
+                        <th></th>
 
                     </tr>
                     {books && books.map((book) => (
                         <tr>
-                            <td>{book.id}</td>
+                            {/* <td>{book.id}</td> */}
                             <td>{book.volumeInfo.title}</td>
                             <td>{book.volumeInfo.authors}</td>
                             <td><img src={book.volumeInfo.imageLinks.thumbnail}/></td>

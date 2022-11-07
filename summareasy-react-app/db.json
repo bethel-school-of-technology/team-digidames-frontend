@@ -420,6 +420,458 @@
       "searchInfo": {
         "textSnippet": "With their message of hope, belonging and the enduring power of truth and love, the story of the Boy Who Lived continues to delight generations of new readers."
       }
+    },
+    {
+      "kind": "books#volume",
+      "id": "GI-n3A-_hT8C",
+      "etag": "XarnhKiIAiU",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/GI-n3A-_hT8C",
+      "volumeInfo": {
+        "title": "Following Jesus",
+        "subtitle": "More about Young Children and Worship",
+        "authors": [
+          "Sonja M. Stewart"
+        ],
+        "publisher": "Westminster John Knox Press",
+        "publishedDate": "2000-01-01",
+        "description": "In this sequel to her bestselling \"Young Children and Worship\", Stewart focuses on Jesus' life and teachings and introduces children to the meaning of worship through biblical stories and parables. Illustrations.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0664501230"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780664501235"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 298,
+        "printType": "BOOK",
+        "categories": [
+          "Religion"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.3.3.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=GI-n3A-_hT8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=GI-n3A-_hT8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=GI-n3A-_hT8C&printsec=frontcover&dq=jesus&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=GI-n3A-_hT8C&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=GI-n3A-_hT8C"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 21,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 12.6,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=GI-n3A-_hT8C&rdid=book-GI-n3A-_hT8C&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 21000000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 12600000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Following_Jesus-sample-pdf.acsm?id=GI-n3A-_hT8C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=GI-n3A-_hT8C&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "In this sequel to her bestselling &quot;Young Children and Worship&quot;, Stewart focuses on Jesus&#39; life and teachings and introduces children to the meaning of worship through biblical stories and parables. Illustrations."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "MSzXCwAAQBAJ",
+      "etag": "9KUpHYlDucs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/MSzXCwAAQBAJ",
+      "volumeInfo": {
+        "title": "What Love Is",
+        "subtitle": "And What It Could Be",
+        "authors": [
+          "Carrie Jenkins"
+        ],
+        "publisher": "Basic Books",
+        "publishedDate": "2017-01-24",
+        "description": "A rising star in philosophy examines the cultural, social, and scientific interpretations of love to answer one of our most enduring questions What is love? Aside from being the title of many a popular love song, this is one of life's perennial questions. In What Love Is, philosopher Carrie Jenkins offers a bold new theory on the nature of romantic love that reconciles its humanistic and scientific components. Love can be a social construct (the idea of a perfect fairy tale romance) and a physical manifestation (those anxiety- inducing heart palpitations); we must recognize its complexities and decide for ourselves how to love. Motivated by her own polyamorous relationships, she examines the ways in which our parameters of love have recently changed-to be more accepting of homosexual, interracial, and non-monogamous relationships-and how they will continue to evolve in the future. Full of anecdotal, cultural, and scientific reflections on love, What Love Is is essential reading for anyone seeking to understand what it means to say \"I love you.\" Whether young or old, gay or straight, male or female, polyamorous or monogamous, this book will help each of us decide for ourselves how we choose to love.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780465098866"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "046509886X"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 224,
+        "printType": "BOOK",
+        "categories": [
+          "Philosophy"
+        ],
+        "averageRating": 5,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.2.3.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=MSzXCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=MSzXCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=MSzXCwAAQBAJ&pg=PP1&dq=love&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=MSzXCwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=MSzXCwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 18.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 18.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=MSzXCwAAQBAJ&rdid=book-MSzXCwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 18990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 18990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/What_Love_Is-sample-epub.acsm?id=MSzXCwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=MSzXCwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "&quot; Whether young or old, gay or straight, male or female, polyamorous or monogamous, this book will help each of us decide for ourselves how we choose to love."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "SPxmHKLwj3MC",
+      "etag": "SnG51WYZD/I",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/SPxmHKLwj3MC",
+      "volumeInfo": {
+        "title": "Why We Love",
+        "subtitle": "The Nature and Chemistry of Romantic Love",
+        "authors": [
+          "Helen Fisher"
+        ],
+        "publisher": "Macmillan",
+        "publishedDate": "2005-01-02",
+        "description": "A revolutionary new study of the origins of love based on physiological research probes the human brain for insights into the origins of the sex drive, romance, and attraction, while also offering practical advice on how to control and channel these desires into healthy pursuits. Reprint. 60,000 first printing.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0805077960"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780805077964"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 324,
+        "printType": "BOOK",
+        "categories": [
+          "Psychology"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 2,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "3.3.3.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=SPxmHKLwj3MC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=SPxmHKLwj3MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=SPxmHKLwj3MC&pg=PP1&dq=love&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=SPxmHKLwj3MC&dq=love&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Why_We_Love.html?hl=&id=SPxmHKLwj3MC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=SPxmHKLwj3MC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "A revolutionary new study of the origins of love based on physiological research probes the human brain for insights into the origins of the sex drive, romance, and attraction, while also offering practical advice on how to control and ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "yB6ODQAAQBAJ",
+      "etag": "IixCTRt1+0s",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/yB6ODQAAQBAJ",
+      "volumeInfo": {
+        "title": "Love in the Present Tense",
+        "authors": [
+          "Catherine Ryan Hyde"
+        ],
+        "publisher": "Vintage",
+        "publishedDate": "2007-07-10",
+        "description": "From the bestselling author of Pay It Forward comes a moving novel about the bond between a five year old abandoned by his mother and the man who raises him. After accidentally killing a police office five years ago, Pearl has managed to protect her bright, frail young son Leonard from her violent past. Then one day, Pearl drops him off with their neighbor Mitch, and never returns. Mitch is far from the ideal caretaker--he’s having an affair with a client’s wife--but he and Leonard must find a way to bridge the gap between them as they bond as parent and child. Gritty but big-hearted, Love in the Present Tense is an inspiring story of love and the surprising forms it can take.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780307276711"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0307276716"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 274,
+        "printType": "BOOK",
+        "categories": [
+          "Fiction"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 12,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.0.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=yB6ODQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=yB6ODQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=yB6ODQAAQBAJ&printsec=frontcover&dq=love&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=yB6ODQAAQBAJ&dq=love&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Love_in_the_Present_Tense.html?hl=&id=yB6ODQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=yB6ODQAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Gritty but big-hearted, Love in the Present Tense is an inspiring story of love and the surprising forms it can take."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "oJ3uZnRm2gsC",
+      "etag": "EdqL1Jw1xxA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/oJ3uZnRm2gsC",
+      "volumeInfo": {
+        "title": "Happier",
+        "subtitle": "Learn the Secrets to Daily Joy and Lasting Fulfillment",
+        "authors": [
+          "Tal Ben-Shahar"
+        ],
+        "publisher": "McGraw Hill Professional",
+        "publishedDate": "2007-05-25",
+        "description": "Can You Learn to Be Happy? YES . . . according to the teacher of Harvard University’s most popular and life-changing course. One out of every five Harvard students has lined up to hear Tal Ben-Shahar’s insightful and inspiring lectures on that ever-elusive state: HAPPINESS. HOW? Grounded in the revolutionary “positive psychology” movement, Ben-Shahar ingeniously combines scientific studies, scholarly research, self-help advice, and spiritual enlightenment. He weaves them together into a set of principles that you can apply to your daily life. Once you open your heart and mind to Happier ’s thoughts, you will feel more fulfilled, more connected . . . and, yes, HAPPIER. “Dr. Ben-Shahar, one of the most popular teachers in Harvard’s recent history, has written a personal, informed, and highly enjoyable primer on how to become happier. It would be wise to take his advice.” --Ellen J. Langer, author of Mindfulness and On Becoming an Artist “This fine book shimmers with a rare brand of good sense that is imbedded in scientific knowledge about how to increase happiness. It is easy to see how this is the backbone of the most popular course at Harvard today.\" --Martin E. P. Seligman, author of Authentic Happiness",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "0071510966"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780071510967"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 224,
+        "printType": "BOOK",
+        "categories": [
+          "Medical"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 11,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "2.15.16.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=oJ3uZnRm2gsC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=oJ3uZnRm2gsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=oJ3uZnRm2gsC&printsec=frontcover&dq=happy&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=oJ3uZnRm2gsC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=oJ3uZnRm2gsC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 28.8,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 15.27,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=oJ3uZnRm2gsC&rdid=book-oJ3uZnRm2gsC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 28800000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 15270000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Happier-sample-epub.acsm?id=oJ3uZnRm2gsC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Happier-sample-pdf.acsm?id=oJ3uZnRm2gsC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=oJ3uZnRm2gsC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "It is easy to see how this is the backbone of the most popular course at Harvard today.&quot; --Martin E. P. Seligman, author of Authentic Happiness Can You Learn to Be Happy?"
+      }
     }
   ],
   "users": [

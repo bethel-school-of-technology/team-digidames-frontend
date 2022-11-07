@@ -1,4 +1,4 @@
-import babydinowaving from "../../images/babydinowaving.jpg";
+import babydinowaving from "../../images/dinosaur-waving.png";
 import Footer from "../Footer";
 import NavBar from "../NavBar";
 import { Col, Container, Row } from 'react-bootstrap';
@@ -12,7 +12,7 @@ const LoggedOut = () => {
     return (
         <>
             <NavBar />
-            <Container style={{ fontSize: '80px', padding: '100px', fontFamily: 'Amaranth' }}>
+            <Container style={{ fontSize: '80px', padding: '50px', fontFamily: 'Amaranth' }}>
                 <Row >
 
                     <h1>Successfully Signed Out!</h1>
