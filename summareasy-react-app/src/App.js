@@ -15,7 +15,6 @@ import APIBookData from './Components/APIBookData';
 import Register from './Components/Register';
 import LogOut from './Components/LogOut/Logout';
 import EmailContactForm from './Components/Email';
-import SignUp from './Components/SignUp';
 import LoggedOut from './Components/LoggedOut';
 import AboutUs from './Components/AboutUs';
 import NavBar from './Components/NavBar';
