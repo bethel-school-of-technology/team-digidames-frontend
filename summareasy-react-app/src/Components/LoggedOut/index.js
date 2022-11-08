@@ -23,12 +23,14 @@ const LoggedOut = () => {
                 </Row>
 
                 <Row>
+                    <Col xs='12' sm='12' md='12' lg='12' xl='12' style={{ paddingBottom: '5px', paddingTop: '5px' }}>
                     <img
                         alt=""
                         src={babydinowaving}
-                        width="200px"
+                        width="75%"
                         style={{ padding: "10px" }}
                     ></img>
+                    </Col>
                 </Row>
                 <Row>
                     <h1>Thank you!</h1>
