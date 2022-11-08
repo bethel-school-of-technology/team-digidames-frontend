@@ -1045,6 +1045,603 @@
       "searchInfo": {
         "textSnippet": "Learning new traditions is joyful. Whether it&#39;s celebrating a holiday, sharing a meal, or learning new things, The Joyful Book inspires readers of all ages to spread the joy near and far, to loved ones and friends."
       }
+    },
+    {
+      "kind": "books#volume",
+      "id": "drpn-CRNyZ0C",
+      "etag": "F5HSAGcI60M",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/drpn-CRNyZ0C",
+      "volumeInfo": {
+        "title": "The Peace Book",
+        "authors": [
+          "Todd Parr"
+        ],
+        "publisher": "Little, Brown Books for Young Readers",
+        "publishedDate": "2010-11-01",
+        "description": "Peace is making new friends.Peace is helping your neighbor. Peace is a growing a garden. Peace is being who you are. The Peace Book delivers positive and hopeful messages of peace in an accessible, child-friendly format featuring Todd Parr's trademark bold, bright colors and silly scenes. Perfect for the youngest readers, this book delivers a timely and timeless message about the importance of friendship, caring, and acceptance.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780316185158"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0316185159"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 32,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 7,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "0.2.3.0.preview.2",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=drpn-CRNyZ0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=drpn-CRNyZ0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=drpn-CRNyZ0C&printsec=frontcover&dq=Peace&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=drpn-CRNyZ0C&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=drpn-CRNyZ0C"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 7.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 7.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=drpn-CRNyZ0C&rdid=book-drpn-CRNyZ0C&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 7990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 7990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Peace_Book-sample-epub.acsm?id=drpn-CRNyZ0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=drpn-CRNyZ0C&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Peace is a growing a garden. Peace is being who you are. The Peace Book delivers positive and hopeful messages of peace in an accessible, child-friendly format featuring Todd Parr&#39;s trademark bold, bright colors and silly scenes."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "BEJaCcg6VZcC",
+      "etag": "DBlUr1fJMdc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/BEJaCcg6VZcC",
+      "volumeInfo": {
+        "title": "Until Justice and Peace Embrace",
+        "subtitle": "The Kuyper Lectures for 1981 Delivered at the Free University of Amsterdam",
+        "authors": [
+          "Nicholas Wolterstorff"
+        ],
+        "publisher": "Wm. B. Eerdmans Publishing",
+        "publishedDate": "1983",
+        "description": "Analyzes the structure of the modern social order and examines the Christian's proper goals of working for peace and justice.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_10",
+            "identifier": "080281980X"
+          },
+          {
+            "type": "ISBN_13",
+            "identifier": "9780802819802"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 212,
+        "printType": "BOOK",
+        "categories": [
+          "Philosophy"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.1.3.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=BEJaCcg6VZcC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=BEJaCcg6VZcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=BEJaCcg6VZcC&printsec=frontcover&dq=Peace&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=BEJaCcg6VZcC&dq=Peace&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Until_Justice_and_Peace_Embrace.html?hl=&id=BEJaCcg6VZcC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Until_Justice_and_Peace_Embrace-sample-epub.acsm?id=BEJaCcg6VZcC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Until_Justice_and_Peace_Embrace-sample-pdf.acsm?id=BEJaCcg6VZcC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=BEJaCcg6VZcC&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Analyzes the structure of the modern social order and examines the Christian&#39;s proper goals of working for peace and justice."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "prlPEAAAQBAJ",
+      "etag": "XEOWHDmEea0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/prlPEAAAQBAJ",
+      "volumeInfo": {
+        "title": "The War That Ended Peace",
+        "subtitle": "The Road to 1914",
+        "authors": [
+          "Margaret MacMillan"
+        ],
+        "publisher": "Random House Trade Paperbacks",
+        "publishedDate": "2014-07-29",
+        "description": "NAMED ONE OF THE BEST BOOKS OF THE YEAR BY The New York Times Book Review • The Economist • The Christian Science Monitor • Bloomberg Businessweek • The Globe and Mail From the bestselling and award-winning author of Paris 1919 comes a masterpiece of narrative nonfiction, a fascinating portrait of Europe from 1900 up to the outbreak of World War I. The century since the end of the Napoleonic wars had been the most peaceful era Europe had known since the fall of the Roman Empire. In the first years of the twentieth century, Europe believed it was marching to a golden, happy, and prosperous future. But instead, complex personalities and rivalries, colonialism and ethnic nationalisms, and shifting alliances helped to bring about the failure of the long peace and the outbreak of a war that transformed Europe and the world. The War That Ended Peace brings vividly to life the military leaders, politicians, diplomats, bankers, and the extended, interrelated family of crowned heads across Europe who failed to stop the descent into war: in Germany, the mercurial Kaiser Wilhelm II and the chief of the German general staff, Von Moltke the Younger; in Austria-Hungary, Emperor Franz Joseph, a man who tried, through sheer hard work, to stave off the coming chaos in his empire; in Russia, Tsar Nicholas II and his wife; in Britain, King Edward VII, Prime Minister Herbert Asquith, and British admiral Jacky Fisher, the fierce advocate of naval reform who entered into the arms race with Germany that pushed the continent toward confrontation on land and sea. There are the would-be peacemakers as well, among them prophets of the horrors of future wars whose warnings went unheeded: Alfred Nobel, who donated his fortune to the cause of international understanding, and Bertha von Suttner, a writer and activist who was the first woman awarded Nobel’s new Peace Prize. Here too we meet the urbane and cosmopolitan Count Harry Kessler, who noticed many of the early signs that something was stirring in Europe; the young Winston Churchill, then First Lord of the Admiralty and a rising figure in British politics; Madame Caillaux, who shot a man who might have been a force for peace; and more. With indelible portraits, MacMillan shows how the fateful decisions of a few powerful people changed the course of history. Taut, suspenseful, and impossible to put down, The War That Ended Peace is also a wise cautionary reminder of how wars happen in spite of the near-universal desire to keep the peace. Destined to become a classic in the tradition of Barbara Tuchman’s The Guns of August, The War That Ended Peace enriches our understanding of one of the defining periods and events of the twentieth century. Praise for The War That Ended Peace “Magnificent . . . The War That Ended Peace will certainly rank among the best books of the centennial crop.”—The Economist “Superb.”—The New York Times Book Review “Masterly . . . marvelous . . . Those looking to understand why World War I happened will have a hard time finding a better place to start.”—The Christian Science Monitor “The debate over the war’s origins has raged for years. Ms. MacMillan’s explanation goes straight to the heart of political fallibility. . . . Elegantly written, with wonderful character sketches of the key players, this is a book to be treasured.”—The Wall Street Journal “A magisterial 600-page panorama.”—Christopher Clark, London Review of Books",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780812980660"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0812980662"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Political Science"
+        ],
+        "averageRating": 4,
+        "ratingsCount": 20,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=prlPEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=prlPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=prlPEAAAQBAJ&dq=peace&hl=&cd=4&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=prlPEAAAQBAJ&dq=peace&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_War_That_Ended_Peace.html?hl=&id=prlPEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=prlPEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": ". . . Elegantly written, with wonderful character sketches of the key players, this is a book to be treasured.”—The Wall Street Journal “A magisterial 600-page panorama.”—Christopher Clark, London Review of Books"
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "W1f6DwAAQBAJ",
+      "etag": "9XhOxrVBrV0",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/W1f6DwAAQBAJ",
+      "volumeInfo": {
+        "title": "ABCs of Kindness",
+        "authors": [
+          "Samantha Berger"
+        ],
+        "publisher": "Highlights Press",
+        "publishedDate": "2020-02-04",
+        "description": "Starting with A and ending with Z, this beautifully illustrated book will show young readers the many ways they can make the world a kinder place. A diverse cast of children shows everyday acts of kindness and generosity through thoughtful and vibrant illustrations. Whether it be donating blankets to the animal shelter, helping with chores, or standing up for what's right, this is the perfect book to spark conversations at home or in the classroom about the concepts of empathy and compassion. Featuring durable cardstock pages and approachable language, this book will encourage children to be their best selves wherever they go.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781684376513"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1684376513"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 30,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.1.0.preview.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=W1f6DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=W1f6DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=W1f6DwAAQBAJ&printsec=frontcover&dq=kindness&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=W1f6DwAAQBAJ&dq=kindness&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/ABCs_of_Kindness.html?hl=&id=W1f6DwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/ABCs_of_Kindness-sample-pdf.acsm?id=W1f6DwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=W1f6DwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This book is crafted by childhood experts to promote strong social and emotional skills and build positive associations with reading."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "QoOLDwAAQBAJ",
+      "etag": "jaT7y+TKX0M",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/QoOLDwAAQBAJ",
+      "volumeInfo": {
+        "title": "The Kindness Book",
+        "authors": [
+          "Todd Parr"
+        ],
+        "publisher": "Little, Brown Books for Young Readers",
+        "publishedDate": "2019-10-01",
+        "description": "Beloved and New York Times bestselling author Todd Parr uses his signature blend of playfulness and sensitivity to explore the value and joy in being kind to others. With his trademark bright colors and bold lines, Todd Parr takes on a topic more important than ever: being kind to each other. This idea is both a perfect fit for Todd's cheerful, child-friendly positivity and incredibly close to Todd's own heart. No matter what other people choose to do, you can always choose to be kind -- and what a wonderful thing to be! Today's parents and teachers are looking for ways to instill empathy and kindness in children at a young age -- this book is the perfect introduction to a timely and timeless topic.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780316533980"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "031653398X"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 32,
+        "printType": "BOOK",
+        "categories": [
+          "Juvenile Fiction"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "1.2.2.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=QoOLDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=QoOLDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=QoOLDwAAQBAJ&pg=PP1&dq=kindness&hl=&cd=3&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=QoOLDwAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=QoOLDwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 9.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 9.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=QoOLDwAAQBAJ&rdid=book-QoOLDwAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 9990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 9990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Kindness_Book-sample-epub.acsm?id=QoOLDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Kindness_Book-sample-pdf.acsm?id=QoOLDwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=QoOLDwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Today&#39;s parents and teachers are looking for ways to instill empathy and kindness in children at a young age -- this book is the perfect introduction to a timely and timeless topic."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ykeEEAAAQBAJ",
+      "etag": "aqaOer3/3gs",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ykeEEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Self-Control",
+        "subtitle": "Individual Differences and What They Mean for Personal Responsibility and Public Policy",
+        "authors": [
+          "W. L. Tiemeijer"
+        ],
+        "publisher": "Cambridge University Press",
+        "publishedDate": "2022-08-31",
+        "description": "Good self-control is a crucial factor in the distribution of life outcomes, ranging from success at school and work, to good mental and physical health, and to satisfying romantic relationships. While in the last decades psychologists have learned much about this all-important trait, both social theory and politics have not caught up. Many academics and policymakers still seem to believe that everybody has unlimited capacity for self-control and that maintaining discipline is purely a matter of volition. This book shows that such beliefs are fundamentally mistaken. It presents the state-of-the-art in research on self-control, explains why this trait has been largely overlooked, and sets out the profound implications of this psychological research for moral responsibility, distributive justice and public policy. It shows that the growing emphasis in politics on 'personal responsibility' is deeply problematic, and outlines alternatives more in accord with human psychology.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781009115704"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1009115707"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": true
+        },
+        "pageCount": 369,
+        "printType": "BOOK",
+        "categories": [
+          "Political Science"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.2.1.0.preview.3",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ykeEEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ykeEEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=ykeEEAAAQBAJ&pg=PA92&dq=selfcontrol&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=ykeEEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=ykeEEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 32,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 32,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=ykeEEAAAQBAJ&rdid=book-ykeEEAAAQBAJ&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 32000000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 32000000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Self_Control-sample-epub.acsm?id=ykeEEAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/Self_Control-sample-pdf.acsm?id=ykeEEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ykeEEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Medication may help in certain cases of extreme inhibitory problems, but it is unclear what it does for milder, more everyday instances of <b>selfcontrol</b> failure, while little is known about the long-term effects."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "i-LMCwAAQBAJ",
+      "etag": "JhQC2ACAdHc",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/i-LMCwAAQBAJ",
+      "volumeInfo": {
+        "title": "The Joyful Classroom",
+        "subtitle": "Practical Ways to Engage and Challenge Students K-6",
+        "authors": [
+          "Responsive Classroom"
+        ],
+        "publisher": "Center for Responsive Schools, Inc.",
+        "publishedDate": "2016-03-16",
+        "description": "Students learn more—and with more joy—when lessons connect with their lives and interests while challenging them to stretch and grow. In this book, you'll find practical, ready-to-use strategies for creating active and exciting lessons. You'll learn about: Partnering and grouping students for optimum learning Using interactive learning structures such as Maître d' and Swap Meets to support active learning Incorporating acting, drawing, debating, and more into daily lessons while still meeting rigorous learning goals Infusing lessons with choices in what or how to learn to increase students ownership of their learning Incorporating student self-assessment tools to help children monitor and evaluate their own work and identify ways to improve their learning Filled with lesson plans, precise directions for interactive learning structures, planning guides, and more!",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781892989833"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1892989832"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 210,
+        "printType": "BOOK",
+        "categories": [
+          "Education"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=i-LMCwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=i-LMCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=i-LMCwAAQBAJ&printsec=frontcover&dq=joyful&hl=&cd=6&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=i-LMCwAAQBAJ&dq=joyful&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Joyful_Classroom.html?hl=&id=i-LMCwAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Joyful_Classroom-sample-pdf.acsm?id=i-LMCwAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=i-LMCwAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Students learn more—and with more joy—when lessons connect with their lives and interests while challenging them to stretch and grow. In this book, you&#39;ll find practical, ready-to-use strategies for creating active and exciting lessons."
+      }
     }
   ],
   "users": [
@@ -1092,6 +1689,13 @@
       "firstName": "Jan",
       "lastName": "Pevny",
       "id": 7
+    },
+    {
+      "email": "lori.m.hutchins@gmail.com",
+      "password": "$2a$10$fEHvORpvpd0p52LE9sGcFO6Ys.R9TED.zcIQRfaDdTRu3rJ4oUrVu",
+      "firstName": "Lori",
+      "lastName": "Hutchins",
+      "id": 8
     }
   ],
   "BookReports": [

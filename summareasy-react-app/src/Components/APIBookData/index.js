@@ -43,7 +43,8 @@ class APIBookData extends React.Component{
                  localStorage.setItem('myBookTitle', result.data.volumeInfo.title);
                  localStorage.setItem('myBookAuthor', result.data.volumeInfo.authors);
                  localStorage.setItem('myBookCover', result.data.volumeInfo.imageLinks.thumbnail);
-                
+                //  localStorage.setItem('myBookId', result.data.book.id); //Book Id not working
+
                 console.log(result.data);
                 // redirect to book report form
 
