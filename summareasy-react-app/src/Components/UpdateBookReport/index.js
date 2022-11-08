@@ -16,17 +16,17 @@ const UpdateBookReport = ({ }) => {
     console.log(id)
 
     return (
-        <>
+        <div style={{ backgroundColor: 'rgba(225,174,53)', fontFamily: 'Amaranth' }} >
             <NavBar />
 
 
             <form>
-                <Container style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(119,148,73)', fontFamily: 'Amaranth' }}>
-                    <Row style={{ padding: '15px'}}>
+                <Container style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(0,299,190)', fontFamily: 'Amaranth' }}>
+                    <Row xs='12' sm='12' md='12' lg='12' xl='12' style={{ padding: '15px'}}>
                         <h3>Update this Book Report</h3>
                     </Row>
                     <Row>
-                        <Col>
+                        <Col xs='12' sm='12' md='12' lg='6' xl='6' >
                             <Row>
                                 <label htmlFor="title">Update Title:  </label>
                                 <input name="title" onChange={context.handleTitleChange}></input>
@@ -52,18 +52,18 @@ const UpdateBookReport = ({ }) => {
                                     <img
                                         alt="Update Book Reports"
                                         src={update}
-                                        width="300"
-                                        style={{ paddingTop: "20px", paddingBottom: "40px" }}
+                                        width="40%"
+                                        style={{ paddingTop: "40px", paddingBottom: "40px" }}
                                     ></img>
                                 </button>
                             </Row>
                         </Col>
-                        <Col>
+                        <Col xs='12' sm='12' md='12' lg='6' xl='6'>
                             <label htmlFor="report">Update Book Report</label>
                             <br />
                             <textarea
                                 rows="20"
-                                cols="70"
+                                cols="50"
                                 name="report"
                                 onChange={context.handleReportChange}
                             ></textarea>
@@ -105,7 +105,7 @@ const UpdateBookReport = ({ }) => {
 
 
             <Footer />
-        </>
+        </div>
     );
 
 }
