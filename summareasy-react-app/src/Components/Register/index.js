@@ -46,16 +46,16 @@ const Register = () => {
         <>
             <NavBar />
             <Container>
-                <Row>
-                    <Col>
+                <Row style={{ marginTop: '150px', marginBottom: '150px' }}>
+                    <Col xs='10' sm='10' md='8' lg='7' xl='7'>
                         <img
                             alt=""
                             src={car}
-                            width="850"
+                            width="100%"
                             style={{ padding: "10px" }}
                         ></img>
                     </Col>
-                    <Col style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(255,182,0)', fontFamily: 'Amaranth' }}>
+                    <Col xs='12' sm='12' md='4' lg='5' xl='5' style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(255,182,0)', fontFamily: 'Amaranth' }}>
                         <form onSubmit={register}>
                             <h1>Sign Up</h1>
                             <br />
