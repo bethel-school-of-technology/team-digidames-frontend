@@ -27,11 +27,29 @@ class APIBookData extends React.Component{
      
     }
 
+    goToReport(bookInfo) {
+        console.log(bookInfo);
+        localStorage.setItem('myBookTitle', bookInfo.volumeInfo.title);
+        localStorage.setItem('myBookAuthor', bookInfo.volumeInfo.authors);
+        localStorage.setItem('myBookCover', bookInfo.volumeInfo.imageLinks.thumbnail);
+        localStorage.setItem('myBookId', bookInfo.id);
+        
+        // const navigate = useNavigate();
+        // navigate('/Create')
+    }
+
     createBook(bookInfo) {
         console.log(bookInfo)
 
             axios.post('http://localhost:3000/books', bookInfo).then(result => {
-               
+
+                
+                 localStorage.setItem('myBookTitle', result.data.volumeInfo.title);
+                 localStorage.setItem('myBookAuthor', result.data.volumeInfo.authors);
+                 localStorage.setItem('myBookCover', result.data.volumeInfo.imageLinks.thumbnail);
+                 localStorage.setItem('myBookId', result.data.id);
+
+
                 console.log(result.data);
                 
                 
@@ -81,12 +99,12 @@ class APIBookData extends React.Component{
                 </Row>
                 <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(52,52,52)', color: 'white', fontFamily: 'Amaranth', fontSize: '24px' }}>
 
-                <h2>Search</h2>
+                <h2>Search for Book</h2>
         <form onSubmit={this.handleSubmit} className="form">
                         
                         <input name="search" onChange={this.handleSearchChange}></input>
                        
-                        <button class="button" type="submit">
+                        <button class="button" type="submit" style={{padding: "7px", margin: "5px"}} >
                             Search
                         </button>
                     
@@ -97,19 +115,25 @@ class APIBookData extends React.Component{
                     ? 
                     <table classname="table table-bordered">
                     <tr style={{ textAlign: 'center', backgroundColor: 'rgba(119,148,73)', color: 'white', fontFamily: 'Amaranth' }}>
-                        <th>Book ID</th>
+                        {/* <th>Book ID</th> */}
                         <th>Book Title</th>
                         <th>Author</th>
                         <th>Book Cover</th>
+                        <th></th>
 
                     </tr>
                     {books && books.map((book) => (
                         <tr>
-                            <td>{book.id}</td>
+                            {/* <td>{book.id}</td> */}
                             <td>{book.volumeInfo.title}</td>
                             <td>{book.volumeInfo.authors}</td>
+
                             <td><img alt="" src={book.volumeInfo.imageLinks.thumbnail}/></td>
                             <td><a href='/create' type='button' onClick={() => this.createBook(book)}>Write report</a></td>
+
+                            <td><img src={book.volumeInfo.imageLinks.thumbnail}/></td>
+                            <td><button type='button' onClick={() => this.goToReport(book)}>Write report</button></td>
+
 
                         </tr>
                     ))}

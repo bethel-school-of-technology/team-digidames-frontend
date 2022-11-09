@@ -25,7 +25,7 @@ function NavBar() {
             <Nav.Link href={`/ApiBookData`} className="nav-link">Book Search</Nav.Link>
             <NavDropdown title="What do you want to do?" id="collasible-nav-dropdown">
               <NavDropdown.Item href={`/Dashboard`} className="nav-drop-item">Go to Dashboard</NavDropdown.Item>
-              <NavDropdown.Item href={`/ApiBookData`} className="nav-drop-item">View all Books</NavDropdown.Item>
+              <NavDropdown.Item href={`/ApiBookData`} className="nav-drop-item">Search for Book</NavDropdown.Item>
               <NavDropdown.Item href={`/all-book-reports`} className="nav-drop-item">View all Book Reports</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href={`/loggedout`} className="nav-drop-item">Sign Out</NavDropdown.Item>

@@ -106,15 +106,53 @@ function App() {
 
   return (
     <div className="App">
-     
+
       <BookReportContext.Provider value={contextObject}>
         <Routes>
+
         
           {/* Start Private Routes */}
           <Route element={<PrivateRoutes/>}>
               
             
            <Route
+
+
+          <Route
+            path="/"
+            exact
+            element={
+              <LandingPage
+                bookReportData={allBookReports} />
+            }
+          />
+          <Route
+            path="/register"
+            exact
+            element={
+              <Register
+                bookReportData={allBookReports} />
+            }
+          />
+
+          <Route
+            path="/about"
+            exact
+            element={
+              <AboutUs
+                bookReportData={allBookReports} />
+            }
+          />
+
+          <Route
+            path="/login"
+            exact
+            element={
+              <Login
+                bookReportData={allBookReports} />
+            }
+          />
+          <Route
             path="/loggedout"
             exact
             element={
@@ -147,6 +185,17 @@ function App() {
             }
           />
           <Route
+
+            path="/logout"
+            exact
+            element={
+              <LogOut
+                bookReportData={allBookReports} />
+            }
+          />
+
+          <Route
+
             path="/Dashboard"
             exact
             element={
@@ -182,9 +231,15 @@ function App() {
           <Route
             path="/email/:id"
             element={
-              <EmailContactForm/>
+              <EmailContactForm />
             }
           />
+
+
+
+
+
+
           <Route
             path="/one-bookreport/:id"
             element={
@@ -255,7 +310,6 @@ function App() {
          
 
        
-
 
         </Routes>
       </BookReportContext.Provider>

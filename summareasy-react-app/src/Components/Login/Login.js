@@ -41,7 +41,7 @@ const Login = () => {
     
 
 
-    //TODO handle actual sign in - How do we do this without an official backend
+
 
     return (
         <>
@@ -50,15 +50,15 @@ const Login = () => {
 
 
                 <Row>
-                    <Col>
+                    <Col xs='7' sm='6' md='5' lg='5' xl='5' style={{ paddingBottom: '5px', paddingTop: '5px' }} >
                         <img
                             alt=""
                             src={tree}
-                            width="550"
+                            width="100%"
                             style={{ padding: "10px" }}
                         ></img>
                     </Col>
-                    <Col>
+                    <Col xs='3' sm='6' md='3' lg='3' xl='3' style={{ paddingBottom: '5px', paddingTop: '5px' }} >
                         <form onSubmit={signIn}>
                             <h1>Sign In</h1>
                             <br />
@@ -80,28 +80,22 @@ const Login = () => {
 
                         </form>
                     </Col>
-                    <Col>
+                    <Col xs='12' sm='12' md='4' lg='4' xl='4' style={{ paddingBottom: '5px', paddingTop: '5px' }}>
 
 
                         <img
                             alt=""
                             src={sun}
-                            width="250"
+                            width="50%"
                             style={{ padding: "30px" }}
                         ></img>
                         <br></br>
-                        {/* <img
-                            alt=""
-                            src={babyDino}
-                            width="150"
-                            
-                        ></img> */}
-                       
+                    
                        
                        <img
                             alt=""
                             src={babyDinos}
-                            width="500"
+                            width="100%"
                             style={{ padding: "30px" }}  
 
                             

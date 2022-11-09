@@ -34,20 +34,20 @@ const AllBookReports = ({ bookReportData }) => {
                             {bookReportData.map((bookReport) => (
 
                                 <div key={bookReport.id} className="one-bookReport">
-                                    <Row style={{ padding: '25px', margin: "30px", textAlign: 'center', backgroundColor: 'rgba(119,148,73)' }}>
-                                        <Col>
+                                    <Row style={{ padding: '15px', margin: "30px", textAlign: 'center', backgroundColor: 'rgba(119,148,73)' }}>
+                                        <Col xs='12' sm='12' md='12' lg='4' xl='4'>
                                             <h3>{bookReport.title}</h3>
                                         </Col>
 
-                                        <Col>
+                                        <Col xs='12' sm='12' md='12' lg='2' xl='2' style={{ margin: "5px", textAlign: 'center'  }}>
                                             <a class="button" href={`one-bookreport/${bookReport.id}`}>{" "}View{" "}</a>
                                         </Col>
 
-                                        <Col>
+                                        <Col xs='12' sm='12' md='12' lg='2' xl='2' style={{ margin: "5px", textAlign: 'center'  }} >
                                             <a class="button" href={`update-bookreport/${bookReport.id}`}>{" "}Update{" "}</a>
                                         </Col>
 
-                                        <Col>
+                                        <Col xs='12' sm='12' md='12' lg='2' xl='2' style={{ margin: "5px", textAlign: 'center'  }} >
                                             <button onClick={() => context.handleDelete(bookReport.id)} class="button">Delete</button>
                                         </Col>
 

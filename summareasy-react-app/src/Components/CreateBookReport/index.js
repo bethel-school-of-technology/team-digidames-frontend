@@ -18,21 +18,20 @@ const CreateBookReport = () => {
             <NavBar />
 
             <Container style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(39,208,241)', fontFamily: 'Amaranth' }}>
-                <Row style={{ padding: '15px'}}>
+                <Row style={{ padding: '15px' }}>
                     <h1> What was the book about?</h1>
                 </Row>
+                <Row style={{ padding: '15px' }}>
+                    
+                    <h4>Book Title: {localStorage.getItem("myBookTitle")}</h4>
+                    <h4>Book Author: {localStorage.getItem("myBookAuthor")}</h4>
+                    <h4>Book Cover <img src={localStorage.getItem("myBookCover")}></img></h4>
+                    <h4>Book Id: {localStorage.getItem("myBookId")}</h4>
+                </Row>
+
 
                 <Row>
-                    <Col>
-                        <img
-                            alt=""
-                            src={dinosaur}
-                            width="550"
-                            style={{ paddingTop: "160px" }}
-                        ></img>
-                    </Col>
-
-                    <Col>
+                    <Col xs='12' sm='12' md='12' lg='6' xl='6'>
                         <form onSubmit={context.handleSubmit} className="form">
                             <label htmlFor="title">Title of Book</label>
                             <br />
@@ -61,10 +60,17 @@ const CreateBookReport = () => {
                             <button class="button" type="submit">
                                 Add Book Report
                             </button>
-                        
+
                         </form>
                     </Col>
-
+                    <Col xs='12' sm='12' md='12' lg='6' xl='6'>
+                        <img
+                            alt=""
+                            src={dinosaur}
+                            width="75%"
+                            style={{ paddingTop: "160px" }}
+                        ></img>
+                    </Col>
                 </Row>
                 <Row><a href={`/Dashboard`} margin="15px">
                     <img
@@ -73,7 +79,7 @@ const CreateBookReport = () => {
                         width="200"
                         style={{ paddingTop: "20px", paddingBottom: "40px" }}
                     ></img>
-                    </a>
+                </a>
                 </Row>
             </Container>
 
@@ -122,4 +128,4 @@ const CreateBookReport = () => {
 //     }
 
 // }
-export default CreateBookReport ;
+export default CreateBookReport;

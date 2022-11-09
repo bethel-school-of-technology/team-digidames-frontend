@@ -12,7 +12,7 @@ function Footer() {
     return (
         <footer >
             <Row style={{fontFamily:'Amaranth', fontSize:'25px', padding: '19px', color: 'rgba(0,0,0)', backgroundColor: 'rgba(174, 152, 219)' }}>
-                <Col>
+                <Col xs='12' sm='12' md='12' lg='4' xl='4' style={{ marginBottom: '5px'}}>
                     <img
                         alt=""
                         src={sun}
@@ -22,10 +22,10 @@ function Footer() {
                 
                     <span>Summareasy &copy; 2022 </span>
                 </Col>
-                <Col>
+                <Col xs='12' sm='12' md='12' lg='4' xl='4' style={{ marginBottom: '5px'}} >
                     <span>Today is {month}/{day}/{year}</span>
                 </Col>
-                <Col>
+                <Col xs='12' sm='12' md='12' lg='4' xl='4' style={{ marginBottom: '5px'}}>
                     <span><a href={`/about`} class='aboutUsLink'>About DigiDames</a></span>
                 </Col>
             </Row>
