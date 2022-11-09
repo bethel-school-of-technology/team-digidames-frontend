@@ -29,6 +29,17 @@ class APIBookData extends React.Component{
         // });
     }
 
+    goToReport(bookInfo) {
+        console.log(bookInfo);
+        localStorage.setItem('myBookTitle', bookInfo.volumeInfo.title);
+        localStorage.setItem('myBookAuthor', bookInfo.volumeInfo.authors);
+        localStorage.setItem('myBookCover', bookInfo.volumeInfo.imageLinks.thumbnail);
+        localStorage.setItem('myBookId', bookInfo.id);
+        
+        // const navigate = useNavigate();
+        // navigate('/Create')
+    }
+
     createBook(bookInfo) {
         console.log(bookInfo)
 
@@ -43,7 +54,7 @@ class APIBookData extends React.Component{
                  localStorage.setItem('myBookTitle', result.data.volumeInfo.title);
                  localStorage.setItem('myBookAuthor', result.data.volumeInfo.authors);
                  localStorage.setItem('myBookCover', result.data.volumeInfo.imageLinks.thumbnail);
-                //  localStorage.setItem('myBookId', result.data.book.id); //Book Id not working
+                 localStorage.setItem('myBookId', result.data.id);
 
                 console.log(result.data);
                 // redirect to book report form
@@ -118,7 +129,7 @@ class APIBookData extends React.Component{
                             <td>{book.volumeInfo.title}</td>
                             <td>{book.volumeInfo.authors}</td>
                             <td><img src={book.volumeInfo.imageLinks.thumbnail}/></td>
-                            <td><button type='button' onClick={() => this.createBook(book)}>Write report</button></td>
+                            <td><button type='button' onClick={() => this.goToReport(book)}>Write report</button></td>
 
                         </tr>
                     ))}
