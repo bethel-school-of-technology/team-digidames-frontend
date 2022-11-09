@@ -1,15 +1,16 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap';
-//import BookReportContext from '../../UTILS/BookReportContext';
-//import { useContext } from "react";
+import { Container, Row } from 'react-bootstrap';
 import axios from 'axios';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
 
 
+
 class APIBookData extends React.Component{
+     
     constructor(props) {
         super(props);
+       
         this.state = {
             books: [],
             searchQuery: '',
@@ -18,32 +19,25 @@ class APIBookData extends React.Component{
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleSearchChange = this.handleSearchChange.bind(this);
     }
+    
+     
 
     searchQuery = '';
     componentDidMount() {
-        // axios.get(`https://www.googleapis.com/books/v1/volumes?q=hobbit`)
-        // .then(response => {
-        //     const books = response.data.items;
-        //     console.log(books)
-        //     this.setState({ books });
-        // });
+     
     }
 
     createBook(bookInfo) {
         console.log(bookInfo)
 
-        // if (email !== '' && password !== '') {
-        //     const req = {
-        //         email,
-        //         password
-        //     };
-
             axios.post('http://localhost:3000/books', bookInfo).then(result => {
-                // const token = result.data.accessToken;
-                // localStorage.setItem('myJWT', token);
-                // localStorage.setItem('userId', result.user.id);
-                // localStorage.setItem('email', result.user.email);
+               
                 console.log(result.data);
+                
+                
+                
+                
+               
                 // redirect to book report form
 
             })
@@ -114,8 +108,8 @@ class APIBookData extends React.Component{
                             <td>{book.id}</td>
                             <td>{book.volumeInfo.title}</td>
                             <td>{book.volumeInfo.authors}</td>
-                            <td><img src={book.volumeInfo.imageLinks.thumbnail}/></td>
-                            <td><button type='button' onClick={() => this.createBook(book)}>Write report</button></td>
+                            <td><img alt="" src={book.volumeInfo.imageLinks.thumbnail}/></td>
+                            <td><a href='/create' type='button' onClick={() => this.createBook(book)}>Write report</a></td>
 
                         </tr>
                     ))}
