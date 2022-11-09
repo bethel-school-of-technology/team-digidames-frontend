@@ -1642,6 +1642,154 @@
       "searchInfo": {
         "textSnippet": "Students learn more—and with more joy—when lessons connect with their lives and interests while challenging them to stretch and grow. In this book, you&#39;ll find practical, ready-to-use strategies for creating active and exciting lessons."
       }
+    },
+    {
+      "kind": "books#volume",
+      "id": "v6CJDQAAQBAJ",
+      "etag": "LqH9Il5MgqI",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/v6CJDQAAQBAJ",
+      "volumeInfo": {
+        "title": "Peaceful Parent, Happy Kids",
+        "subtitle": "How to Stop Yelling and Start Connecting",
+        "authors": [
+          "Laura Markham"
+        ],
+        "publisher": "Penguin",
+        "publishedDate": "2012-11-28",
+        "description": "A groundbreaking guide to raising responsible, capable, happy kids Based on the latest research on brain development and extensive clinical experience with parents, Dr. Laura Markham’s approach is as simple as it is effective. Her message: Fostering emotional connection with your child creates real and lasting change. When you have that vital connection, you don’t need to threaten, nag, plead, bribe—or even punish. This remarkable guide will help parents better understand their own emotions—and get them in check—so they can parent with healthy limits, empathy, and clear communication to raise a self-disciplined child. Step-by-step examples give solutions and kid-tested phrasing for parents of toddlers right through the elementary years. If you’re tired of power struggles, tantrums, and searching for the right “consequence,” look no further. You’re about to discover the practical tools you need to transform your parenting in a positive, proven way.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9780399160288"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "0399160280"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 306,
+        "printType": "BOOK",
+        "categories": [
+          "Family & Relationships"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.3.0.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=v6CJDQAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=v6CJDQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=v6CJDQAAQBAJ&dq=Peaceful&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=v6CJDQAAQBAJ&dq=Peaceful&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Peaceful_Parent_Happy_Kids.html?hl=&id=v6CJDQAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=v6CJDQAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "This remarkable guide will help parents better understand their own emotions—and get them in check—so they can parent with healthy limits, empathy, and clear communication to raise a self-disciplined child."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "ZiSQEAAAQBAJ",
+      "etag": "VjOWG9+UjGo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/ZiSQEAAAQBAJ",
+      "volumeInfo": {
+        "title": "Children Who Are Not Yet Peaceful",
+        "subtitle": "Preventing Exclusion in the Early Elementary Classroom",
+        "authors": [
+          "Donna Bryant Goertz"
+        ],
+        "publisher": "National Geographic Books",
+        "publishedDate": "2001-02-21",
+        "description": "Charting the progress of twelve children in a real Texas classroom, educator Donna Goertz shows how positive change can occur given the proper environment. In each case she describes a child's transformation from destructive troublemaker to responsible citizen of the classroom community. Readers will learn how to apply Montessori methods to virtually any early elementary environment.",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781583940327"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1583940324"
+          }
+        ],
+        "readingModes": {
+          "text": true,
+          "image": false
+        },
+        "pageCount": 0,
+        "printType": "BOOK",
+        "categories": [
+          "Education"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=ZiSQEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=ZiSQEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=ZiSQEAAAQBAJ&dq=Peaceful&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=ZiSQEAAAQBAJ&dq=Peaceful&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Children_Who_Are_Not_Yet_Peaceful.html?hl=&id=ZiSQEAAAQBAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=ZiSQEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Charting the progress of twelve children in a real Texas classroom, educator Donna Goertz shows how positive change can occur given the proper environment."
+      }
     }
   ],
   "users": [

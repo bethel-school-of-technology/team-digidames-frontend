@@ -104,10 +104,10 @@ function App() {
 
   return (
     <div className="App">
-     
+
       <BookReportContext.Provider value={contextObject}>
         <Routes>
-        
+
           <Route
             path="/"
             exact
@@ -116,14 +116,14 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
-           <Route
+          <Route
             path="/register"
             exact
             element={
               <Register
                 bookReportData={allBookReports} />
             }
-          /> 
+          />
 
           <Route
             path="/about"
@@ -141,8 +141,8 @@ function App() {
               <Login
                 bookReportData={allBookReports} />
             }
-          /> 
-            <Route
+          />
+          <Route
             path="/loggedout"
             exact
             element={
@@ -184,8 +184,8 @@ function App() {
               <LogOut
                 bookReportData={allBookReports} />
             }
-          /> 
- 
+          />
+
           <Route
             path="/Dashboard"
             exact
@@ -222,11 +222,11 @@ function App() {
           <Route
             path="/email/:id"
             element={
-              <EmailContactForm/>
+              <EmailContactForm />
             }
           />
-           
-         
+
+
 
           <Route
             path="/one-bookreport/:id"
@@ -255,7 +255,6 @@ function App() {
               <SearchBar />
             }
           /> */}
-
 
 
         </Routes>

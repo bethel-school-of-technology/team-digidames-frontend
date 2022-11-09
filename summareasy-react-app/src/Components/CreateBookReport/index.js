@@ -25,7 +25,7 @@ const CreateBookReport = () => {
                     <h4>Book Title: {localStorage.getItem("myBookTitle")}</h4>
                     <h4>Book Author: {localStorage.getItem("myBookAuthor")}</h4>
                     <h4>Book Cover <img src={localStorage.getItem("myBookCover")}></img></h4>
-                    {/* <h4>Book Id: {localStorage.getItem("myBookId")}</h4> */}
+                    <h4>Book Id: {localStorage.getItem("myBookId")}</h4>
                 </Row>
 
 
