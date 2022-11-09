@@ -17,6 +17,7 @@ import back from '../../images/back2.png';
 
 
 
+
 const OneBookReport = () => {
 
     const [bookReport, setBookReport] = useState({});
@@ -35,7 +36,7 @@ const OneBookReport = () => {
 
         getBookReport();
 
-    }, [])
+    }, [id])
 
 
 
@@ -80,6 +81,7 @@ const OneBookReport = () => {
                     </a>
                     
                 </Col>
+                
                
                
 

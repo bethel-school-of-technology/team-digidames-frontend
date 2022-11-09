@@ -13,14 +13,16 @@ import Login from './Components/Login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import APIBookData from './Components/APIBookData';
 import Register from './Components/Register';
-import LogOut from './Components/LogOut/Logout';
+
 import EmailContactForm from './Components/Email';
+
 import LoggedOut from './Components/LoggedOut';
 import AboutUs from './Components/AboutUs';
 import NavBar from './Components/NavBar';
 import EmailedConfirm from './Components/EmailedConfirm';
 import PrintedConfirm from './Components/PrintedConfirm';
 import DeletedConfirm from './Components/DeletedConfirm';
+import PrivateRoutes from './UTILS/PrivateRoutes';
 
 
 //import SearchBar from './Components/SearchBar';
@@ -35,7 +37,7 @@ function App() {
     report: ""
   });
 
-  const [refresh, setRefresh] = useState({ count: 0 });
+  const [refresh, setRefresh] = useState({ count: 1 });
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -86,7 +88,7 @@ function App() {
     updateBookReport: (id) => {
       API.updateBookReport(id, newBookReport).then(res => {
         console.log(res);
-        setRefresh({ ...refresh, count: refresh.count + 1 });
+        setRefresh({ ...refresh, count: refresh.count + 0 });
         navigate("/all-book-reports") //this navigates (useNavigat) to homepage ("/") after updating Book Report
       });
     },
@@ -107,6 +109,14 @@ function App() {
 
       <BookReportContext.Provider value={contextObject}>
         <Routes>
+
+        
+          {/* Start Private Routes */}
+          <Route element={<PrivateRoutes/>}>
+              
+            
+           <Route
+
 
           <Route
             path="/"
@@ -149,7 +159,7 @@ function App() {
               <LoggedOut
                 bookReportData={allBookReports} />
             }
-          />
+          />   
           <Route
             path="/emailedconfirm"
             exact
@@ -158,8 +168,7 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
-
-          <Route
+           <Route
             path="/deletedconfirm"
             exact
             element={
@@ -167,9 +176,7 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
-
-
-          <Route
+             <Route
             path="/printedconfirm"
             exact
             element={
@@ -178,6 +185,7 @@ function App() {
             }
           />
           <Route
+
             path="/logout"
             exact
             element={
@@ -187,6 +195,7 @@ function App() {
           />
 
           <Route
+
             path="/Dashboard"
             exact
             element={
@@ -228,13 +237,15 @@ function App() {
 
 
 
+
+
+
           <Route
             path="/one-bookreport/:id"
             element={
               <OneBookReport />
             }
           />
-
           <Route
             path="/update-bookreport/:id"
             element={
@@ -248,14 +259,57 @@ function App() {
               <NavBar />
             }
           />
-
-          {/* <Route
-            path="/SearchBar"
+          
+          </Route>
+        
+           
+          
+          {/* End private routes */}
+          
+          <Route
+              path="/"
+              exact
+              element={
+                <LandingPage
+                  bookReportData={allBookReports} />
+              }
+            />
+          
+          <Route
+            path="/register"
+            exact
             element={
-              <SearchBar />
+              <Register
+                bookReportData={allBookReports} />
             }
-          /> */}
+          /> 
+          
 
+          <Route
+            path="/about"
+            exact
+            element={
+              <AboutUs
+                bookReportData={allBookReports} />
+            }
+          />
+          
+
+          <Route
+        
+            path="/login"
+            exact
+            element={
+              <Login
+                bookReportData={allBookReports} />
+            }
+          /> 
+          
+        
+
+         
+
+       
 
         </Routes>
       </BookReportContext.Provider>

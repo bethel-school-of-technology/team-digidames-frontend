@@ -1,10 +1,28 @@
 import babydinowaving from "../../images/dinosaur-waving.png";
 import Footer from "../Footer";
 import NavBar from "../NavBar";
-import { Col, Container, Row } from 'react-bootstrap';
+import { useEffect } from "react";
+import { Container, Row } from 'react-bootstrap';
+import { useNavigate } from "react-router-dom";
+
 
 const LoggedOut = () => {
+    const navigate = useNavigate();
+    
+    useEffect(() =>{
+        
+    localStorage.clear();
+  
+    navigate("/loggedout"); 
+    
+   
+    
+    
+    });
 
+
+   
+   
 
 
 

@@ -7,6 +7,7 @@ import Footer from '../Footer';
 import NavBar from '../NavBar';
 import dinosaur from '../../images/dinosaur.png';
 import back from '../../images/back2.png';
+import AllBookReports from '../AllBookReports';
 
 const CreateBookReport = () => {
 
@@ -34,7 +35,7 @@ const CreateBookReport = () => {
                         <form onSubmit={context.handleSubmit} className="form">
                             <label htmlFor="title">Title of Book</label>
                             <br />
-                            <input name="title" onChange={context.handleTitleChange}></input>
+                            <input name="title"  onChange={context.handleTitleChange}></input>
                             <br />
 
                             <label htmlFor="author">Author of Book</label>

@@ -8,10 +8,15 @@ import NavBar from "../NavBar";
 import back from '../../images/back2.png'
 import update from '../../images/update.png'
 
+
+
+
 const UpdateBookReport = ({ }) => {
 
     let { id } = useParams();
     const context = useContext(BookReportContext);
+   
+   
 
     console.log(id)
 
@@ -28,20 +33,32 @@ const UpdateBookReport = ({ }) => {
                     <Row>
                         <Col xs='12' sm='12' md='12' lg='6' xl='6' >
                             <Row>
-                                <label htmlFor="title">Update Title:  </label>
-                                <input name="title" onChange={context.handleTitleChange}></input>
+                                <label htmlFor="title" >Update Title:  </label>
+                                <input name="title" placeholder="New Title"  onChange={context.handleTitleChange}></input>
                                 <br />
                             </Row>
                             <Row>
                                 <label htmlFor="author">Update Author:  </label>
-                                <input name="author" onChange={context.handleAuthorChange}></input>
+                                <input name="author" placeholder="New Author"  onChange={context.handleAuthorChange}></input>
                                 <br />
                             </Row>
                             <Row>
                                 <label htmlFor="writtenBy">Update Written By:  </label>
-                                <input name="writtenBy" onChange={context.handleWrittenByChange}></input>
+                                <input name="writtenBy" placeholder="Your name"  onChange={context.handleWrittenByChange}></input>
                                 <br />
                             </Row>
+                            
+                        </Col>
+                        <Col>
+                            <label htmlFor="report">Update Book Report</label>
+                            <br />
+                            <textarea
+                                rows="20"
+                                cols="70"
+                                name="report"
+                                onChange={context.handleReportChange}
+                            ></textarea>
+                            <br />
                             <Row>
                                 <button
                                     className="btn"
@@ -58,6 +75,7 @@ const UpdateBookReport = ({ }) => {
                                 </button>
                             </Row>
                         </Col>
+
                         <Col xs='12' sm='12' md='12' lg='6' xl='6'>
                             <label htmlFor="report">Update Book Report</label>
                             <br />
@@ -69,6 +87,7 @@ const UpdateBookReport = ({ }) => {
                             ></textarea>
                             <br />
                         </Col>
+
                     </Row>
 
 
