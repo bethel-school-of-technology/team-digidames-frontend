@@ -64,8 +64,8 @@ const UpdateBookReport = ({ }) => {
 
                                 <h4>Book Title: {bookReport.title}</h4>
                                 <h4>Book Author: {bookReport.author}</h4>
-                                <h4>Book Author: {bookReport.writtenBy}</h4>
-                                <h4>Book Cover <img src={bookReport.cover}></img></h4>
+                                <h4>Written By: {bookReport.writtenBy}</h4>
+                                <h4><img src={bookReport.cover}></img></h4>
                                 <h4>Book Report: {bookReport.report}</h4>
                             </Row>
 
@@ -90,7 +90,7 @@ const UpdateBookReport = ({ }) => {
                             <label htmlFor="report">Update Book Report</label>
                             <br />
                             <textarea
-                                rows="20"
+                                rows="30"
                                 cols="50"
                                 name="report"
                                 onChange={context.handleReportChange}

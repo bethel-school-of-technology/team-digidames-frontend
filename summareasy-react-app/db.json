@@ -1844,6 +1844,13 @@
       "firstName": "Lori",
       "lastName": "Hutchins",
       "id": 8
+    },
+    {
+      "email": "marty.r.hutchins@gmail.com",
+      "password": "$2a$10$Nu3loL0J/evzKn5zmy0VPOW24ECHY1/GtCgb8KSOGwsJvPfFijDxC",
+      "firstName": "Marty",
+      "lastName": "Hutchins",
+      "id": 9
     }
   ],
   "BookReports": [
@@ -1901,6 +1908,18 @@
       "bookId": "LpdMDwAAQBAJ",
       "report": "Praying through fear by Stormie Omartian provides practical ways to pray and allow the Lord to draw us near to Him to reduce fear in our lives. The Book of Prayers will be a wonderful addition to your home library.",
       "id": 6
+    },
+    {
+      "title": "The Red Badge of Courage",
+      "author": [
+        "Stephen Crane"
+      ],
+      "cover": "http://books.google.com/books/content?id=qxBgtgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "writtenBy": "Marty",
+      "userId": "9",
+      "bookId": "qxBgtgEACAAJ",
+      "report": "This book was amazing!",
+      "id": 7
     }
   ]
 }
