@@ -17,10 +17,12 @@ function NavBar() {
               className="d-inline-block align-top"
               alt="Summareasy logo"
             />
+            <h4>Hello, {localStorage.getItem("firstName")} {localStorage.getItem("lastName")}</h4>
             </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
+          
             <Nav.Link href={`/Dashboard`} className="nav-link">Dashboard</Nav.Link>
             <Nav.Link href={`/ApiBookData`} className="nav-link">Book Search</Nav.Link>
             <NavDropdown title="What do you want to do?" id="collasible-nav-dropdown">

@@ -1855,33 +1855,48 @@
   ],
   "BookReports": [
     {
-      "title": "Reading is Fun",
+      "title": "Reading is Fun with Dr. Seuss",
       "author": "Dr. Seuss",
-      "writtenBy": "Lisa",
-      "cover": "",
+      "cover": "http://books.google.com/books/content?id=otk4AAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "writtenBy": "Lori",      
+      "userId": "8",
+      "bookId": "otk4AAAACAAJ",
       "report": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae justo iaculis, efficitur nibh non, dictum neque. In euismod, ex ac convallis lobortis, nulla ante lacinia leo, eget rutrum nisl leo non enim. Ut ex diam, gravida quis sem et, elementum molestie mauris. Aenean feugiat porttitor dui a volutpat. Duis iaculis hendrerit enim, nec malesuada felis tincidunt eget. Nullam nec accumsan metus. Donec accumsan, est sit amet interdum pretium, mi mi eleifend risus, non pretium lectus mauris nec ante. Aliquam in diam id ante ultricies dictum. Praesent placerat, sem vitae interdum laoreet, erat dolor congue dolor, ac efficitur leo metus auctor orci. Aenean ullamcorper, lacus eu interdum cursus, tellus felis rhoncus nisl, eu gravida urna magna nec enim. Donec arcu orci, semper nec ante ac, tempus aliquet elit. Aenean sed massa nec eros varius pellentesque non non tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac fermentum nulla. Morbi ipsum libero, lobortis et malesuada id, scelerisque vitae elit. Maecenas laoreet leo eu leo mattis, quis semper tellus egestas. Sed pellentesque, nibh ut vestibulum tempus, turpis nisi sagittis nisl, ullamcorper bibendum mi lectus at turpis.",
       "id": 1
     },
     {
-      "title": "Busy, Busy Town",
-      "author": "Richard Scarry",
-      "writtenByy": "Lisa",
-      "cover": "",
+      "title": "Richard Scarry's Busy, Busy Town",
+      "author": [
+        "Richard Scarry"
+    ],
+      "cover": "http://books.google.com/books/content?id=_18QYInmSpwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "writtenBy": "Lori",      
+      "userId": "8",
+      "bookId": "_18QYInmSpwC",
       "report": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae justo iaculis, efficitur nibh non, dictum neque. In euismod, ex ac convallis lobortis, nulla ante lacinia leo, eget rutrum nisl leo non enim. Ut ex diam, gravida quis sem et, elementum molestie mauris. Aenean feugiat porttitor dui a volutpat. Duis iaculis hendrerit enim, nec malesuada felis tincidunt eget. Nullam nec accumsan metus. Donec accumsan, est sit amet interdum pretium, mi mi eleifend risus, non pretium lectus mauris nec ante. Aliquam in diam id ante ultricies dictum. Praesent placerat, sem vitae interdum laoreet, erat dolor congue dolor, ac efficitur leo metus auctor orci. Aenean ullamcorper, lacus eu interdum cursus, tellus felis rhoncus nisl, eu gravida urna magna nec enim. Donec arcu orci, semper nec ante ac, tempus aliquet elit. Aenean sed massa nec eros varius pellentesque non non tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac fermentum nulla. Morbi ipsum libero, lobortis et malesuada id, scelerisque vitae elit. Maecenas laoreet leo eu leo mattis, quis semper tellus egestas. Sed pellentesque, nibh ut vestibulum tempus, turpis nisi sagittis nisl, ullamcorper bibendum mi lectus at turpis.",
       "id": 2
     },
     {
       "title": "God Gave Us You",
-      "author": "Lisa Tawn Bergren",
-      "writtenBy": "Lisa",
-      "cover": "",
+      "author": [
+        "Lisa Tawn Bergren"
+      ],
+      "cover": "http://books.google.com/books/content?id=Rajg_l4sPs4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "writtenBy": "Lori",      
+      "userId": "8",
+      "bookId": "Rajg_l4sPs4C",
       "report": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae justo iaculis, efficitur nibh non, dictum neque. In euismod, ex ac convallis lobortis, nulla ante lacinia leo, eget rutrum nisl leo non enim. Ut ex diam, gravida quis sem et, elementum molestie mauris. Aenean feugiat porttitor dui a volutpat. Duis iaculis hendrerit enim, nec malesuada felis tincidunt eget. Nullam nec accumsan metus. Donec accumsan, est sit amet interdum pretium, mi mi eleifend risus, non pretium lectus mauris nec ante. Aliquam in diam id ante ultricies dictum. Praesent placerat, sem vitae interdum laoreet, erat dolor congue dolor, ac efficitur leo metus auctor orci. Aenean ullamcorper, lacus eu interdum cursus, tellus felis rhoncus nisl, eu gravida urna magna nec enim. Donec arcu orci, semper nec ante ac, tempus aliquet elit. Aenean sed massa nec eros varius pellentesque non non tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac fermentum nulla. Morbi ipsum libero, lobortis et malesuada id, scelerisque vitae elit. Maecenas laoreet leo eu leo mattis, quis semper tellus egestas. Sed pellentesque, nibh ut vestibulum tempus, turpis nisi sagittis nisl, ullamcorper bibendum mi lectus at turpis.",
       "id": 3
     },
     {
       "title": "You Are Special",
-      "author": "Max Lucado",
-      "writtenBy": "Lisa",
+      "author": [
+        "Max Lucado"
+      ],
+      "cover": "http://books.google.com/books/content?id=toqHPwAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "writtenBy": "Lori",
+      "userId": "8",
+      "bookId": "toqHPwAACAAJ",
       "report": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae justo iaculis, efficitur nibh non, dictum neque. In euismod, ex ac convallis lobortis, nulla ante lacinia leo, eget rutrum nisl leo non enim. Ut ex diam, gravida quis sem et, elementum molestie mauris. Aenean feugiat porttitor dui a volutpat. Duis iaculis hendrerit enim, nec malesuada felis tincidunt eget. Nullam nec accumsan metus. Donec accumsan, est sit amet interdum pretium, mi mi eleifend risus, non pretium lectus mauris nec ante. Aliquam in diam id ante ultricies dictum. Praesent placerat, sem vitae interdum laoreet, erat dolor congue dolor, ac efficitur leo metus auctor orci. Aenean ullamcorper, lacus eu interdum cursus, tellus felis rhoncus nisl, eu gravida urna magna nec enim. Donec arcu orci, semper nec ante ac, tempus aliquet elit. Aenean sed massa nec eros varius pellentesque non non tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac fermentum nulla. Morbi ipsum libero, lobortis et malesuada id, scelerisque vitae elit. Maecenas laoreet leo eu leo mattis, quis semper tellus egestas. Sed pellentesque, nibh ut vestibulum tempus, turpis nisi sagittis nisl, ullamcorper bibendum mi lectus at turpis.",
       "id": 4
     },
