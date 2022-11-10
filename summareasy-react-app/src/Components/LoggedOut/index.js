@@ -4,6 +4,7 @@ import NavBar from "../NavBar";
 import { useEffect } from "react";
 import { Container, Row } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
+import {Col} from 'react-bootstrap'
 
 
 const LoggedOut = () => {
