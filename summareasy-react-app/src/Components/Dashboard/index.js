@@ -20,12 +20,12 @@ const Dashboard = () => {
 
                 <Row style={{ fontSize: '80px', padding: '25px', fontFamily: 'Amaranth' }}>
 
-                    <h1>What would you like to do?</h1>
+                    <h1>What would you like to do, {localStorage.getItem("firstName")}?</h1>
 
                 </Row>
                 <Row>
                     <Col style={{ padding: '25px' }}>
-                        <a href={`/Create`} >  <img src={start} alt='' height={300} /></a>
+                        <a href={`/APIBookData`} >  <img src={start} alt='' height={300} /></a>
                     </Col>
 
                     <Col style={{ padding: '25px' }}>

@@ -62,23 +62,24 @@ function App() {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
         document.querySelector(".form").reset();
+        navigate("/all-book-reports") //this navigates (useNavigat) to homepage ("/") after updating Book Report
       });
     },
 
-    handleTitleChange: (e) => {
-      const { value } = e.target;
-      setNewBookReport({ ...newBookReport, title: value });
-    },
+    // handleTitleChange: (e) => {
+    //   const { value } = e.target;
+    //   setNewBookReport({ ...newBookReport, title: value });
+    // },
 
-    handleAuthorChange: (e) => {
-      const { value } = e.target;
-      setNewBookReport({ ...newBookReport, author: value });
-    },
+    // handleAuthorChange: (e) => {
+    //   const { value } = e.target;
+    //   setNewBookReport({ ...newBookReport, author: value });
+    // },
 
-    handleWrittenByChange: (e) => {
-      const { value } = e.target;
-      setNewBookReport({ ...newBookReport, writtenBy: value });
-    },
+    // handleWrittenByChange: (e) => {
+    //   const { value } = e.target;
+    //   setNewBookReport({ ...newBookReport, writtenBy: value });
+    // },
 
     handleReportChange: (e) => {
       const { value } = e.target;
@@ -272,7 +273,7 @@ function App() {
               <LoggedOut
                 bookReportData={allBookReports} />
             }
-          />   00000000000
+          />
           
         
 

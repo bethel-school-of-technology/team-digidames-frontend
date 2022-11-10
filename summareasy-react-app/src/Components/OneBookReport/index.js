@@ -58,6 +58,9 @@ const OneBookReport = () => {
                     <p>{bookReport.report}</p>
                 </Row>
                 <Row style={{ padding: '25px'}}>
+                    <p><img src={bookReport.cover}></img></p>
+                </Row>
+                <Row style={{ padding: '25px'}}>
 
                 
                     <Col>
