@@ -115,25 +115,8 @@ function App() {
           <Route element={<PrivateRoutes/>}>
               
             
-           <Route
 
-
-          <Route
-            path="/"
-            exact
-            element={
-              <LandingPage
-                bookReportData={allBookReports} />
-            }
-          />
-          <Route
-            path="/register"
-            exact
-            element={
-              <Register
-                bookReportData={allBookReports} />
-            }
-          />
+          
 
           <Route
             path="/about"
@@ -144,22 +127,7 @@ function App() {
             }
           />
 
-          <Route
-            path="/login"
-            exact
-            element={
-              <Login
-                bookReportData={allBookReports} />
-            }
-          />
-          <Route
-            path="/loggedout"
-            exact
-            element={
-              <LoggedOut
-                bookReportData={allBookReports} />
-            }
-          />   
+         
           <Route
             path="/emailedconfirm"
             exact
@@ -184,15 +152,7 @@ function App() {
                 bookReportData={allBookReports} />
             }
           />
-          <Route
-
-            path="/logout"
-            exact
-            element={
-              <LogOut
-                bookReportData={allBookReports} />
-            }
-          />
+          
 
           <Route
 
@@ -304,6 +264,15 @@ function App() {
                 bookReportData={allBookReports} />
             }
           /> 
+          
+          <Route
+            path="/loggedout"
+            exact
+            element={
+              <LoggedOut
+                bookReportData={allBookReports} />
+            }
+          />   00000000000
           
         
 
