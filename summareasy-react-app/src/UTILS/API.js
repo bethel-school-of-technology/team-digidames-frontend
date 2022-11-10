@@ -6,7 +6,7 @@ const baseURL = "http://localhost:3000/BookReports"
 const API = {
 
     getAll: () => {
-        return axios.get(baseURL);
+        return axios.get(baseURL + "?userId=" + localStorage.getItem('userId'));
     },
 
     createBookReport: (newBookReport) => {
