@@ -6,7 +6,7 @@ import axios from 'axios';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
 import { joinPaths } from '@remix-run/router';
-//import { createBrowserHistory } from "history";
+import back from '../../images/back2.png';
 
 
 class APIBookData extends React.Component{
@@ -159,6 +159,19 @@ class APIBookData extends React.Component{
                 }
 
                 
+                </Row>
+                <Row>
+                <Col>
+                    <a href={`/Dashboard`} margin="15px">
+                        <img
+                            alt="go back to View All Book Reports"
+                            src={back}
+                            width="200"
+                            style={{ paddingTop: "20px", paddingBottom: "40px" }}
+                        ></img>
+                    </a>
+                    
+                </Col>
                 </Row>
                 </Container>
                 <Footer />

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
+import API from '../../UTILS/API';
 import { useParams } from 'react-router-dom'
 import { Col, Container, Row } from 'react-bootstrap';
 import BookReportContext from '../../UTILS/BookReportContext';
@@ -10,8 +11,23 @@ import update from '../../images/update.png'
 
 const UpdateBookReport = ({ }) => {
 
+    const [bookReport, setBookReport] = useState({});
     let { id } = useParams();
     const context = useContext(BookReportContext);
+
+    useEffect(() => {
+        const getBookReport = () => {
+            API.getBookReportById(id).then(res => {
+                console.log(res)
+                setBookReport(res.data)
+                
+            })
+        }
+
+        getBookReport();
+
+    }, [])
+
 
     console.log(id)
 
@@ -22,12 +38,12 @@ const UpdateBookReport = ({ }) => {
 
             <form>
                 <Container style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(0,299,190)', fontFamily: 'Amaranth' }}>
-                    <Row xs='12' sm='12' md='12' lg='12' xl='12' style={{ padding: '15px'}}>
+                    <Row xs='12' sm='12' md='12' lg='12' xl='12' style={{ padding: '15px' }}>
                         <h3>Update this Book Report</h3>
                     </Row>
                     <Row>
                         <Col xs='12' sm='12' md='12' lg='6' xl='6' >
-                            <Row>
+                            {/* <Row>
                                 <label htmlFor="title">Update Title:  </label>
                                 <input name="title" onChange={context.handleTitleChange}></input>
                                 <br />
@@ -41,7 +57,19 @@ const UpdateBookReport = ({ }) => {
                                 <label htmlFor="writtenBy">Update Written By:  </label>
                                 <input name="writtenBy" onChange={context.handleWrittenByChange}></input>
                                 <br />
+                            </Row> */}
+
+
+                            <Row style={{ padding: '15px' }}>
+
+                                <h4>Book Title: {bookReport.title}</h4>
+                                <h4>Book Author: {bookReport.author}</h4>
+                                <h4>Book Author: {bookReport.writtenBy}</h4>
+                                <h4>Book Cover <img src={bookReport.cover}></img></h4>
+                                <h4>Book Id: {bookReport.id}</h4>
                             </Row>
+
+
                             <Row>
                                 <button
                                     className="btn"

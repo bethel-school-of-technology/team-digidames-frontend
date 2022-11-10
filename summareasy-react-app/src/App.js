@@ -250,14 +250,6 @@ function App() {
             }
           />
 
-          {/* <Route
-            path="/SearchBar"
-            element={
-              <SearchBar />
-            }
-          /> */}
-
-
         </Routes>
       </BookReportContext.Provider>
     </div>

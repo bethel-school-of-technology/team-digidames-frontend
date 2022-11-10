@@ -1879,42 +1879,16 @@
       "id": 4
     },
     {
-      "title": "I Prayed for You",
-      "author": "Jean Fischer",
-      "writtenBy": "Lisa",
-      "report": "Testing to see if the functionality works.",
+      "title": "Who Ate My Cheese?",
+      "author": [
+        "John Nichols"
+      ],
+      "cover": "http://books.google.com/books/content?id=V5WVAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "writtenBy": "Lori",
+      "userId": "8",
+      "bookId": "V5WVAgAAQBAJ",
+      "report": "Will the Update Functionality work again?",
       "id": 5
-    },
-    {
-      "title": "Who Stole My Cheese?",
-      "author": [
-        "Ilene Hochberg"
-      ],
-      "writtenBy": "Lori",
-      "bookId": "cvH40cB8fyQC",
-      "report": "This is my parody report!",
-      "id": 6
-    },
-    {
-      "title": "WHO MOVED MY CHEESE? for Kids",
-      "author": [
-        "Spencer Johnson"
-      ],
-      "cover": "http://books.google.com/books/content?id=BAyTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "writtenBy": "Lori",
-      "userId": "8",
-      "bookId": "BAyTEAAAQBAJ",
-      "report": "This is my book about who moved my cheese for kids.",
-      "id": 7
-    },
-    {
-      "title": "Disney Peaceful Piano Solos",
-      "cover": "http://books.google.com/books/content?id=qLAixwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
-      "writtenBy": "Lori",
-      "userId": "8",
-      "bookId": "qLAixwEACAAJ",
-      "report": "Testing the useNavigate function",
-      "id": 8
     }
   ]
 }
