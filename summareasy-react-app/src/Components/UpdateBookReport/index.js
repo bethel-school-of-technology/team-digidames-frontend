@@ -66,7 +66,7 @@ const UpdateBookReport = ({ }) => {
                                 <h4>Book Author: {bookReport.author}</h4>
                                 <h4>Book Author: {bookReport.writtenBy}</h4>
                                 <h4>Book Cover <img src={bookReport.cover}></img></h4>
-                                <h4>Book Id: {bookReport.id}</h4>
+                                <h4>Book Report: {bookReport.report}</h4>
                             </Row>
 
 
