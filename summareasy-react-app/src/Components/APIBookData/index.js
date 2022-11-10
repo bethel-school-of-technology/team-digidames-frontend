@@ -5,6 +5,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 import axios from 'axios';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
+import { joinPaths } from '@remix-run/router';
+//import { createBrowserHistory } from "history";
 
 
 class APIBookData extends React.Component{
@@ -34,7 +36,14 @@ class APIBookData extends React.Component{
         localStorage.setItem('myBookTitle', bookInfo.volumeInfo.title);
         localStorage.setItem('myBookAuthor', bookInfo.volumeInfo.authors);
         localStorage.setItem('myBookCover', bookInfo.volumeInfo.imageLinks.thumbnail);
+        localStorage.setItem('myBook', JSON.stringify(bookInfo));
         localStorage.setItem('myBookId', bookInfo.id);
+
+        window.location = '/Create';
+        
+       // const history = createBrowserHistory();
+       // this.props.history.push("/Create");
+
         
         // const navigate = useNavigate();
         // navigate('/Create')
@@ -98,6 +107,19 @@ class APIBookData extends React.Component{
                 <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(144,186,249)', fontFamily: 'Amaranth' }}>
                 <h1>What book would you like to write about?</h1>
                 </Row>
+{/* 
+                <Row style={{ padding: '15px' }}>
+                    <h1>Selected Book</h1>
+                </Row>
+                <Row style={{ padding: '15px' }}>
+                    
+                    <h4>Book Title: {localStorage.getItem("myBookTitle")}</h4>
+                    <h4>Book Author: {localStorage.getItem("myBookAuthor")}</h4>
+                    <h4>Book Cover <img src={localStorage.getItem("myBookCover")}></img></h4>
+                    <h4>Book Id: {localStorage.getItem("myBookId")}</h4>
+                    <a href="/Create">Next</a>
+                </Row> */}
+
                 <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(52,52,52)', color: 'white', fontFamily: 'Amaranth', fontSize: '24px' }}>
 
                 <h2>Search for Book</h2>

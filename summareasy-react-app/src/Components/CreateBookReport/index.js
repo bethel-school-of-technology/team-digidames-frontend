@@ -32,7 +32,7 @@ const CreateBookReport = () => {
                 <Row>
                     <Col xs='12' sm='12' md='12' lg='6' xl='6'>
                         <form onSubmit={context.handleSubmit} className="form">
-                            <label htmlFor="title">Title of Book</label>
+                            {/* <label htmlFor="title">Title of Book</label>
                             <br />
                             <input name="title" onChange={context.handleTitleChange}></input>
                             <br />
@@ -45,7 +45,7 @@ const CreateBookReport = () => {
                             <label htmlFor="writtenBy">Written By</label>
                             <br />
                             <input name="writtenBy" onChange={context.handleWrittenByChange}></input>
-                            <br />
+                            <br /> */}
 
                             <label htmlFor="report">Book Report</label>
                             <br />

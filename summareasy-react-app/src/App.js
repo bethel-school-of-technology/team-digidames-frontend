@@ -63,20 +63,20 @@ function App() {
       });
     },
 
-    handleTitleChange: (e) => {
-      const { value } = e.target;
-      setNewBookReport({ ...newBookReport, title: value });
-    },
+    // handleTitleChange: (e) => {
+    //   const { value } = e.target;
+    //   setNewBookReport({ ...newBookReport, title: value });
+    // },
 
-    handleAuthorChange: (e) => {
-      const { value } = e.target;
-      setNewBookReport({ ...newBookReport, author: value });
-    },
+    // handleAuthorChange: (e) => {
+    //   const { value } = e.target;
+    //   setNewBookReport({ ...newBookReport, author: value });
+    // },
 
-    handleWrittenByChange: (e) => {
-      const { value } = e.target;
-      setNewBookReport({ ...newBookReport, writtenBy: value });
-    },
+    // handleWrittenByChange: (e) => {
+    //   const { value } = e.target;
+    //   setNewBookReport({ ...newBookReport, writtenBy: value });
+    // },
 
     handleReportChange: (e) => {
       const { value } = e.target;

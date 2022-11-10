@@ -10,7 +10,21 @@ const API = {
     },
 
     createBookReport: (newBookReport) => {
-        return axios.post(baseURL, newBookReport);
+        // load book from local storage
+        const myBook = JSON.parse(localStorage.getItem('myBook'));
+
+        // TODO check if the book exist in database
+
+        // TODO if not, create the book
+
+        // create the book report
+        return axios.post(baseURL, {
+            title: myBook.volumeInfo.title,
+            author: myBook.volumeInfo.authors,
+            writtenBy: localStorage.getItem('firstName'),
+            bookId: myBook.id,
+            report: newBookReport.report,
+        });
     },
 
     getBookReportById: (id) => {

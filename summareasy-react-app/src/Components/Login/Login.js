@@ -32,6 +32,8 @@ const Login = () => {
                 localStorage.setItem('myJWT', token);
                 localStorage.setItem('userId', result.data.user.id);
                 localStorage.setItem('email', result.data.user.email);
+                localStorage.setItem('firstName', result.data.user.firstName);
+                localStorage.setItem('lastName', result.data.user.lastName);
                 console.log(result.data);
                 navigate('/dashboard');
 

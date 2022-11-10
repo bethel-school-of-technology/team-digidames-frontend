@@ -1884,6 +1884,16 @@
       "writtenBy": "Lisa",
       "report": "Testing to see if the functionality works.",
       "id": 5
+    },
+    {
+      "title": "Who Stole My Cheese?",
+      "author": [
+        "Ilene Hochberg"
+      ],
+      "writtenBy": "Lori",
+      "bookId": "cvH40cB8fyQC",
+      "report": "This is my parody report!",
+      "id": 6
     }
   ]
 }
