@@ -60,6 +60,7 @@ function App() {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
         document.querySelector(".form").reset();
+        navigate("/all-book-reports") //this navigates (useNavigat) to homepage ("/") after updating Book Report
       });
     },
 
