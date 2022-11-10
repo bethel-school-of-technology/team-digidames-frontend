@@ -105,7 +105,7 @@ class APIBookData extends React.Component{
             <NavBar />
             <Container>
                 <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(144,186,249)', fontFamily: 'Amaranth' }}>
-                <h1>What book would you like to write about?</h1>
+                <h1>Hi {localStorage.getItem("firstName")}! What book would you like to write about?</h1>
                 </Row>
 {/* 
                 <Row style={{ padding: '15px' }}>

@@ -18,14 +18,14 @@ const CreateBookReport = () => {
 
             <Container style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(39,208,241)', fontFamily: 'Amaranth' }}>
                 <Row style={{ padding: '15px' }}>
-                    <h1> What was the book about?</h1>
+                    <h1>What was the book {localStorage.getItem("myBookTitle")} about?</h1>
                 </Row>
                 <Row style={{ padding: '15px' }}>
                     
                     <h4>Book Title: {localStorage.getItem("myBookTitle")}</h4>
                     <h4>Book Author: {localStorage.getItem("myBookAuthor")}</h4>
-                    <h4>Book Cover <img src={localStorage.getItem("myBookCover")}></img></h4>
-                    <h4>Book Id: {localStorage.getItem("myBookId")}</h4>
+                    <h4><img src={localStorage.getItem("myBookCover")}></img></h4>
+                    
                 </Row>
 
 

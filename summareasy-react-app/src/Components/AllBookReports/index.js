@@ -33,7 +33,7 @@ const AllBookReports = ({ bookReportData }) => {
         <div style={{ backgroundColor: 'rgba(174, 152, 219)' }}>
             <NavBar />
             <Container>
-                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(119,148,73)' }}><h1>Your Book Reports</h1></Row>
+                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(119,148,73)' }}><h1>{localStorage.getItem("firstName")}'s Book Reports</h1></Row>
                 <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(255,182,0)' }}>
                     <div className="container header">
                         {/* <CreateBookReport /> */}
