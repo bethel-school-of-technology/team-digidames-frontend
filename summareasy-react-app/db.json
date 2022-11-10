@@ -1894,6 +1894,18 @@
       "bookId": "cvH40cB8fyQC",
       "report": "This is my parody report!",
       "id": 6
+    },
+    {
+      "title": "WHO MOVED MY CHEESE? for Kids",
+      "author": [
+        "Spencer Johnson"
+      ],
+      "cover": "http://books.google.com/books/content?id=BAyTEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "writtenBy": "Lori",
+      "userId": "8",
+      "bookId": "BAyTEAAAQBAJ",
+      "report": "This is my book about who moved my cheese for kids.",
+      "id": 7
     }
   ]
 }

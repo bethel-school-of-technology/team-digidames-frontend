@@ -21,7 +21,9 @@ const API = {
         return axios.post(baseURL, {
             title: myBook.volumeInfo.title,
             author: myBook.volumeInfo.authors,
+            cover: localStorage.getItem("myBookCover"), //TODO- do we need to handle this differently since it is an image
             writtenBy: localStorage.getItem('firstName'),
+            userId: localStorage.getItem('userId'),
             bookId: myBook.id,
             report: newBookReport.report,
         });
