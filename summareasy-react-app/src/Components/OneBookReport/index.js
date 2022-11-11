@@ -60,6 +60,9 @@ const OneBookReport = () => {
                     <Col>
                         <button onClick={() => context.handleDelete(bookReport.id)} className="button">Delete Book Report</button>
                     </Col>
+                    <Col>
+                        <a href={`/email/${bookReport.id}`}  className="button">Email</a>
+                    </Col>
                 </Row>
            
 
