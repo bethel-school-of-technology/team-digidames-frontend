@@ -43,7 +43,7 @@ const LandingPage = () => {
                     </Col>
 
                     <Col xs='6' sm='6' md='6' lg='6' xl='6'>
-                        <h1 style={{paddingTop: '40px'}}>Welcome to Summareasy</h1>
+                        <h1 style={{paddingTop: '50px'}}>Welcome to Summareasy</h1>
 
                     </Col>
 
@@ -61,7 +61,7 @@ const LandingPage = () => {
                 </Row>
 
 
-                <Row style={{ fontSize: '24px', padding: '30px', fontFamily: 'Amaranth' }}>
+                <Row style={{ fontSize: '24px', padding: '20px', fontFamily: 'Amaranth' }}>
                     <h4>
                         Welcome to Summareasy, where book report writing is easy-breezy. Effortlessly search for any book you like, and you will find that creating a report here is like riding a bike. Once you have your message conveyed, email it to your teacher to make the grade.
                     </h4>
@@ -73,7 +73,7 @@ const LandingPage = () => {
                             alt="school bus background"
                             src={schoolBus}
                             width="60%"
-                            style={{ paddingTop: "35px", paddingBottom: "40px" }}
+                            style={{ paddingTop: "15px", paddingBottom: "30px" }}
                         ></img>
                     </Col>
                 </Row>
