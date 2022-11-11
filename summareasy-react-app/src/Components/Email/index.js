@@ -75,7 +75,7 @@ const sendEmail = (e) => {
      
      <br></br>
      
-     <a href={`/emailedconfirm`} className="button" alt='email'>Email</a>
+     <a href={`/emailedconfirm`} className="button"onClick={sendEmail} alt='email'>Email</a>
      <br></br>
      <a href={`/one-bookreport/${bookReport.id}`} margin="15px">
         <img
