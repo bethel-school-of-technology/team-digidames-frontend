@@ -2,7 +2,6 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import '../../App.css';
 import Footer from '../Footer';
-import NavBar from '../NavBar';
 import schoolBus from '../../images/schoolbus.png';
 import logo from '../../images/Logo.png'
 import signup from '../../images/SignUp.png'
@@ -15,39 +14,7 @@ const LandingPage = () => {
         <>
 
             <Container>
-                <Row>
-
-                </Row>
-                <Row>
-
-                    <div >
-
-                        <div >
-                            {/* <a href={`/register`} >
-                                <img
-                                    alt=""
-                                    width="20%"
-                                    src={signup}
-                                    style={{ paddingTop: "2px", paddingBottom: "2px" }}
-                                ></img>
-                            </a>
-                            <a href={`/login`} >
-                                <img
-                                    alt=""
-                                    width="20%"
-                                    src={signin}
-                                    style={{ paddingTop: "2px", paddingBottom: "2px" }}
-                                ></img>
-                            </a> */}
-                            {/* 
-                            <button >
-
-                                <a href={`/login`} >Sign In</a>
-
-                            </button> */}
-                        </div>
-                    </div>
-                </Row>
+    
 
                 <Row style={{ fontSize: '80px', padding: '5x', fontFamily: 'Amaranth' }}>
 
@@ -116,7 +83,5 @@ const LandingPage = () => {
         </>
     );
 };
-
-
 
 export default LandingPage;

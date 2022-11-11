@@ -8,18 +8,11 @@ import NavBar from '../NavBar';
 import back from '../../images/back2.png'
 
 
-
-
-
-
-
-
 const AllBookReports = ({ bookReportData }) => {
 
     const context = useContext(BookReportContext);
     return (
-
-       
+ 
 
         <div style={{ backgroundColor: 'rgba(174, 152, 219)' }}>
             <NavBar />
@@ -40,20 +33,19 @@ const AllBookReports = ({ bookReportData }) => {
                                         </Col>
 
                                         <Col xs='12' sm='12' md='12' lg='2' xl='2' style={{ margin: "5px", textAlign: 'center'  }}>
-                                            <a class="button" href={`one-bookreport/${bookReport.id}`}>{" "}View{" "}</a>
+                                            <a className="button" href={`one-bookreport/${bookReport.id}`}>{" "}View{" "}</a>
                                         </Col>
 
                                         <Col xs='12' sm='12' md='12' lg='2' xl='2' style={{ margin: "5px", textAlign: 'center'  }} >
-                                            <a class="button" href={`update-bookreport/${bookReport.id}`}>{" "}Update{" "}</a>
+                                            <a className="button" href={`update-bookreport/${bookReport.id}`}>{" "}Update{" "}</a>
                                         </Col>
 
                                         <Col xs='12' sm='12' md='12' lg='2' xl='2' style={{ margin: "5px", textAlign: 'center'  }} >
-                                            <button onClick={() => context.handleDelete(bookReport.id)} class="button">Delete</button>
+                                            <button onClick={() => context.handleDelete(bookReport.id)} className="button">Delete</button>
                                         </Col>
 
                                         <hr></hr>
                                     </Row>
-
 
 
                                 </div>
@@ -77,7 +69,6 @@ const AllBookReports = ({ bookReportData }) => {
         </div>
     );
 };
-
 
 
 export default AllBookReports;

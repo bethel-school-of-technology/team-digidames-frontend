@@ -39,7 +39,6 @@
       "id": 6
     },
     {
-
       "email": "vh@gmail.com",
       "password": "$2a$10$g9Osmfg5nDZl5KICt1CFle7Rbm00.zWodu6NLxF/xbBHu1Fyzpnfm",
       "firstName": "Vanessa",
@@ -66,6 +65,13 @@
       "firstName": "Marty",
       "lastName": "Hutchins",
       "id": 9
+    },
+    {
+      "email": "lm2@gmail.com",
+      "password": "$2a$10$KQ6Fj.wQ39qCQpI2eQIwfuB72KMtq2zNpUTpLkcK51sBLN7g4nV2e",
+      "firstName": "Lisa",
+      "lastName": "Mo",
+      "id": 10
     }
   ],
   "BookReports": [
@@ -174,6 +180,18 @@
       "bookId": "kzF8EoKw89oC",
       "report": "Can I update this?",
       "id": 9
+    },
+    {
+      "title": "Mere Christianity",
+      "author": [
+        "Clive Staples Lewis"
+      ],
+      "cover": "http://books.google.com/books/content?id=KY58OFp4RZUC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "writtenBy": "Lori",
+      "userId": "8",
+      "bookId": "KY58OFp4RZUC",
+      "report": "Does the updated function still work?",
+      "id": 10
     }
   ]
 }

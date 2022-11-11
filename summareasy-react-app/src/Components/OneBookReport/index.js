@@ -9,15 +9,6 @@ import NavBar from '../NavBar';
 import back from '../../images/back2.png';
 
 
-
-
-
-
-
-
-
-
-
 const OneBookReport = () => {
 
     const [bookReport, setBookReport] = useState({});
@@ -37,7 +28,6 @@ const OneBookReport = () => {
         getBookReport();
 
     }, [id])
-
 
 
     return (
@@ -64,11 +54,11 @@ const OneBookReport = () => {
 
                 
                     <Col>
-                        <a href={`/update-bookreport/${bookReport.id}`} class="button">Update Book Report</a>
+                        <a href={`/update-bookreport/${bookReport.id}`} className="button">Update Book Report</a>
                     </Col>
 
                     <Col>
-                        <button onClick={() => context.handleDelete(bookReport.id)} class="button">Delete Book Report</button>
+                        <button onClick={() => context.handleDelete(bookReport.id)} className="button">Delete Book Report</button>
                     </Col>
                 </Row>
            
@@ -84,10 +74,7 @@ const OneBookReport = () => {
                     </a>
                     
                 </Col>
-                
-               
-               
-
+                                       
                 
             </Container>
             <Footer />

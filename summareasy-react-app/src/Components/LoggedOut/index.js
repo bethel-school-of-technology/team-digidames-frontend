@@ -8,26 +8,13 @@ import {Col} from 'react-bootstrap'
 
 
 const LoggedOut = () => {
-    const navigate = useNavigate();
-    
+       
     useEffect(() =>{
         
     localStorage.clear();
-  
-    navigate("/loggedout"); 
-    
-   
-    
-    
+        
     });
-
-
-   
-   
-
-
-
-
+  
     return (
         <>
             <NavBar />
