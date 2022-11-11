@@ -19,34 +19,19 @@ const CreateBookReport = () => {
 
             <Container style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(39,208,241)', fontFamily: 'Amaranth' }}>
                 <Row style={{ padding: '15px' }}>
-                    <h1> What was the book about?</h1>
+                    <h1>What was the book {localStorage.getItem("myBookTitle")} about?</h1>
                 </Row>
                 <Row style={{ padding: '15px' }}>
                     
                     <h4>Book Title: {localStorage.getItem("myBookTitle")}</h4>
                     <h4>Book Author: {localStorage.getItem("myBookAuthor")}</h4>
-                    <h4>Book Cover <img src={localStorage.getItem("myBookCover")}></img></h4>
-                    <h4>Book Id: {localStorage.getItem("myBookId")}</h4>
+                    <h4><img src={localStorage.getItem("myBookCover")}></img></h4>
+                    
                 </Row>
-
 
                 <Row>
                     <Col xs='12' sm='12' md='12' lg='6' xl='6'>
                         <form onSubmit={context.handleSubmit} className="form">
-                            <label htmlFor="title">Title of Book</label>
-                            <br />
-                            <input name="title"  onChange={context.handleTitleChange}></input>
-                            <br />
-
-                            <label htmlFor="author">Author of Book</label>
-                            <br />
-                            <input name="author" onChange={context.handleAuthorChange}></input>
-                            <br />
-
-                            <label htmlFor="writtenBy">Written By</label>
-                            <br />
-                            <input name="writtenBy" onChange={context.handleWrittenByChange}></input>
-                            <br />
 
                             <label htmlFor="report">Book Report</label>
                             <br />
@@ -57,7 +42,7 @@ const CreateBookReport = () => {
                                 onChange={context.handleReportChange}
                             ></textarea>
                             <br />
-                            <button class="button" type="submit">
+                            <button className="button" type="submit">
                                 Add Book Report
                             </button>
 
@@ -89,43 +74,4 @@ const CreateBookReport = () => {
     )
 }
 
-// class CreateBookReport extends React.Component{
-//     state = {
-//         books: []
-//     }
-//     componentDidMount() {
-//         axios.get(`https://www.googleapis.com/books/v1/volumes?q=hobbit`)
-//         .then(response => {
-//             const books = response.data.items;
-//             console.log(books)
-//             this.setState({ books });
-//         });
-//     }
-
-//     render() {
-//         const { books } = this.state;
-//         return (
-//             <>
-//                 <h4>Axios GET Request Example in React</h4>
-//                 <table classname="table table-bordered">
-//                     <tr>
-//                         <th>Book Title</th>
-//                         <th>Author</th>
-//                         <th>Book Cover</th>
-
-//                     </tr>
-//                     {books && books.map((book) => (
-//                         <tr>
-//                             <td>{book.volumeInfo.title}</td>
-//                             <td>{book.volumeInfo.authors}</td>
-//                             <td><img src={book.volumeInfo.imageLinks.thumbnail}/></td>
-
-//                         </tr>
-//                     ))}
-//                 </table>
-//             </>
-//         )
-//     }
-
-// }
 export default CreateBookReport;

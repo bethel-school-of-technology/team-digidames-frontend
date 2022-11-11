@@ -26,7 +26,7 @@ function Footer() {
                     <span>Today is {month}/{day}/{year}</span>
                 </Col>
                 <Col xs='12' sm='12' md='12' lg='4' xl='4' style={{ marginBottom: '5px'}}>
-                    <span><a href={`/about`} class='aboutUsLink'>About DigiDames</a></span>
+                    <span><a href={`/about`} className='aboutUsLink'>About DigiDames</a></span>
                 </Col>
             </Row>
         </footer>
