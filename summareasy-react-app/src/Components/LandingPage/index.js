@@ -22,7 +22,7 @@ const LandingPage = () => {
                         <img
                             alt=""
                             src={logo}
-                            width="50%"
+                            width="45%"
                             style={{ paddingTop: "2px", paddingBottom: "2px" }}
                         ></img>
                     </Col>
@@ -62,7 +62,7 @@ const LandingPage = () => {
 
                 <Row style={{ fontSize: '24px', padding: '30px', fontFamily: 'Amaranth' }}>
                     <h4>
-                        Write something about what Summareasy can do and direct end-user to Register.
+                    Welcome to Summareasy, where book report writing is easy-breezy. Effortlessly search for any book you like, and you will find that creating a report here is like riding a bike. Once you have your message conveyed, email it to your teacher to make the grade.
                     </h4>
                 </Row>
 
