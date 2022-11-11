@@ -14,7 +14,7 @@ const LandingPage = () => {
         <>
 
             <Container>
-    
+
 
                 <Row style={{ fontSize: '80px', padding: '5x', fontFamily: 'Amaranth' }}>
 
@@ -22,7 +22,7 @@ const LandingPage = () => {
                         <img
                             alt=""
                             src={logo}
-                            width="45%"
+                            width="30%"
                             style={{ paddingTop: "2px", paddingBottom: "2px" }}
                         ></img>
                     </Col>
@@ -35,7 +35,7 @@ const LandingPage = () => {
                         <a href={`/register`} >
                             <img
                                 alt=""
-                                width="70%"
+                                width="65%"
                                 src={signup}
                                 style={{ paddingTop: "2px", paddingBottom: "2px" }}
                             ></img>
@@ -43,14 +43,15 @@ const LandingPage = () => {
                     </Col>
 
                     <Col xs='6' sm='6' md='6' lg='6' xl='6'>
-                        <h1>Welcome to Summareasy</h1>
+                        <h1 style={{paddingTop: '40px'}}>Welcome to Summareasy</h1>
+
                     </Col>
 
                     <Col xs='3' sm='3' md='3' lg='3' xl='3' >
                         <a href={`/login`} >
                             <img
                                 alt=""
-                                width="70%"
+                                width="65%"
                                 src={signin}
                                 style={{ paddingTop: "2px", paddingBottom: "2px" }}
                             ></img>
@@ -62,19 +63,19 @@ const LandingPage = () => {
 
                 <Row style={{ fontSize: '24px', padding: '30px', fontFamily: 'Amaranth' }}>
                     <h4>
-                    Welcome to Summareasy, where book report writing is easy-breezy. Effortlessly search for any book you like, and you will find that creating a report here is like riding a bike. Once you have your message conveyed, email it to your teacher to make the grade.
+                        Welcome to Summareasy, where book report writing is easy-breezy. Effortlessly search for any book you like, and you will find that creating a report here is like riding a bike. Once you have your message conveyed, email it to your teacher to make the grade.
                     </h4>
                 </Row>
 
                 <Row>
-
-                    <img
-                        alt="school bus background"
-                        src={schoolBus}
-                        width="80%"
-                        style={{ paddingTop: "35px", paddingBottom: "40px" }}
-                    ></img>
-
+                    <Col>
+                        <img
+                            alt="school bus background"
+                            src={schoolBus}
+                            width="60%"
+                            style={{ paddingTop: "35px", paddingBottom: "40px" }}
+                        ></img>
+                    </Col>
                 </Row>
 
 
