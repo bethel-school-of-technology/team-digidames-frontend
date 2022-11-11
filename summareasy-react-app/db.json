@@ -192,6 +192,18 @@
       "bookId": "KY58OFp4RZUC",
       "report": "Does the updated function still work?",
       "id": 10
+    },
+    {
+      "title": "Green Eggs and Ham",
+      "author": [
+        "Dr. Seuss"
+      ],
+      "cover": "http://books.google.com/books/content?id=3_Y9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+      "writtenBy": "Leah",
+      "userId": "3",
+      "bookId": "3_Y9DwAAQBAJ",
+      "report": "I think that this story is about acceptance and trying new things. In the beginning, the main character did not want to try green eggs and ham. \n\nHe ran away and did everything that he could to not eat the green eggs and ham.\n\nIn the end, Sam I Am got him to try the green eggs and ham and the main character decided that it was good. \n\nI am happy that he tried something new. I just don't think that Sam I Am should have chased him.",
+      "id": 11
     }
   ]
 }
