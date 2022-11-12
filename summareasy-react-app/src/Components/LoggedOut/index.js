@@ -4,21 +4,33 @@ import NavBar from "../NavBar";
 import { useEffect } from "react";
 import { Container, Row } from 'react-bootstrap';
 import { useNavigate } from "react-router-dom";
-import {Col} from 'react-bootstrap'
+import { Col } from 'react-bootstrap';
+import logo from "../../images/Logo.png";
 
 
 const LoggedOut = () => {
-       
-    useEffect(() =>{
-        
-    localStorage.clear();
-        
+
+    useEffect(() => {
+
+        localStorage.clear();
+
     });
-  
+
     return (
         <>
-            <NavBar />
+           
             <Container style={{ fontSize: '80px', padding: '50px', fontFamily: 'Amaranth' }}>
+                <Row>
+                    <Col xs='12' sm='12' md='12' lg='12' xl='12' style={{ paddingBottom: '25px', paddingTop: '10px' }}>
+                       <a href={`/`} > <img
+                            alt=""
+                            src={logo}
+                            width="30%"
+                            style={{ paddingTop: "2px", paddingBottom: "2px" }}
+                        ></img>
+                        </a>
+                    </Col>
+                </Row>
                 <Row >
 
                     <h1>Successfully Signed Out!</h1>
@@ -30,12 +42,12 @@ const LoggedOut = () => {
 
                 <Row>
                     <Col xs='12' sm='12' md='12' lg='12' xl='12' style={{ paddingBottom: '5px', paddingTop: '5px' }}>
-                    <img
-                        alt=""
-                        src={babydinowaving}
-                        width="75%"
-                        style={{ padding: "10px" }}
-                    ></img>
+                        <img
+                            alt=""
+                            src={babydinowaving}
+                            width="75%"
+                            style={{ padding: "10px" }}
+                        ></img>
                     </Col>
                 </Row>
                 <Row>

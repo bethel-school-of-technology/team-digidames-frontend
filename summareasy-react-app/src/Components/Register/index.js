@@ -3,8 +3,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Col, Container, Row } from 'react-bootstrap';
 import Footer from "../Footer";
-import NavBar from "../NavBar";
-import car from '../../images/car2.png'
+import car from '../../images/car2.png';
+import logo from '../../images/Logo.png';
+import signin from '../../images/SignIn.png';
 
 const Register = () => {
     const [firstName, setFirstName] = useState("");
@@ -26,7 +27,7 @@ const Register = () => {
             };
 
             axios.post('http://localhost:3000/users', req).then(result => {
-                
+
                 const token = result.data.accessToken;
                 localStorage.setItem('myJWT', token);
                 localStorage.setItem('userId', result.data.user.id);
@@ -37,29 +38,53 @@ const Register = () => {
 
             })
         }
-    
+
     };
 
-//TODO handle actual sign in - How do we do this without an official backend
 
     return (
-        <>
-            <NavBar />
-            <Container>
-                <Row style={{ marginTop: '150px', marginBottom: '150px' }}>
-                    <Col xs='10' sm='10' md='8' lg='7' xl='7'>
-                        <img
+        <div >
+            <Container style={{ backgroundColor: 'rgba(174, 152, 219)' }}>
+                <Row>
+                    <Col xs='12' sm='12' md='12' lg='12' xl='12' style={{ paddingBottom: '5px', paddingTop: '10px' }}>
+                        <a href={`/`} > <img
                             alt=""
-                            src={car}
-                            width="100%"
-                            style={{ padding: "10px" }}
+                            src={logo}
+                            width="30%"
+                            style={{ paddingTop: "2px", paddingBottom: "2px" }}
                         ></img>
+                        </a>
                     </Col>
-                    <Col xs='12' sm='12' md='4' lg='5' xl='5' style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(255,182,0)', fontFamily: 'Amaranth' }}>
+                </Row>
+
+                <Row style={{ marginTop: '20px', marginBottom: '100px', padding: '50px' }}>
+                    <Col xs='10' sm='10' md='7' lg='67' xl='7'>
+                        <Row>
+                            <Col xs='6' sm='6' md='6' lg='6' xl='6' >
+                                <a href={`/login`} >
+                                    <img
+                                        alt=""
+                                        width="65%"
+                                        src={signin}
+                                        style={{ paddingTop: "2px", paddingBottom: "60px" }}
+                                    ></img>
+                                </a>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <img
+                                alt=""
+                                src={car}
+                                width="100%"
+                                style={{ padding: "10px" }}
+                            ></img>
+                        </Row>
+                    </Col>
+                    <Col xs='12' sm='12' md='4' lg='4' xl='4' style={{ paddingTop: '15px', paddingBottom: '15px', margin: '15px', textAlign: 'center', backgroundColor: 'rgba(255,182,0)', fontFamily: 'Amaranth' }}>
                         <form onSubmit={register}>
                             <h1>Sign Up</h1>
                             <br />
-                            
+
                             <label htmlFor="firstName">First Name</label>
                             <br />
                             <input type="text" name="firstName" onChange={e => setFirstName(e.target.value)}></input>
@@ -85,14 +110,13 @@ const Register = () => {
 
                         </form>
                     </Col>
-                    <Col>
 
-                    </Col>
                 </Row>
+
             </Container>
             <Footer />
 
-        </>
+        </div>
     );
 
 }
