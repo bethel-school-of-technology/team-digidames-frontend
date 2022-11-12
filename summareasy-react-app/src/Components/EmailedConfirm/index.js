@@ -32,7 +32,7 @@ const EmailedConfirm = () => {
 
                 <Row>
                     <Col style={{ padding: '25px' }}>
-                        <a href={`/Create`} >  <img src={start} alt='' height={260} /></a>
+                        <a href={`/apibookdata`} >  <img src={start} alt='' height={260} /></a>
                     </Col>
 
                     <Col style={{ padding: '25px' }}>
