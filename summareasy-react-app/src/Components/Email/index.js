@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import API from '../../UTILS/API';
 import NavBar from '../NavBar';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -13,6 +13,7 @@ const EmailContactForm = () => {
     const [bookReport, setBookReport] = useState({});    
     const form = useRef();
     const { id } = useParams();
+    const navigate = useNavigate();
 
 const sendEmail = (e) => {
    e.preventDefault(); // prevents the page from reloading when you hit “Send”
@@ -20,7 +21,7 @@ const sendEmail = (e) => {
    emailjs.sendForm('service_yzd6ykk', 'template_q2ux90h', form.current, 'w2acWniWNw96Kt5do')
      .then((result) => {
          // show the user a success message
-         console.log("Success");
+         navigate('/emailedconfirm');
      }, (error) => {
          // show the user an error
          console.log("denied")
@@ -35,6 +36,9 @@ const sendEmail = (e) => {
     }
     getBookReport();
  }, []); //bookReport, id
+
+ 
+ 
  return (
    <>
     <NavBar />
@@ -75,7 +79,7 @@ const sendEmail = (e) => {
      
      <br></br>
      
-     <a href={`/emailedconfirm`} className="button"onClick={sendEmail} alt='email'>Email</a>
+     <a href={`/emailedconfirm`} className="button" onClick={sendEmail } alt='email'>Email</a>
      <br></br>
      <a href={`/one-bookreport/${bookReport.id}`} margin="15px">
         <img
