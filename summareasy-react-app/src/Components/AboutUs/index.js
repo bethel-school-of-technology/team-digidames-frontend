@@ -48,12 +48,14 @@ function AboutUs() {
             <Container  style={{ backgroundColor: 'rgba(174, 152, 219)' }} >
                 <Row style={{ paddingTop: '25px', textAlign: 'center' }}>
                     <Col xs='12' sm='12' md='12' lg='12' xl='12' style={{ paddingBottom: '20px', paddingTop: '15px' }}>
+                    <a href={`/`} >
                         <img
                             alt=""
                             src={logo}
                             width="30%"
                             style={{ paddingTop: "2px", paddingBottom: "20px" }}
                         ></img>
+                        </a>
                     </Col>
                 </Row>
                 <Row>
