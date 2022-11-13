@@ -13,9 +13,9 @@ function AboutUs() {
 
     const team = [
         {
-            name: 'Jess Moton',
+            name: 'Jessica Moton',
             role: 'Full Stack Developer',
-            about: '',
+            about: 'The best thing about life is that there is always another opportunity to learn and change.',
             image: jess
         },
         {
@@ -47,13 +47,15 @@ function AboutUs() {
         <div style={{ backgroundColor: 'rgba(121,136,100)' }} >
             <Container  style={{ backgroundColor: 'rgba(174, 152, 219)' }} >
                 <Row style={{ paddingTop: '25px', textAlign: 'center' }}>
-                    <Col xs='12' sm='12' md='12' lg='12' xl='12' style={{ paddingBottom: '50px', paddingTop: '15px' }}>
+                    <Col xs='12' sm='12' md='12' lg='12' xl='12' style={{ paddingBottom: '20px', paddingTop: '15px' }}>
+                    <a href={`/`} >
                         <img
                             alt=""
                             src={logo}
-                            width="40%"
-                            style={{ paddingTop: "2px", paddingBottom: "40px" }}
+                            width="30%"
+                            style={{ paddingTop: "2px", paddingBottom: "20px" }}
                         ></img>
+                        </a>
                     </Col>
                 </Row>
                 <Row>
@@ -67,7 +69,7 @@ function AboutUs() {
 
                 <Row>
                     <Col xs='12' sm='12' md='12' lg='12' xl='12'>
-                        <h1 style={{ fontSize: '44px', paddingBottom: '30px', paddingTop: '25px', fontFamily: 'Teko' }}>DigiDames</h1>
+                        <h1 style={{ fontSize: '44px', paddingBottom: '20px', paddingTop: '25px', fontFamily: 'Teko' }}>DigiDames</h1>
                         {displayTeam()}
                     </Col>
                 </Row>

@@ -17,7 +17,7 @@ function NavBar() {
               className="d-inline-block align-top"
               alt="Summareasy logo"
             />
-            <h4>Hello, {localStorage.getItem("firstName")} {localStorage.getItem("lastName")}</h4>
+            <h4>Hello {localStorage.getItem("firstName")} {localStorage.getItem("lastName")}</h4>
             </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

@@ -12,11 +12,13 @@ import update from '../../images/update.png'
 
 
 
+
 const UpdateBookReport = ({ }) => {
 
     const [bookReport, setBookReport] = useState({});
     let { id } = useParams();
     const context = useContext(BookReportContext);
+    const [value, setValue] =useState();
    
    
 
@@ -70,9 +72,10 @@ const UpdateBookReport = ({ }) => {
                                 <h4>Book Title: {bookReport.title}</h4>
                                 <h4>Book Author: {bookReport.author}</h4>
                                 <h4>Written By: {bookReport.writtenBy}</h4>
-                                <h4><img src={bookReport.cover}></img></h4>
+                                <h4><img src={bookReport.cover}alt='Book'></img></h4>
                                 <h4>Book Report: {bookReport.report}</h4>
                             </Row>
+                            
 
 
                             <Row>
@@ -100,6 +103,7 @@ const UpdateBookReport = ({ }) => {
                                 cols="50"
                                 name="report"
                                 onChange={context.handleReportChange}
+                                value={context.bookReport}
                             ></textarea>
                             <br />
                         </Col>
