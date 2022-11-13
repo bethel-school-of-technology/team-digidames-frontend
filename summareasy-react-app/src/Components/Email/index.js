@@ -8,6 +8,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Footer from '../Footer';
 import back from '../../images/back2.png';
 
+
  
 const EmailContactForm = () => {
     const [bookReport, setBookReport] = useState({});    
@@ -56,15 +57,15 @@ const sendEmail = (e) => {
     <Row style={{ padding: '15px', width: '250px', textAlign:'center', display:'flex',justifyContent:'center', alignItems:'center' }}>
     <label htmlFor= "title"></label>
     <h5>Title:</h5>
-     <input   name="title" value={`${bookReport.title}`} />
+     <input   name="title" placeholder={`${bookReport.title}`} />
      <br></br>
      <label htmlFor= "author"></label>
      <h5>Author:</h5>
-     <input value={`${bookReport.author}`} name="author" />
+     <input placeholder={`${bookReport.author}`} name="author" />
      <br></br>
      <label htmlFor="writtenBy"></label>
      <h5> Written By</h5>
-     <input value={`${bookReport.writtenBy}`} name="to_name" />
+     <input placeholder={`${bookReport.writtenBy}`} name="to_name" />
      <br></br>
      </Row>
    
@@ -72,7 +73,9 @@ const sendEmail = (e) => {
         <Col xs='12' sm='12' md='12' lg='6' xl='6'>
         <textarea rows="20"
                   cols="50"
-                  value={`${bookReport.report}`} name="message" />
+                  placeholder={`${bookReport.report}`} name="message" 
+                  read-only='false'
+                  />
         </Col>
         
      </Row>

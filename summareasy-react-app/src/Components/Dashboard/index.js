@@ -20,7 +20,7 @@ const Dashboard = () => {
 
                 <Row style={{ fontSize: '80px', padding: '25px', fontFamily: 'Amaranth' }}>
 
-                    <h1>What would you like to do, {localStorage.getItem("firstName")}?</h1>
+                    <h1>What would you like to do, {`${localStorage.getItem("firstName")}`}?</h1>
 
                 </Row>
                 <Row>

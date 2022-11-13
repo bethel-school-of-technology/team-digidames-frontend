@@ -13,9 +13,9 @@ function AboutUs() {
 
     const team = [
         {
-            name: 'Jess Moton',
+            name: 'Jessica Moton',
             role: 'Full Stack Developer',
-            about: '',
+            about: 'The best thing about life is that there is always another opportunity to learn and change.',
             image: jess
         },
         {

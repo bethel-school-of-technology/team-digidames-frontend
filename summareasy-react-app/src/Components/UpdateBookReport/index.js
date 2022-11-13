@@ -12,11 +12,13 @@ import update from '../../images/update.png'
 
 
 
+
 const UpdateBookReport = ({ }) => {
 
     const [bookReport, setBookReport] = useState({});
     let { id } = useParams();
     const context = useContext(BookReportContext);
+    const [value, setValue] =useState();
    
    
 
@@ -73,6 +75,7 @@ const UpdateBookReport = ({ }) => {
                                 <h4><img src={bookReport.cover}alt='Book'></img></h4>
                                 <h4>Book Report: {bookReport.report}</h4>
                             </Row>
+                            
 
 
                             <Row>
