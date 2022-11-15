@@ -47,7 +47,7 @@ const UpdateBookReport = ({ }) => {
 
 
             <form>
-                <Container xs='12' sm='12' md='12' lg='12' xl='12' style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(0,299,190)', fontFamily: 'Amaranth' }}>
+                <Container xs='12' sm='12' md='12' lg='12' xl='12' style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgb(46, 90, 151)', fontFamily: 'Amaranth' }}>
                     <Row xs='12' sm='12' md='12' lg='12' xl='12' style={{ padding: '15px' }}>
                         <h3>Update this Book Report</h3>
                     </Row>

@@ -39,7 +39,7 @@ const OneBookReport = () => {
             <NavBar />
 
             <Container  style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(255,255,255)' }}>
-                <Row style={{ margin:'10px', padding: '25px', textAlign: 'center', backgroundColor: 'rgba(255,182,0)' }}>
+                <Row style={{ margin:'10px', padding: '25px',width:'auto', textAlign: 'center', backgroundColor: 'rgb(253, 162, 22)' }}>
                     <h1>{bookReport.title}</h1>
                 </Row>
                 <Row>
@@ -49,14 +49,17 @@ const OneBookReport = () => {
                     <h3>Book Report Written By: {bookReport.writtenBy}</h3>
                 </Row>
                
-                
-                <Row style={{ padding: '25px'}}>
+                {/* cover */}
+               <Col xs='12' sm='12' md='12' lg='12' xl='12' style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+               <Row className="cover" xs='12' sm='12' md='12' lg='12' xl='12' >
                     <p><img src={bookReport.cover}></img></p>
                 </Row>
-                <Row style={{ padding: '35px', width: 'auto', height:'auto', display: 'flex', alignItems: 'center', justifyContent:'center', textAlign:'center'}}>
+               </Col>
+                {/* book report */}
+                <Row className='report' >
                     <p>{bookReport.report}</p>
                 </Row>
-                <Row style={{ padding: '25px'}}>
+                <Row style={{ padding: '25px'}} className= 'pageNav'>
                     <Col xs='12' sm='12' md='12' lg='6' xl='6'>
                     
                       <Button variant="success" href={`/update-bookreport/${bookReport.id}`} className="button">Update</Button>
@@ -79,7 +82,7 @@ const OneBookReport = () => {
                 </Row>
            
 
-                <Col>
+                <Col className="back">
                     <a href={`/all-book-reports`} margin="15px">
                         <img
                             alt="go back to View All Book Reports"
