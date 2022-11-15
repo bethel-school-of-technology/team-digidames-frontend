@@ -3,7 +3,7 @@
 
 .App {
   text-align: center;
-  background-color: rgb(97, 174, 68);
+  background-color: rgb(253, 162, 22);
   /* background-color: rgb(174, 152, 219); */
   margin: 0px;
   height: 100%;
@@ -174,6 +174,12 @@ input.invalid + p {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.pageNav{
+  padding: 10px;
+  background-color: rgba(52,52,52);
+  border: white 1px solid;
+  width: fi;
+}
 
 /* .App-header {
   background-color: #282c34;
@@ -199,6 +205,42 @@ input.invalid + p {
     transform: rotate(360deg);
   }
 }
+.report{
+   padding: 45px;
+   margin: 40px;
+   width: auto;
+   height: fit-content; 
+   display: flex;
+   align-items: center;
+   justify-content: center; 
+   text-align: center;
+   border: white 2px solid;
+   font-weight: 800;
+   background-color: rgb(176, 176, 176);
+
+
+  }
+  .cover{
+    padding-top: 8px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border: black 3px solid;
+    width: fit-content;
+    height: auto;
+    background-color: black;
+  }
+.back{
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
 
 .aboutUsLink {
   color: black;
@@ -209,7 +251,7 @@ input.invalid + p {
 }
 
 .color-nav {
-  background-color:  rgb(174, 152, 219);
+  background-color:  rgb(235, 80, 36);
   font-family: 'Amaranth', sans-serif;
   font-weight: 500;
   font-size: 24px;

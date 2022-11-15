@@ -21,21 +21,29 @@ const CreateBookReport = () => {
                 <Row style={{ padding: '15px' }}>
                     <h1>What was the book {localStorage.getItem("myBookTitle")} about?</h1>
                 </Row>
-                <Row style={{ padding: '15px' }}>
+                
+                <Row  xs='12' sm='12' md='12' lg='12' xl='12' style={{ display:'flex', alignItems: 'center', justifyContent: 'center',width: 'auto', height: 'fit-content' }} >
                     
                     <h4>Book Title: {localStorage.getItem("myBookTitle")}</h4>
-                    <h4>Book Author: {localStorage.getItem("myBookAuthor")}</h4>
-                    <h4><img src={localStorage.getItem("myBookCover")}></img></h4>
-                    
                 </Row>
+                    <Row>
+                    <h4>Book Author: {localStorage.getItem("myBookAuthor")}</h4>
+                    </Row>
+                    
+                    <Col  xs='12' sm='12' md='12' lg='12' xl='12' style={{ display:'flex', alignItems: 'center', justifyContent: 'center', }}>
+                    <Row>
+                    <h4 ><img className='cover'src={localStorage.getItem("myBookCover")}></img></h4>
+                    </Row>
+                </Col>
 
-                <Row>
-                    <Col xs='12' sm='12' md='12' lg='6' xl='6'>
+                <Row style={{ display:'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Col xs='12' sm='12' md='12' lg='6' xl='6' style={{ display:'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <form onSubmit={context.handleSubmit} className="form">
 
-                            <label htmlFor="report">Book Report</label>
+                            <h5>Book Report</h5>
                             <br />
                             <textarea
+                                className='report'
                                 rows="20"
                                 cols="50"
                                 name="report"
@@ -48,7 +56,7 @@ const CreateBookReport = () => {
 
                         </form>
                     </Col>
-                    <Col xs='12' sm='12' md='12' lg='6' xl='6'>
+                <Col xs='12' sm='12' md='12' lg='6' xl='6'>
                         <img
                             alt=""
                             src={dinosaur}

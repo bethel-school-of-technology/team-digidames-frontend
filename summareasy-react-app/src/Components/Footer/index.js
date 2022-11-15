@@ -11,7 +11,7 @@ function Footer() {
 
     return (
         <footer >
-            <Row style={{fontFamily:'Amaranth', fontSize:'25px', padding: '19px', color: 'rgba(0,0,0)', backgroundColor: 'rgba(174, 152, 219)' }}>
+            <Row style={{fontFamily:'Amaranth', fontSize:'25px', padding: '19px', color: 'rgba(0,0,0)', backgroundColor: 'rgb(235, 80, 36)' }}>
                 <Col xs='12' sm='12' md='12' lg='4' xl='4' style={{ marginBottom: '5px'}}>
                     <img
                         alt=""

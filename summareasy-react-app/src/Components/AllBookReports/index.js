@@ -14,10 +14,10 @@ const AllBookReports = ({ bookReportData }) => {
     return (
  
 
-        <div style={{ backgroundColor: 'rgb(97, 174, 68)' }}>
+        <div style={{ backgroundColor: 'rgb(253, 162, 22)' }}>
             <NavBar />
             <Container>
-                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(144,186,249)' }}><h1>{localStorage.getItem("firstName")}'s Book Reports</h1></Row>
+                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgb(46, 90, 151)' }}><h1>{localStorage.getItem("firstName")}'s Book Reports</h1></Row>
                 <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(52,52,52)' }}>
                     <div className="container header">
                         {/* <CreateBookReport /> */}

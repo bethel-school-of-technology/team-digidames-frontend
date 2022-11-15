@@ -63,10 +63,10 @@ class APIBookData extends React.Component {
         const { books } = this.state;
         let searching = false;
         return (
-            <div style={{ backgroundColor: 'rgba(144,186,249)' }}>
+            <div style={{ backgroundColor: 'rgb(39, 208, 241)' }}>
                 <NavBar />
                 <Container>
-                    <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(144,186,249)', fontFamily: 'Amaranth' }}>
+                    <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgb(39, 208, 241)', fontFamily: 'Amaranth' }}>
                         <h1>Hi {localStorage.getItem("firstName")}! What book would you like to write about?</h1>
                     </Row>
 
@@ -105,7 +105,7 @@ class APIBookData extends React.Component {
                                             <td>{book.volumeInfo.authors}</td>
 
 
-                                            <td><img src={book.volumeInfo.imageLinks.thumbnail} /></td>
+                                            <td className='cover'><img src={book.volumeInfo.imageLinks.thumbnail} /></td>
                                             <td><Button variant='success' type='button' onClick={() => this.goToReport(book)}>Write report</Button></td>
 
 

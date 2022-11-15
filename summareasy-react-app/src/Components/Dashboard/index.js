@@ -13,7 +13,7 @@ const Dashboard = () => {
 
     return (
 
-        <div style={{backgroundColor:'rgba(144,186,249)'}} >
+        <div style={{backgroundColor:'rgb(39, 208, 241)'}} >
             <NavBar />
             <Container style={{ backgroundColor: 'rgba(164,210,104)'} }  xs='12' sm='12' md='12' lg='6' xl='6'>
 
