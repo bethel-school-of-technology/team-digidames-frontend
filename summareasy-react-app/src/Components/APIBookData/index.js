@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import axios from 'axios';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
@@ -78,9 +78,11 @@ class APIBookData extends React.Component {
 
                             <input name="search" onChange={this.handleSearchChange}></input>
 
-                            <button className="button" type="submit" style={{ padding: "7px", margin: "5px" }} >
+                           
+                           <Button  variant='secondary' className="button" type="submit" style={{ padding: "7px", margin: "5px" }} >
                                 Search
-                            </button>
+                            </Button>
+                           
 
                         </form>
 
@@ -104,7 +106,7 @@ class APIBookData extends React.Component {
 
 
                                             <td><img src={book.volumeInfo.imageLinks.thumbnail} /></td>
-                                            <td><button type='button' onClick={() => this.goToReport(book)}>Write report</button></td>
+                                            <td><Button variant='success' type='button' onClick={() => this.goToReport(book)}>Write report</Button></td>
 
 
                                         </tr>

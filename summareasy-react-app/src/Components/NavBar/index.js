@@ -9,7 +9,7 @@ import "../../App.css";
 function NavBar() {
   return (
     <Navbar collapseOnSelect expand="lg" variant="dark" className="color-nav">
-      <Container>
+      <Container  xs='12' sm='8' md='8' lg='6' xl='6'>
         <Navbar.Brand href="/">
         <img
               src={logo}
