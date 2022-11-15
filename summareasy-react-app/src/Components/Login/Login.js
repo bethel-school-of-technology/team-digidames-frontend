@@ -68,13 +68,13 @@ const Login = () => {
                             <label htmlFor="email">Email:</label>
                             <br />
 
-                            <input type="text" name="email" onChange={e => setEmail(e.target.value)}></input>
+                            <input type="text" name="email" onChange={e => setEmail(e.target.value)} autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true"></input>
                             <br />
                             <br />
                             <label htmlFor="password">Password:</label>
                             <br />
 
-                            <input type="password" name="password" onChange={e => setPassword(e.target.value) }></input>
+                            <input type="password" name="password" onChange={e => setPassword(e.target.value) } autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true"></input>
                             <br />
                             <br />
                             <Button className="button" onClick={signIn}>Sign In</Button>

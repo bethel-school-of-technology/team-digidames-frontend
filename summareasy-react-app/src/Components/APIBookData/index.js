@@ -76,7 +76,7 @@ class APIBookData extends React.Component {
                         <h2>Search for Book</h2>
                         <form onSubmit={this.handleSubmit} className="form">
 
-                            <input name="search" onChange={this.handleSearchChange}></input>
+                            <input name="search" onChange={this.handleSearchChange} autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true"></input>
 
                            
                            <Button  variant='secondary' className="button" type="submit" style={{ padding: "7px", margin: "5px" }} >

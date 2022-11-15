@@ -3,8 +3,8 @@
 
 .App {
   text-align: center;
-  background-color: rgb(253, 162, 22);
-  /* background-color: rgb(174, 152, 219); */
+  background-color: rgb(51, 156, 49);
+ 
   margin: 0px;
   height: 100%;
   width: 100%;
@@ -221,7 +221,7 @@ input.invalid + p {
 
   }
   .cover{
-    padding-top: 8px;
+    padding-top: 0px;
     margin: 20px;
     display: flex;
     align-items: center;

@@ -87,6 +87,8 @@ const UpdateBookReport = ({ }) => {
                             <br />
                             <Col xs='12' sm='12' md='12' lg='12' xl='12' >
                             <textarea
+                                autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true"
+                                className='report'
                                 rows="30"
                                 cols="50"
                                 name="report"

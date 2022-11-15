@@ -43,6 +43,7 @@ const CreateBookReport = () => {
                             <h5>Book Report</h5>
                             <br />
                             <textarea
+                                autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true"
                                 className='report'
                                 rows="20"
                                 cols="50"
