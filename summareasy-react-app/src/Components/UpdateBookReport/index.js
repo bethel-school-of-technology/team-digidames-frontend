@@ -19,6 +19,9 @@ const UpdateBookReport = ({ }) => {
     let { id } = useParams();
     const context = useContext(BookReportContext);
     const [value, setValue] =useState();
+
+
+    const reactElement = React.createElement('textarea', null, context.handleReportChange)
    
    
 
@@ -50,30 +53,14 @@ const UpdateBookReport = ({ }) => {
                     </Row>
                     <Row>
                         <Col xs='12' sm='12' md='12' lg='6' xl='6' >
-                            {/* <Row>
-                                <label htmlFor="title">Update Title:  </label>
-                                <input name="title" onChange={context.handleTitleChange}></input>
-                                <br />
-                            </Row>
-                            <Row>
-                                <label htmlFor="author">Update Author:  </label>
-                                <input name="author" placeholder="New Author"  onChange={context.handleAuthorChange}></input>
-                                <br />
-                            </Row>
-                            <Row>
-                                <label htmlFor="writtenBy">Update Written By:  </label>
-                                <input name="writtenBy" placeholder="Your name"  onChange={context.handleWrittenByChange}></input>
-                                <br />
-                            </Row> */}
-
+                            
 
                             <Row style={{ padding: '15px' }}>
 
                                 <h4>Book Title: {bookReport.title}</h4>
                                 <h4>Book Author: {bookReport.author}</h4>
                                 <h4>Written By: {bookReport.writtenBy}</h4>
-                                <h4><img src={bookReport.cover}alt='Book'></img></h4>
-                                <h4>Book Report: {bookReport.report}</h4>
+                                
                             </Row>
                             
 
@@ -103,29 +90,15 @@ const UpdateBookReport = ({ }) => {
                                 cols="50"
                                 name="report"
                                 onChange={context.handleReportChange}
-                                value={context.bookReport}
+                                defaultValue={bookReport.report}
+
                             ></textarea>
+                            
                             <br />
                         </Col>
 
                     </Row>
 
-
-
-                    {/* <button
-                            className="btn"
-                            type="button"
-                            value="Submit"
-                            onClick={() => context.updateBookReport(id)}
-                            >
-                            Update
-                                <img
-                                    alt="Update Book Reports"
-                                    src={update}
-                                    width="200"
-                                    style={{ paddingTop: "20px", paddingBottom: "40px" }}
-                                ></img>
-                        </button> */}
 
                     <Row>
                         <Col>
