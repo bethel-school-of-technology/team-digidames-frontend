@@ -1,6 +1,6 @@
 import React from "react";
 import sun from "../../images/sun.jpg.png"
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import "../../App.css";
 
 function Footer() {
@@ -33,4 +33,4 @@ function Footer() {
     )
 }
 
-export default Footer;
+export default Footer ;

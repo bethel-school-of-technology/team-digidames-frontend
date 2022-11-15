@@ -47,7 +47,7 @@ const UpdateBookReport = ({ }) => {
 
 
             <form>
-                <Container style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(0,299,190)', fontFamily: 'Amaranth' }}>
+                <Container xs='12' sm='12' md='12' lg='12' xl='12' style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgba(0,299,190)', fontFamily: 'Amaranth' }}>
                     <Row xs='12' sm='12' md='12' lg='12' xl='12' style={{ padding: '15px' }}>
                         <h3>Update this Book Report</h3>
                     </Row>
@@ -85,6 +85,7 @@ const UpdateBookReport = ({ }) => {
                         <Col xs='12' sm='12' md='12' lg='6' xl='6'>
                             <label htmlFor="report">Update Book Report</label>
                             <br />
+                            <Col xs='12' sm='12' md='12' lg='12' xl='12' >
                             <textarea
                                 rows="30"
                                 cols="50"
@@ -93,6 +94,7 @@ const UpdateBookReport = ({ }) => {
                                 defaultValue={bookReport.report}
 
                             ></textarea>
+                            </Col>
                             
                             <br />
                         </Col>

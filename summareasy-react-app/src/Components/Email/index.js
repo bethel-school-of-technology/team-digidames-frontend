@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import API from '../../UTILS/API';
 import NavBar from '../NavBar';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Button } from 'react-bootstrap';
 import Footer from '../Footer';
 import back from '../../images/back2.png';
 
@@ -53,19 +53,19 @@ const sendEmail = (e) => {
      
     
      <label htmlFor= "EmailPreview"></label>
-     <h1>Email Preview</h1>
+     <h1 style={{color: 'Purple'}}>Email Preview</h1>
     <Row style={{ padding: '15px', width: '250px', textAlign:'center', display:'flex',justifyContent:'center', alignItems:'center' }}>
     <label htmlFor= "title"></label>
     <h5>Title:</h5>
-     <input   name="title" placeholder={`${bookReport.title}`} />
+     <input   name="title" defaultValue={bookReport.title} />
      <br></br>
      <label htmlFor= "author"></label>
      <h5>Author:</h5>
-     <input placeholder={`${bookReport.author}`} name="author" />
+     <input defaultValue={bookReport.author} name="author" />
      <br></br>
      <label htmlFor="writtenBy"></label>
      <h5> Written By</h5>
-     <input placeholder={`${bookReport.writtenBy}`} name="to_name" />
+     <input defaultValue={bookReport.writtenBy} name="to_name" />
      <br></br>
      </Row>
    
@@ -73,7 +73,7 @@ const sendEmail = (e) => {
         <Col xs='12' sm='12' md='12' lg='6' xl='6'>
         <textarea rows="20"
                   cols="50"
-                  placeholder={`${bookReport.report}`} name="message" 
+                  defaultValue={bookReport.report} name="message" 
                   read-only='false'
                   />
         </Col>
@@ -82,7 +82,8 @@ const sendEmail = (e) => {
      
      <br></br>
      
-     <a href={`/emailedconfirm`} className="button" onClick={sendEmail } alt='email'>Email</a>
+     <Button variant='success' href={`/emailedconfirm`} className="button" onClick={sendEmail } alt='email'>Email
+     </Button>
      <br></br>
      <a href={`/one-bookreport/${bookReport.id}`} margin="15px">
         <img
