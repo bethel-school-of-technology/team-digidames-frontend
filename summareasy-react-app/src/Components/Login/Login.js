@@ -85,13 +85,13 @@ keys.forEach(item => item.addEventListener(
                             <label htmlFor="email">Email:</label>
                             <br />
 
-                            <input type="text" name="email" onChange={e => setEmail(e.target.value) && e.target.attributes.name.value} required></input>
+                            <input type="text" name="email" onChange={e => setEmail(e.target.value)  } onChange2={e => e.target.attributes.name.value} required></input>
                             <br />
                             <br />
                             <label htmlFor="password">Password:</label>
                             <br />
 
-                            <input type="password" name="password" onChange={e => setPassword(e.target.value) && e.target.attributes.name.value} required></input>
+                            <input type="password" name="password" onChange={e => setPassword(e.target.value) }onChange2={e => e.target.attributes.name.value} required></input>
                             <br />
                             <br />
                             <button>Sign In</button>

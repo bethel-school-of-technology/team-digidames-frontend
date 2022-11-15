@@ -103,22 +103,22 @@ keys.forEach(item => item.addEventListener(
 
                             <label htmlFor="firstName">First Name</label>
                             <br />
-                            <input type="text" name="firstName" onChange={e => setFirstName(e.target.value && e.target.attributes.name.value)} required></input>
+                            <input type="text" name="firstName" onChange={e => setFirstName(e.target.value )} onChange2={e=> e.target.attributes.name.value} required></input>
                             <br />
                             <br />
                             <label htmlFor="lastName">Last Name</label>
                             <br />
-                            <input type="text" name="lastName" onChange={e => setLastName(e.target.value && e.target.attributes.name.value)} required></input>
+                            <input type="text" name="lastName" onChange={e => setLastName(e.target.value )} onChange2={e=> e.target.attributes.name.value} required></input>
                             <br />
                             <br />
                             <label htmlFor="email">Email</label>
                             <br />
-                            <input type="text" name="email" onChange={e => setEmail(e.target.value && e.target.attributes.name.value)} required></input>
+                            <input type="text" name="email" onChange={e => setEmail(e.target.value )} onChange2={e=> e.target.attributes.name.value} required></input>
                             <br />
                             <br />
                             <label htmlFor="password">Password</label>
                             <br />
-                            <input type="password" name="password" onChange={e => setPassword(e.target.value && e.target.attributes.name.value)} required></input>
+                            <input type="password" name="password" onChange={e => setPassword(e.target.value )} onChange2={e=> e.target.attributes.name.value} required></input>
                             <br />
                             <br />
                             <button>Sign Up</button>
