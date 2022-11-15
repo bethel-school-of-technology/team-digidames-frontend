@@ -79,6 +79,13 @@
       "firstName": "Testing",
       "lastName": "The",
       "id": 11
+    },
+    {
+      "email": "jc@gmail.com",
+      "password": "$2a$10$NkE8ny0ndGiQCMt0HviLROTq4rUzyVNC8n0EDT9poUdTvzA6pHeZa",
+      "firstName": "Jasper",
+      "lastName": "Clouse",
+      "id": 12
     }
   ],
   "BookReports": [
