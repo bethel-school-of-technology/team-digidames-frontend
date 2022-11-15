@@ -72,6 +72,13 @@
       "firstName": "Lisa",
       "lastName": "Mo",
       "id": 10
+    },
+    {
+      "email": "required@gmail.com",
+      "password": "$2a$10$z8cNiVinTxm/XWElcL19OeZ8.RCr8OCQmBR7/yl8ah9D16yY.3RV.",
+      "firstName": "Testing",
+      "lastName": "The",
+      "id": 11
     }
   ],
   "BookReports": [

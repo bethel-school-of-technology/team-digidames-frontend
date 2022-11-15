@@ -15,6 +15,23 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
+
+    const input_fields = {
+        firstName: /^[a-z\d]{5,12}$/i,
+        lastName: /^[a-z\d]{5,12}$/i,
+        email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
+        password: /^[!#\w@_-]{5,20}$/,
+       
+      }
+      const validate = (field, regex) => {
+        regex.test(field.value) ? field.className = 'valid' : field.className = 'invalid';
+      }
+      let keys = document.querySelectorAll('input');
+keys.forEach(item => item.addEventListener(
+  'keyup', e => {
+    validate(e.target, input_fields[e.target.attributes.name.value])
+  }
+));
     
 
     const signIn = (e) => {
@@ -68,13 +85,13 @@ const Login = () => {
                             <label htmlFor="email">Email:</label>
                             <br />
 
-                            <input type="text" name="email" onChange={e => setEmail(e.target.value)}></input>
+                            <input type="text" name="email" onChange={e => setEmail(e.target.value) && e.target.attributes.name.value} required></input>
                             <br />
                             <br />
                             <label htmlFor="password">Password:</label>
                             <br />
 
-                            <input type="password" name="password" onChange={e => setPassword(e.target.value)}></input>
+                            <input type="password" name="password" onChange={e => setPassword(e.target.value) && e.target.attributes.name.value} required></input>
                             <br />
                             <br />
                             <button>Sign In</button>
