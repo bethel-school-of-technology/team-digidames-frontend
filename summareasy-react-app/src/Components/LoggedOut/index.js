@@ -1,9 +1,7 @@
 import babydinowaving from "../../images/dinosaur-waving.png";
 import Footer from "../Footer";
-import NavBar from "../NavBar";
 import { useEffect } from "react";
 import { Container, Row } from 'react-bootstrap';
-import { useNavigate } from "react-router-dom";
 import { Col } from 'react-bootstrap';
 import logo from "../../images/Logo.png";
 
@@ -21,7 +19,7 @@ const LoggedOut = () => {
            
             <Container style={{ fontSize: '80px', padding: '50px', fontFamily: 'Amaranth' }}>
                 <Row>
-                    <Col xs='12' sm='12' md='12' lg='12' xl='12' style={{ paddingBottom: '25px', paddingTop: '10px' }}>
+                    <Col xs='8' sm='8' md='8' lg='12' xl='12' style={{ paddingBottom: '25px', paddingTop: '10px' }}>
                        <a href={`/`} > <img
                             alt=""
                             src={logo}
@@ -41,7 +39,7 @@ const LoggedOut = () => {
                 </Row>
 
                 <Row>
-                    <Col xs='12' sm='12' md='12' lg='12' xl='12' style={{ paddingBottom: '5px', paddingTop: '5px' }}>
+                    <Col xs='12' sm='12' md='8' lg='12' xl='12' style={{ paddingBottom: '5px', paddingTop: '5px' }}>
                         <img
                             alt=""
                             src={babydinowaving}

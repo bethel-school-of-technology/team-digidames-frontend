@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Button } from 'react-bootstrap';
 import Footer from "../Footer";
 import car from '../../images/car2.png';
 import logo from '../../images/Logo.png';
@@ -13,23 +13,7 @@ const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
-    const input_fields = {
-        firstName: /^[a-z\d]{5,12}$/i,
-        lastName: /^[a-z\d]{5,12}$/i,
-        email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
-        password: /^[!#\w@_-]{5,20}$/,
-       
-      }
-      const validate = (field, regex) => {
-        regex.test(field.value) ? field.className = 'valid' : field.className = 'invalid';
-      }
-      let keys = document.querySelectorAll('input');
-keys.forEach(item => item.addEventListener(
-  'keyup', e => {
-    validate(e.target, input_fields[e.target.attributes.name.value])
-  }
-));
-
+   
     const register = (e) => {
         e.preventDefault();
         console.log('Registered!');
@@ -103,25 +87,25 @@ keys.forEach(item => item.addEventListener(
 
                             <label htmlFor="firstName">First Name</label>
                             <br />
-                            <input type="text" name="firstName" onChange={e => setFirstName(e.target.value )} onChange2={e=> e.target.attributes.name.value} required></input>
+                            <input type="text" name="firstName" onChange={e => setFirstName(e.target.value )} required></input>
                             <br />
                             <br />
                             <label htmlFor="lastName">Last Name</label>
                             <br />
-                            <input type="text" name="lastName" onChange={e => setLastName(e.target.value )} onChange2={e=> e.target.attributes.name.value} required></input>
+                            <input type="text" name="lastName" onChange={e => setLastName(e.target.value ) } required></input>
                             <br />
                             <br />
                             <label htmlFor="email">Email</label>
                             <br />
-                            <input type="text" name="email" onChange={e => setEmail(e.target.value )} onChange2={e=> e.target.attributes.name.value} required></input>
+                            <input type="text" name="email" onChange={e => setEmail(e.target.value ) } required></input>
                             <br />
                             <br />
                             <label htmlFor="password">Password</label>
                             <br />
-                            <input type="password" name="password" onChange={e => setPassword(e.target.value )} onChange2={e=> e.target.attributes.name.value} required></input>
+                            <input type="password" name="password" onChange={e => setPassword(e.target.value ) } required></input>
                             <br />
                             <br />
-                            <button>Sign Up</button>
+                            <Button variant="success">Sign Up</Button>
                             <br />
 
                         </form>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Button } from 'react-bootstrap';
 import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from "react";
 import axios from 'axios';
@@ -42,9 +42,9 @@ const CreateBookReport = () => {
                                 onChange={context.handleReportChange}
                             ></textarea>
                             <br />
-                            <button className="button" type="submit">
-                                Add Book Report
-                            </button>
+                            <Button variant='primary' className="button" type="submit">
+                                Create
+                            </Button>
 
                         </form>
                     </Col>

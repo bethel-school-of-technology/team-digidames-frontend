@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Button } from 'react-bootstrap';
 // import CreateBookReport from '../CreateBookReport';
 import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from "react";
@@ -9,16 +9,16 @@ import back from '../../images/back2.png'
 
 
 const AllBookReports = ({ bookReportData }) => {
-
+   
     const context = useContext(BookReportContext);
     return (
  
 
-        <div style={{ backgroundColor: 'rgba(174, 152, 219)' }}>
+        <div style={{ backgroundColor: 'rgb(97, 174, 68)' }}>
             <NavBar />
             <Container>
-                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(119,148,73)' }}><h1>{localStorage.getItem("firstName")}'s Book Reports</h1></Row>
-                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(255,182,0)' }}>
+                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(144,186,249)' }}><h1>{localStorage.getItem("firstName")}'s Book Reports</h1></Row>
+                <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(52,52,52)' }}>
                     <div className="container header">
                         {/* <CreateBookReport /> */}
                         <div>
@@ -27,21 +27,21 @@ const AllBookReports = ({ bookReportData }) => {
                             {bookReportData.map((bookReport) => (
 
                                 <div key={bookReport.id} className="one-bookReport">
-                                    <Row style={{ padding: '15px', margin: "30px", textAlign: 'center', backgroundColor: 'rgba(119,148,73)' }}>
+                                    <Row style={{ padding: '15px', margin: "30px", textAlign: 'center', backgroundColor: 'rgb(255, 255, 255)' }}>
                                         <Col xs='12' sm='12' md='12' lg='4' xl='4'>
                                             <h3>{bookReport.title}</h3>
                                         </Col>
 
                                         <Col xs='12' sm='12' md='12' lg='2' xl='2' style={{ margin: "5px", textAlign: 'center'  }}>
-                                            <a className="button" href={`one-bookreport/${bookReport.id}`}>{" "}View{" "}</a>
+                                           <Button variant="primary" className="button" href={`one-bookreport/${bookReport.id}`}>{" "}View{" "}</Button>
                                         </Col>
 
                                         <Col xs='12' sm='12' md='12' lg='2' xl='2' style={{ margin: "5px", textAlign: 'center'  }} >
-                                            <a className="button" href={`update-bookreport/${bookReport.id}`}>{" "}Update{" "}</a>
+                                            <Button variant="dark" className="button" href={`update-bookreport/${bookReport.id}`}>{" "}Update{" "}</Button>
                                         </Col>
 
                                         <Col xs='12' sm='12' md='12' lg='2' xl='2' style={{ margin: "5px", textAlign: 'center'  }} >
-                                            <button onClick={() => context.handleDelete(bookReport.id)} className="button">Delete</button>
+                                            <Button variant="danger" onClick={() => context.handleDelete(bookReport.id)} className="button">Delete</Button>
                                         </Col>
 
                                         <hr></hr>

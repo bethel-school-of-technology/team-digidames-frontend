@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Amaranth:ital@0;1&family=Teko:wght@500&display=swap);
 
+
 .App {
   text-align: center;
   background-color: rgb(97, 174, 68);
@@ -65,17 +66,44 @@ input.invalid + p {
 .btn {
   text-decoration: none;
 }
+.deleteButton{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  color: white;
 
+}
+/* .updateButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  color: white;
+
+}
+.emailButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  color: white;
+  
+} */
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  align-content: center;
+  
   font: bold 20px Arial;
   text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
+  
+  /* color: black; */
+  width: 100px
+  
 }
 
 
@@ -86,7 +114,7 @@ input.invalid + p {
   justify-content: flex-end;
   align-items: center;
   flex-direction: row;
-  padding-right: 20px;
+  /* padding-right: 20px; */
 }
 
 .start {

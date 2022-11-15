@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Button  } from 'react-bootstrap';
+
 import API from '../../UTILS/API';
 import { useParams } from 'react-router-dom';
 import BookReportContext from '../../UTILS/BookReportContext';
@@ -9,11 +10,14 @@ import NavBar from '../NavBar';
 import back from '../../images/back2.png';
 
 
+
 const OneBookReport = () => {
 
     const [bookReport, setBookReport] = useState({});
     const { id } = useParams();
     const context = useContext(BookReportContext);
+   
+
  
 
     useEffect(() => {
@@ -44,24 +48,33 @@ const OneBookReport = () => {
                 <Row style={{ padding: '25px'}}>
                     <h3>Book Report Written By: {bookReport.writtenBy}</h3>
                 </Row>
-                <Row style={{ padding: '25px'}}>
-                    <p>{bookReport.report}</p>
-                </Row>
+               
+                
                 <Row style={{ padding: '25px'}}>
                     <p><img src={bookReport.cover}></img></p>
                 </Row>
+                <Row style={{ padding: '35px', width: 'auto', height:'auto', display: 'flex', alignItems: 'center', justifyContent:'center', textAlign:'center'}}>
+                    <p>{bookReport.report}</p>
+                </Row>
                 <Row style={{ padding: '25px'}}>
-
-                
-                    <Col>
-                        <a href={`/update-bookreport/${bookReport.id}`} className="button">Update Book Report</a>
+                    <Col xs='12' sm='12' md='12' lg='6' xl='6'>
+                    
+                      <Button variant="success" href={`/update-bookreport/${bookReport.id}`} className="button">Update</Button>
+                   
                     </Col>
+                    
 
-                    <Col>
-                        <button onClick={() => context.handleDelete(bookReport.id)} className="button">Delete Book Report</button>
+                     
+                    <Col xs='12' sm='12' md='12' lg='6' xl='6'>
+                    
+                        <Button variant="danger" onClick={() => context.handleDelete(bookReport.id)} className="button">Delete</Button>
+                   
                     </Col>
-                    <Col>
-                        <a href={`/email/${bookReport.id}`}  className="button">Email</a>
+                    
+                    <Col xs='12' sm='12' md='12' lg='12' xl='12'>
+                        
+                            <Button variant="primary" href={`/email/${bookReport.id}`}  className="button">Email</Button>
+                        
                     </Col>
                 </Row>
            
