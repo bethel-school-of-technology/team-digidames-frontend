@@ -3,13 +3,16 @@
 
 .App {
   text-align: center;
-  background-color: rgb(51, 156, 49);
+  background-color: rgb(42, 150, 65);
  
   margin: 0px;
   height: 100%;
   width: 100%;
 
 
+}
+.home{
+  background-color: rgb(42, 150, 65);
 }
 input{
   display: block;
@@ -95,14 +98,10 @@ input.invalid + p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   align-content: center;
-  
   font: bold 20px Arial;
   text-decoration: none;
-  
-  /* color: black; */
-  width: 100px
+  width: 80px;
   
 }
 
@@ -205,21 +204,6 @@ input.invalid + p {
     transform: rotate(360deg);
   }
 }
-.report{
-   padding: 45px;
-   margin: 40px;
-   width: auto;
-   height: fit-content; 
-   display: flex;
-   align-items: center;
-   justify-content: center; 
-   text-align: center;
-   border: white 2px solid;
-   font-weight: 800;
-   background-color: rgb(176, 176, 176);
-
-
-  }
   .cover{
     padding-top: 0px;
     margin: 20px;
@@ -231,7 +215,38 @@ input.invalid + p {
     width: fit-content;
     height: auto;
     background-color: black;
+    
   }
+  .report{
+   
+    margin: 20px;
+    width: auto;
+    height: fit-content; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    
+    
+    border: white 2px solid;
+    font-weight: 800;
+    background-color: rgb(176, 176, 176);
+    overflow: hidden;
+ 
+ 
+   }
+  .reportPreview{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: baseline; */
+    height: 50px;
+    /* width: auto;  */
+    overflow: auto;
+    
+    background-color: rgb(176, 176, 176);
+    border: gray 2px solid;
+
+  }
+ 
 .back{
   padding: 20px;
   margin: 10px;
@@ -240,6 +255,15 @@ input.invalid + p {
   justify-content: center;
  
 
+}
+/* table styling */
+.table.table-bordered{
+  color: black;
+  text-align: center;
+  
+  background-color: rgba(119,148,73);
+  font-family: 'Amaranth';
+  padding: 25px
 }
 
 .aboutUsLink {

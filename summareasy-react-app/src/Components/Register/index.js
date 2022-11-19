@@ -87,25 +87,25 @@ const Register = () => {
 
                             <label htmlFor="firstName">First Name</label>
                             <br />
-                            <input type="text" name="firstName" onChange={e => setFirstName(e.target.value )} autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true" required></input>
+                            <input type="text" name="firstName" onChange={e => setFirstName(e.target.value )} autoComplete="on" autoCorrect="on" autoCapitalize="on" spellCheck="true" required></input>
                             <br />
                             <br />
                             <label htmlFor="lastName">Last Name</label>
                             <br />
-                            <input type="text" name="lastName" onChange={e => setLastName(e.target.value ) } autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true" required></input>
+                            <input type="text" name="lastName" onChange={e => setLastName(e.target.value ) } autoComplete="on" autoCorrect="on" autoCapitalize="on" spellCheck="true" required></input>
                             <br />
                             <br />
                             <label htmlFor="email">Email</label>
                             <br />
-                            <input type="text" name="email" onChange={e => setEmail(e.target.value ) } autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true" required></input>
+                            <input type="text" name="email" onChange={e => setEmail(e.target.value ) } autoComplete="on" autoCorrect="on" autoCapitalize="on" spellCheck="true" required></input>
                             <br />
                             <br />
                             <label htmlFor="password">Password</label>
                             <br />
-                            <input type="password" name="password" onChange={e => setPassword(e.target.value ) } autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true" required></input>
+                            <input type="password" name="password" onChange={e => setPassword(e.target.value ) } autoComplete="on" autoCorrect="on" autoCapitalize="on" spellCheck="true" required></input>
                             <br />
                             <br />
-                            <Button variant="success">Sign Up</Button>
+                            <Button variant="success" onClick={register}>Sign Up</Button>
                             <br />
 
                         </form>

@@ -57,22 +57,22 @@ const sendEmail = (e) => {
     <Row style={{ padding: '15px', width: '250px', textAlign:'center', display:'flex',justifyContent:'center', alignItems:'center' }}>
     <label htmlFor= "title"></label>
     <h5>Title:</h5>
-     <input   name="title" defaultValue={bookReport.title} autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true" />
+     <input   name="title" defaultValue={bookReport.title} autoComplete="on" autoCorrect="on" autoCapitalize="on" spellCheck="true" />
      <br></br>
      <label htmlFor= "author"></label>
      <h5>Author:</h5>
-     <input defaultValue={bookReport.author} name="author" autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true" />
+     <input defaultValue={bookReport.author} name="author" autoComplete="on" autoCorrect="on" autoCapitalize="on" spellCheck="true" />
      <br></br>
      <label htmlFor="writtenBy"></label>
      <h5> Written By</h5>
-     <input defaultValue={bookReport.writtenBy} name="to_name" autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true" />
+     <input defaultValue={bookReport.writtenBy} name="to_name" autoComplete="on" autoCorrect="on" autoCapitalize="on" spellCheck="true" />
      <br></br>
      </Row>
    
      <Row>
         <Col xs='12' sm='12' md='12' lg='6' xl='6'>
         <textarea 
-            autocomplete="on" autocorrect="on" autocapitalize="on" spellcheck="true"
+            autoComplete="on" autoCorrect="on" autoCapitalize="on" spellCheck="true"
             rows="20"
             cols="50"
             defaultValue={bookReport.report} name="message" 

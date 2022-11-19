@@ -98,7 +98,7 @@ function App() {
       API.deleteBookReport(id).then(res => {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
-        navigate("/deletedconfirm") //this navigates (useNavigat) to delete confirmation page ("/") after deleting Book Report      
+        navigate("/deletedConfirm") //this navigates (useNavigat) to delete confirmation page ("/") after deleting Book Report      
       });
     }
 
