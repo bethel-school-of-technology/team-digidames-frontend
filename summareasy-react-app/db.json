@@ -265,6 +265,18 @@
       "bookId": "pxTDCgAAQBAJ",
       "report": "Responsiveness check",
       "id": 22
+    },
+    {
+      "title": "Why We Love",
+      "author": [
+        "Helen Fisher"
+      ],
+      "cover": "http://books.google.com/books/content?id=SPxmHKLwj3MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "writtenBy": "Lori",
+      "userId": "8",
+      "bookId": "SPxmHKLwj3MC",
+      "report": "Does this update? again",
+      "id": 23
     }
   ]
 }
