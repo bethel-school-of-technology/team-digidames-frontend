@@ -1,6 +1,5 @@
 import React from 'react';
 import { Col, Container, Row, Button } from 'react-bootstrap';
-// import CreateBookReport from '../CreateBookReport';
 import BookReportContext from '../../UTILS/BookReportContext';
 import { useContext } from "react";
 import Footer from '../Footer';
@@ -13,16 +12,14 @@ const AllBookReports = ({ bookReportData }) => {
     const context = useContext(BookReportContext);
     return (
 
-
         <div style={{ backgroundColor: 'rgb(253, 162, 22)' }}>
             <NavBar />
             <Container>
                 <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgb(46, 90, 151)', color: 'white' }}><h1>{localStorage.getItem("firstName")}'s Book Reports</h1></Row>
                 <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(52,52,52)' }}>
                     <div className="container header">
-                        {/* <CreateBookReport /> */}
+                       
                         <div>
-
 
                             {bookReportData.map((bookReport) => (
 
