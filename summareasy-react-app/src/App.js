@@ -13,9 +13,7 @@ import Login from './Components/Login/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import APIBookData from './Components/APIBookData';
 import Register from './Components/Register';
-
 import EmailContactForm from './Components/Email';
-
 import LoggedOut from './Components/LoggedOut';
 import AboutUs from './Components/AboutUs';
 import NavBar from './Components/NavBar';
@@ -23,9 +21,6 @@ import EmailedConfirm from './Components/EmailedConfirm';
 import PrintedConfirm from './Components/PrintedConfirm';
 import DeletedConfirm from './Components/DeletedConfirm';
 import PrivateRoutes from './UTILS/PrivateRoutes';
-
-
-//import SearchBar from './Components/SearchBar';
 
 
 function App() {
@@ -56,30 +51,16 @@ function App() {
 
 
   const contextObject = {
+    
     handleSubmit: (e) => {
       e.preventDefault();
       API.createBookReport(newBookReport).then((res) => {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
         document.querySelector(".form").reset();
-        navigate("/all-book-reports") //this navigates (useNavigat) to homepage ("/") after updating Book Report
+        navigate("/all-book-reports") 
       });
     },
-
-    // handleTitleChange: (e) => {
-    //   const { value } = e.target;
-    //   setNewBookReport({ ...newBookReport, title: value });
-    // },
-
-    // handleAuthorChange: (e) => {
-    //   const { value } = e.target;
-    //   setNewBookReport({ ...newBookReport, author: value });
-    // },
-
-    // handleWrittenByChange: (e) => {
-    //   const { value } = e.target;
-    //   setNewBookReport({ ...newBookReport, writtenBy: value });
-    // },
 
     handleReportChange: (e) => {
       const { value } = e.target;
@@ -90,7 +71,7 @@ function App() {
       API.updateBookReport(id, newBookReport).then(res => {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 0 });
-        navigate("/all-book-reports") //this navigates (useNavigat) to homepage ("/") after updating Book Report
+        navigate("/all-book-reports") 
       });
     },
 
@@ -98,7 +79,7 @@ function App() {
       API.deleteBookReport(id).then(res => {
         console.log(res);
         setRefresh({ ...refresh, count: refresh.count + 1 });
-        navigate("/deletedConfirm") //this navigates (useNavigat) to delete confirmation page ("/") after deleting Book Report      
+        navigate("/deletedConfirm") 
       });
     }
 
@@ -114,11 +95,7 @@ function App() {
         
           {/* Start Private Routes */}
           <Route element={<PrivateRoutes/>}>
-              
-            
-
-          
-
+                           
           <Route
             path="/about"
             exact
