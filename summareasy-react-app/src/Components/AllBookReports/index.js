@@ -27,30 +27,40 @@ const AllBookReports = ({ bookReportData }) => {
                             {bookReportData.map((bookReport) => (
 
                                 <div key={bookReport.id} className="one-bookReport">
-                                    <Row style={{ height: '150px', width:'auto', backgroundColor: 'rgb(255, 255, 255)'}}>
+                                    <Row style={{  width:'auto', backgroundColor: 'rgb(255, 255, 255)'}}>
                                         
-                                        <Col xs='8' sm='12' md='12' lg='12' xl='12' >
+                                        {/* <Col xs='12' sm='6' md='6' lg='6' xl='6' >
                                            <Row  xs='12' sm='12' md='12' lg='12' xl='12' style={{}} > <h3>{bookReport.title}</h3></Row>
-                                        </Col>   
-                                        <Col xs='3' sm='6' md='4' lg='4' xl='4' style={{margin:'10px'}}>
+                                        </Col>    */}
+                                        {/* <Col xs='11' sm='5' md='5' lg='5' xl='5' style={{margin:'10px'}}>
                                             <Row xs='2' sm='1' md='8' lg='8' xl='8' style={{}} className='reportPreview'><p>{bookReport.report}</p> </Row>
-                                        </Col>
+                                        </Col> */}
                                     {/* buttons */}
-                                        <Row xs='2' sm='2' md='2' lg='2' xl='2' style={{display:'flex', justifyContent:'flex-end'}}>
+                                    <Col xs='12' sm='6' md='6' lg='6' xl='6' style={{margin:'10px'}}>
+                                    
+                                           <Row  xs='12' sm='12' md='12' lg='12' xl='12' style={{}} > <h3>{bookReport.title}</h3></Row>
+                                      
+
+                                        <Row xs='12' sm='12' md='12' lg='12' xl='12' style={{display:'flex'}}>
+
+
                                             
-                                        <Col xs='3' sm='3' md='2' lg='2' xl='2' >
+                                        <Col xs='4' sm='4' md='4' lg='4' xl='4' >
                                            <Button variant="primary" className="button" href={`one-bookreport/${bookReport.id}`}>{" "}View{" "}</Button>
                                         </Col>
 
-                                        <Col xs='3' sm='3' md='2' lg='2' xl='2' style={{  textAlign: 'center'  }} >
+                                        <Col xs='4' sm='4' md='4' lg='4' xl='4' style={{  textAlign: 'center'  }} >
                                             <Button variant="dark" className="button" href={`update-bookreport/${bookReport.id}`}>{" "}Update{" "}</Button>
                                         </Col>
 
-                                        <Col xs='3' sm='3' md='2' lg='2' xl='2' style={{ textAlign: 'center'  }} >
-                                            <Button variant="danger" className="button" onClick={() => context.handleDelete(bookReport.id)} className="button">Delete</Button>
+                                        <Col xs='4' sm='4' md='4' lg='4' xl='4' style={{ textAlign: 'center'  }} >
+                                            <Button variant="danger" className="button" onClick={() => context.handleDelete(bookReport.id)}>Delete</Button>
                                         </Col>
                                         </Row>   
-
+                                        </Col>
+                                        <Col xs='11' sm='5' md='5' lg='5' xl='5' style={{margin:'10px'}}>
+                                            <Row xs='2' sm='1' md='8' lg='8' xl='8' style={{}} className='reportPreview'><p>{bookReport.report}</p> </Row>
+                                        </Col>
                                         <hr></hr>
                                     </Row>
 
