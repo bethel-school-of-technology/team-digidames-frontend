@@ -21,7 +21,7 @@ function AboutUs() {
         {
             name: 'Lori Hutchins',
             role: 'Christ-Follower, Wife, Mother and Full Stack Developer Student',
-            about: 'My name is Lori Hutchins. I am a Christ-follower, wife, and mother of two teenagers. I have been a part of the Indiana Wesleyan University community since 1998 when I began my college journey as a traditional student. My college journey was delayed because I was unsure what degree to pursue and was planning a wedding.  After getting married, my husband and I moved to Oregon and began our family. Nineteen years after beginning college, I find myself with the opportunity to pursue my degree again, but this time in a field that I am excited about and was not available back in 1998. I am thankful!',
+            about: 'I am a Christ-follower, wife, and mother of two teenagers. I have been a part of the Indiana Wesleyan University community since 1998 when I began my college journey as a traditional student. My college journey was delayed because I was unsure what degree to pursue and was planning a wedding.  After getting married, my husband and I moved to Oregon and began our family. Nineteen years after delaying college, I find myself with the opportunity to pursue my degree again, but this time in a field that I am excited about and was not available back in 1998. I am grateful!',
             image: lori
         }
     ]
@@ -63,7 +63,7 @@ function AboutUs() {
                 </Row>
                 <Row>
                     <div className="d-flex justify-content-center">
-                        <p style={{ fontSize: '20px', width: '750px', textAlign: 'left', fontFamily: 'Teko' }}>Write a Paragraph about us.  Digital.....Dame is "the title given to a woman equivalent to the rank of knight.".... Knighted by the Lord ???</p>
+                        <p style={{ fontSize: '20px', width: '750px', textAlign: 'left', fontFamily: 'Teko' }}></p>
                     </div>
                 </Row>
 
