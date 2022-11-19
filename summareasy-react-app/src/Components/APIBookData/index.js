@@ -106,12 +106,14 @@ class APIBookData extends React.Component {
 
 
                                             <td className='cover'><img src={book.volumeInfo.imageLinks.thumbnail} alt='Book Cover' /></td>
-                                            <td>
+                                            
                                             <Button  xs='2' sm='2' md='4' lg='4' xl='4'  type='button' onClick={() => this.goToReport(book)}><td>Write report</td></Button>
-                                            </td>
+                                            
 
                                         </tr>
+                                        
                                     ))}
+                                    
                                 </table> : <></>
                         }
 

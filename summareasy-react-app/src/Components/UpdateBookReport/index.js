@@ -10,20 +10,12 @@ import back from '../../images/back2.png'
 import update from '../../images/update.png'
 
 
-
-
-
 const UpdateBookReport = ({ }) => {
 
     const [bookReport, setBookReport] = useState({});
     let { id } = useParams();
     const context = useContext(BookReportContext);
-   
-
-
-    
-   
-   
+     
 
     useEffect(() => {
         const getBookReport = () => {
@@ -49,21 +41,18 @@ const UpdateBookReport = ({ }) => {
             <form>
                 <Container xs='12' sm='12' md='12' lg='12' xl='12' style={{ padding: '15px', textAlign: 'center', backgroundColor: 'rgb(46, 90, 151)', fontFamily: 'Amaranth' }}>
                     <Row xs='12' sm='12' md='12' lg='12' xl='12' style={{ padding: '15px' }}>
-                        <h3>Update this Book Report</h3>
+                        <h1>Update this Book Report</h1>
                     </Row>
                     <Row>
                         <Col xs='12' sm='12' md='12' lg='6' xl='6' >
-                            
+                           
+                            <Row style={{ padding: '15px', textAlign: 'left' }}>
 
-                            <Row style={{ padding: '15px' }}>
-
-                                <h4>Book Title: {bookReport.title}</h4>
-                                <h4>Book Author: {bookReport.author}</h4>
-                                <h4>Written By: {bookReport.writtenBy}</h4>
+                                <h3>Book Title: {bookReport.title}</h3>
+                                <h3>Book Author: {bookReport.author}</h3>
+                                <h3>Written By: {bookReport.writtenBy}</h3>
                                 
-                            </Row>
-                            
-
+                            </Row>                         
 
                             <Row>
                                 <button
@@ -89,7 +78,7 @@ const UpdateBookReport = ({ }) => {
                                 
                                 autoComplete="on" autoCorrect="on" autoCapitalize="on" spellCheck="true"
                                 className='report'
-                                rows="30"
+                                rows="25"
                                 cols="50"
                                 name="report"
                                 onChange={context.handleReportChange}
@@ -102,7 +91,6 @@ const UpdateBookReport = ({ }) => {
                         </Col>
 
                     </Row>
-
 
                     <Row>
                         <Col>
@@ -118,7 +106,6 @@ const UpdateBookReport = ({ }) => {
                     </Row>
                 </Container>
             </form>
-
 
             <Footer />
         </div>

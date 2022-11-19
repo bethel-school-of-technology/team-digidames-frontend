@@ -45,15 +45,6 @@ input.invalid + p {
   margin-bottom: 20px;
 }
 
-/* .background {
-  background-image: url(./images/schoolbus.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: auto;
-
-  background-attachment: fixed;
-} */
-
 .icon-buttons {
   display: flex;
   justify-content: flex-start;
