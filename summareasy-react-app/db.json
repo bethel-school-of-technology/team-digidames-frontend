@@ -86,6 +86,13 @@
       "firstName": "Jasper",
       "lastName": "Clouse",
       "id": 12
+    },
+    {
+      "email": "ll@gmail.com",
+      "password": "$2a$10$5vmCNetCbU77r7EuxVSMGumRraL34Gnbr0/s5.SVe4m7eE/ga5P4C",
+      "firstName": "Lois",
+      "lastName": "Lane",
+      "id": 13
     }
   ],
   "BookReports": [
@@ -208,16 +215,28 @@
       "id": 10
     },
     {
-      "title": "Green Eggs and Ham",
+      "title": "Nya's Long Walk",
       "author": [
-        "Dr. Seuss"
+        "Linda Sue Park"
       ],
-      "cover": "http://books.google.com/books/content?id=ZK7xAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "writtenBy": "Leah",
-      "userId": "3",
-      "bookId": "ZK7xAwAAQBAJ",
-      "report": " I think that this story is about acceptance and trying new things. In the beginning, the main character did not want to try green eggs and ham. He ran away and did everything that he could to not eat the green eggs and ham. In the end, Sam I Am got him to try the green eggs and ham and the main character decided that it was good. I am happy that he tried something new. I just don't think that Sam I Am should have chased him.\n\n\n\n",
-      "id": 11
+      "cover": "http://books.google.com/books/content?id=d7OoDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "writtenBy": "Lois",
+      "userId": "13",
+      "bookId": "d7OoDwAAQBAJ",
+      "report": "This is a test for the book report preview feature.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas maecenas pharetra convallis posuere. Amet justo donec enim diam vulputate. Tortor dignissim convallis aenean et tortor. Consectetur libero id faucibus nisl. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Sed risus ultricies tristique nulla aliquet. Nulla facilisi nullam vehicula ipsum. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Nec tincidunt praesent semper feugiat nibh sed pulvinar. Augue interdum velit euismod in pellentesque massa placerat duis. At varius vel pharetra vel turpis nunc. Nulla facilisi morbi tempus iaculis urna id volutpat. Sit amet purus gravida quis blandit turpis cursus in hac.\n\nMassa sapien faucibus et molestie. Amet dictum sit amet justo donec. Odio aenean sed adipiscing diam. Adipiscing enim eu turpis egestas. Eu facilisis sed odio morbi quis commodo odio aenean. Ut venenatis tellus in metus vulputate eu scelerisque. At varius vel pharetra vel. Semper eget duis at tellus at. Massa enim nec dui nunc mattis enim ut. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Quam adipiscing vitae proin sagittis. Pellentesque dignissim enim sit amet venenatis urna cursus. Quam adipiscing vitae proin sagittis. Magna ac placerat vestibulum lectus mauris ultrices eros in. Donec massa sapien faucibus et molestie ac feugiat sed. Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Vulputate enim nulla aliquet porttitor. Quam pellentesque nec nam aliquam. Est velit egestas dui id ornare arcu odio ut sem.\n\nViverra aliquet eget sit amet tellus cras. Sed lectus vestibulum mattis ullamcorper. Cursus turpis massa tincidunt dui ut. Bibendum neque egestas congue quisque egestas. Montes nascetur ridiculus mus mauris vitae. Est ante in nibh mauris cursus. Diam maecenas ultricies mi eget mauris pharetra et. Scelerisque eu ultrices vitae auctor eu. Platea dictumst vestibulum rhoncus est pellentesque. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Morbi non arcu risus quis varius. Eleifend mi in nulla posuere sollicitudin. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Sit amet massa vitae tortor condimentum lacinia quis vel.\n\nLectus mauris ultrices eros in cursus turpis massa. Senectus et netus et malesuada fames. Quis blandit turpis cursus in hac habitasse platea dictumst. Lorem sed risus ultricies tristique nulla aliquet enim. Nulla porttitor massa id neque. Maecenas accumsan lacus vel facilisis volutpat est. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Consectetur libero id faucibus nisl tincidunt eget nullam. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Euismod nisi porta lorem mollis aliquam. Bibendum at varius vel pharetra vel. Amet nisl purus in mollis nunc sed. Risus commodo viverra maecenas accumsan lacus vel. Diam donec adipiscing tristique risus. Ornare suspendisse sed nisi lacus sed viverra.\n\nVulputate dignissim suspendisse in est ante. Ut etiam sit amet nisl purus in. Faucibus interdum posuere lorem ipsum dolor. Malesuada bibendum arcu vitae elementum. Nulla malesuada pellentesque elit eget gravida. Vitae aliquet nec ullamcorper sit amet. Ac auctor augue mauris augue neque gravida. Tempor id eu nisl nunc mi ipsum faucibus. Et malesuada fames ac turpis egestas integer. Egestas tellus rutrum tellus pellentesque eu. Senectus et netus et malesuada fames ac turpis egestas.\n",
+      "id": 19
+    },
+    {
+      "title": "Nya's Long Walk",
+      "author": [
+        "Linda Sue Park"
+      ],
+      "cover": "http://books.google.com/books/content?id=d7OoDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "writtenBy": "Lois",
+      "userId": "13",
+      "bookId": "d7OoDwAAQBAJ",
+      "report": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas maecenas pharetra convallis posuere. Amet justo donec enim diam vulputate. Tortor dignissim convallis aenean et tortor. Consectetur libero id faucibus nisl. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Sed risus ultricies tristique nulla aliquet. Nulla facilisi nullam vehicula ipsum. Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Nec tincidunt praesent semper feugiat nibh sed pulvinar. Augue interdum velit euismod in pellentesque massa placerat duis. At varius vel pharetra vel turpis nunc. Nulla facilisi morbi tempus iaculis urna id volutpat. Sit amet purus gravida quis blandit turpis cursus in hac.\n\nMassa sapien faucibus et molestie. Amet dictum sit amet justo donec. Odio aenean sed adipiscing diam. Adipiscing enim eu turpis egestas. Eu facilisis sed odio morbi quis commodo odio aenean. Ut venenatis tellus in metus vulputate eu scelerisque. At varius vel pharetra vel. Semper eget duis at tellus at. Massa enim nec dui nunc mattis enim ut. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Quam adipiscing vitae proin sagittis. Pellentesque dignissim enim sit amet venenatis urna cursus. Quam adipiscing vitae proin sagittis. Magna ac placerat vestibulum lectus mauris ultrices eros in. Donec massa sapien faucibus et molestie ac feugiat sed. Amet venenatis urna cursus eget nunc scelerisque viverra mauris. Vulputate enim nulla aliquet porttitor. Quam pellentesque nec nam aliquam. Est velit egestas dui id ornare arcu odio ut sem.\n\nViverra aliquet eget sit amet tellus cras. Sed lectus vestibulum mattis ullamcorper. Cursus turpis massa tincidunt dui ut. Bibendum neque egestas congue quisque egestas. Montes nascetur ridiculus mus mauris vitae. Est ante in nibh mauris cursus. Diam maecenas ultricies mi eget mauris pharetra et. Scelerisque eu ultrices vitae auctor eu. Platea dictumst vestibulum rhoncus est pellentesque. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Morbi non arcu risus quis varius. Eleifend mi in nulla posuere sollicitudin. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Sit amet massa vitae tortor condimentum lacinia quis vel.\n\nLectus mauris ultrices eros in cursus turpis massa. Senectus et netus et malesuada fames. Quis blandit turpis cursus in hac habitasse platea dictumst. Lorem sed risus ultricies tristique nulla aliquet enim. Nulla porttitor massa id neque. Maecenas accumsan lacus vel facilisis volutpat est. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Consectetur libero id faucibus nisl tincidunt eget nullam. Malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Euismod nisi porta lorem mollis aliquam. Bibendum at varius vel pharetra vel. Amet nisl purus in mollis nunc sed. Risus commodo viverra maecenas accumsan lacus vel. Diam donec adipiscing tristique risus. Ornare suspendisse sed nisi lacus sed viverra.\n\nVulputate dignissim suspendisse in est ante. Ut etiam sit amet nisl purus in. Faucibus interdum posuere lorem ipsum dolor. Malesuada bibendum arcu vitae elementum. Nulla malesuada pellentesque elit eget gravida. Vitae aliquet nec ullamcorper sit amet. Ac auctor augue mauris augue neque gravida. Tempor id eu nisl nunc mi ipsum faucibus. Et malesuada fames ac turpis egestas integer. Egestas tellus rutrum tellus pellentesque eu. Senectus et netus et malesuada fames ac turpis egestas.\n",
+      "id": 20
     },
     {
       "title": "Chicka Chicka Boom Boom",
@@ -230,20 +249,22 @@
       "writtenBy": "Leah",
       "userId": "3",
       "bookId": "pxTDCgAAQBAJ",
-      "report": "does it capture the date?\n",
-      "id": 12
+      "report": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas integer eget aliquet nibh praesent tristique. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. Eget gravida cum sociis natoque penatibus. Tempor orci dapibus ultrices in. Orci ac auctor augue mauris. Viverra vitae congue eu consequat ac felis. Eget est lorem ipsum dolor sit amet consectetur adipiscing. Arcu odio ut sem nulla pharetra diam sit. Venenatis lectus magna fringilla urna porttitor rhoncus. Amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec.\n\nDiam sollicitudin tempor id eu nisl. Donec ac odio tempor orci dapibus ultrices in iaculis. Rhoncus urna neque viverra justo nec ultrices. Nisi quis eleifend quam adipiscing vitae. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Bibendum ut tristique et egestas quis ipsum. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum. Iaculis urna id volutpat lacus laoreet. Diam phasellus vestibulum lorem sed risus ultricies tristique. Morbi leo urna molestie at elementum eu. Malesuada nunc vel risus commodo viverra maecenas accumsan. Sit amet dictum sit amet justo donec enim diam. Feugiat in ante metus dictum at tempor commodo ullamcorper a. Elit duis tristique sollicitudin nibh sit. Faucibus vitae aliquet nec ullamcorper. Volutpat sed cras ornare arcu.\n\nEgestas diam in arcu cursus. Purus non enim praesent elementum facilisis leo vel. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Ut eu sem integer vitae justo eget magna fermentum. Arcu odio ut sem nulla pharetra diam. Risus commodo viverra maecenas accumsan. Tincidunt id aliquet risus feugiat in ante metus dictum. Nisi scelerisque eu ultrices vitae. Eget nunc lobortis mattis aliquam. Arcu ac tortor dignissim convallis aenean et.\n\nNunc sed velit dignissim sodales ut. At ultrices mi tempus imperdiet nulla malesuada. Neque convallis a cras semper auctor neque vitae tempus. Massa enim nec dui nunc mattis. Ac ut consequat semper viverra nam. Porttitor lacus luctus accumsan tortor. In eu mi bibendum neque egestas congue quisque egestas diam. Nisl nunc mi ipsum faucibus vitae aliquet. Risus at ultrices mi tempus imperdiet nulla. Dictum fusce ut placerat orci nulla pellentesque. Amet aliquam id diam maecenas. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Est placerat in egestas erat imperdiet sed euismod nisi. Sed tempus urna et pharetra pharetra massa massa ultricies mi. Lobortis mattis aliquam faucibus purus.\n\nVelit ut tortor pretium viverra suspendisse potenti nullam ac. Ac placerat vestibulum lectus mauris. Tempor nec feugiat nisl pretium fusce id velit ut tortor. Elementum integer enim neque volutpat. Amet porttitor eget dolor morbi non arcu risus. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Placerat in egestas erat imperdiet sed euismod nisi. Sit amet nulla facilisi morbi tempus iaculis. Sed adipiscing diam donec adipiscing tristique risus nec. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Morbi blandit cursus risus at ultrices. In vitae turpis massa sed elementum. Aenean pharetra magna ac placerat vestibulum lectus mauris ultrices. Duis at tellus at urna condimentum mattis. Integer vitae justo eget magna fermentum. Blandit aliquam etiam erat velit scelerisque. Amet consectetur adipiscing elit ut. Laoreet sit amet cursus sit amet dictum sit. Hendrerit dolor magna eget est lorem ipsum dolor sit.",
+      "id": 21
     },
     {
-      "title": "Minion",
+      "title": "Chicka Chicka Boom Boom",
       "author": [
-        "L. A. Banks"
+        "Bill Martin",
+        "John Archambault",
+        "Ray Charles"
       ],
-      "cover": "http://books.google.com/books/content?id=GRfSV_71yHkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "cover": "http://books.google.com/books/content?id=pxTDCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "writtenBy": "Leah",
       "userId": "3",
-      "bookId": "GRfSV_71yHkC",
-      "report": "",
-      "id": 13
+      "bookId": "pxTDCgAAQBAJ",
+      "report": "Responsiveness check",
+      "id": 22
     }
   ]
 }

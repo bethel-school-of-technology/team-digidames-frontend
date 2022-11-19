@@ -52,12 +52,12 @@ const OneBookReport = () => {
                 {/* cover */}
                <Col xs='12' sm='12' md='12' lg='12' xl='12' style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                <Row className="cover" xs='12' sm='12' md='12' lg='12' xl='12' >
-                    <p><img src={bookReport.cover}></img></p>
+                    <p><img src={bookReport.cover} alt='Book Cover'></img></p>
                 </Row>
                </Col>
                 {/* book report */}
-                <Row className='report' >
-                    <p>{bookReport.report}</p>
+            <Row className='report'  >
+                    <p >{bookReport.report}</p>
                 </Row>
                 <Row style={{ padding: '25px'}} className= 'pageNav'>
                     <Col xs='12' sm='12' md='12' lg='6' xl='6'>
@@ -70,7 +70,7 @@ const OneBookReport = () => {
                      
                     <Col xs='12' sm='12' md='12' lg='6' xl='6'>
                     
-                        <Button variant="danger" onClick={() => context.handleDelete(bookReport.id)} className="button">Delete</Button>
+                        <Button variant="danger"  className="button">Delete</Button>
                    
                     </Col>
                     

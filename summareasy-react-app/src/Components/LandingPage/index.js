@@ -13,7 +13,7 @@ const LandingPage = () => {
     return (
         <>
 
-            <Container>
+            <Container className='home'>
 
 
                 <Row style={{ fontSize: '80px', padding: '5x', fontFamily: 'Amaranth' }}>

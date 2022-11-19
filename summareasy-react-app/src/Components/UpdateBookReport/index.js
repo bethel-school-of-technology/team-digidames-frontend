@@ -18,7 +18,7 @@ const UpdateBookReport = ({ }) => {
     const [bookReport, setBookReport] = useState({});
     let { id } = useParams();
     const context = useContext(BookReportContext);
-    const [value, setValue] =useState();
+   
 
 
     
@@ -42,7 +42,7 @@ const UpdateBookReport = ({ }) => {
     console.log(id)
 
     return (
-        <div style={{ backgroundColor: 'rgba(225,174,53)', fontFamily: 'Amaranth' }} >
+        <div style={{ backgroundColor: 'rgba(225,174,53)',color:'rgb(255, 255, 255)', fontFamily: 'Amaranth' }} >
             <NavBar />
 
 
@@ -83,10 +83,12 @@ const UpdateBookReport = ({ }) => {
                         </Col>
 
                         <Col xs='12' sm='12' md='12' lg='6' xl='6'>
-                            <label htmlFor="report">Update Book Report</label>
-                            <br />
-                            <Col xs='12' sm='12' md='12' lg='12' xl='12' >
+                            
+                            <Col xs='6' sm='6' md='6' lg='12' xl='12' style={{display:'flex', alignItems:'center', justifyContent:'center'}} >
                             <textarea
+                                
+                                autoComplete="on" autoCorrect="on" autoCapitalize="on" spellCheck="true"
+                                className='report'
                                 rows="30"
                                 cols="50"
                                 name="report"

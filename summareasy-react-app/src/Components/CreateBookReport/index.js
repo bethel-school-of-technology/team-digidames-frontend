@@ -32,7 +32,7 @@ const CreateBookReport = () => {
                     
                     <Col  xs='12' sm='12' md='12' lg='12' xl='12' style={{ display:'flex', alignItems: 'center', justifyContent: 'center', }}>
                     <Row>
-                    <h4 ><img className='cover'src={localStorage.getItem("myBookCover")}></img></h4>
+                    <h4 ><img className='cover'src={localStorage.getItem("myBookCover")} alt='Book Cover'></img></h4>
                     </Row>
                 </Col>
 
@@ -43,6 +43,7 @@ const CreateBookReport = () => {
                             <h5>Book Report</h5>
                             <br />
                             <textarea
+                                // autoComplete="on" autoCorrect="on" autoCapitalize="on" spellCheck="true"
                                 className='report'
                                 rows="20"
                                 cols="50"

@@ -65,21 +65,21 @@ class APIBookData extends React.Component {
         return (
             <div style={{ backgroundColor: 'rgb(39, 208, 241)' }}>
                 <NavBar />
-                <Container>
-                    <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgb(39, 208, 241)', fontFamily: 'Amaranth' }}>
-                        <h1>Hi {localStorage.getItem("firstName")}! What book would you like to write about?</h1>
+                <Container xs='2' sm='6' md='8' lg='12' xl='12'>
+                    <Row  style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgb(39, 208, 241)', fontFamily: 'Amaranth' }}>
+                        <h1>Hi, {localStorage.getItem("firstName")}! What book would you like to write about?</h1>
                     </Row>
 
 
                     <Row style={{ padding: '25px', textAlign: 'center', backgroundColor: 'rgba(52,52,52)', color: 'white', fontFamily: 'Amaranth', fontSize: '24px' }}>
 
                         <h2>Search for Book</h2>
-                        <form onSubmit={this.handleSubmit} className="form">
+                        <form  onSubmit={this.handleSubmit} className="form">
 
-                            <input name="search" onChange={this.handleSearchChange}></input>
+                            <input xs='2' sm='2' md='12' lg='6' xl='6' name="search" onChange={this.handleSearchChange} autoComplete="on" autoCorrect="on" autoCapitalize="on" spellCheck="true"></input>
 
                            
-                           <Button  variant='secondary' className="button" type="submit" style={{ padding: "7px", margin: "5px" }} >
+                           <Button xs='2' sm='2' md='12' lg='6' xl='6' variant='secondary' className="button" type="submit" style={{ padding: "7px", margin: "5px" }} >
                                 Search
                             </Button>
                            
@@ -89,8 +89,8 @@ class APIBookData extends React.Component {
                         {
                             this.state.books.length > 0
                                 ?
-                                <table classname="table table-bordered">
-                                    <tr style={{ textAlign: 'center', backgroundColor: 'rgba(119,148,73)', color: 'white', fontFamily: 'Amaranth' }}>
+                                <table xs='2' sm='2' md='4' lg='12' xl='12' className="table table-bordered">
+                                    <tr  >
 
                                         <th>Book Title</th>
                                         <th>Author</th>
@@ -99,14 +99,14 @@ class APIBookData extends React.Component {
 
                                     </tr>
                                     {books && books.map((book) => (
-                                        <tr>
+                                        <tr  xs='2' sm='2' md='4' lg='12' xl='12' key={book.id} className="table-data">
                                             {/* <td>{book.id}</td> */}
                                             <td>{book.volumeInfo.title}</td>
                                             <td>{book.volumeInfo.authors}</td>
 
 
-                                            <td className='cover'><img src={book.volumeInfo.imageLinks.thumbnail} /></td>
-                                            <td><Button variant='success' type='button' onClick={() => this.goToReport(book)}>Write report</Button></td>
+                                            <td className='cover'><img src={book.volumeInfo.imageLinks.thumbnail} alt='Book Cover' /></td>
+                                            <Button  xs='2' sm='2' md='4' lg='4' xl='4'  type='button' onClick={() => this.goToReport(book)}><td>Write report</td></Button>
 
 
                                         </tr>
