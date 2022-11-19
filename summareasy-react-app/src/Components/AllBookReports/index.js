@@ -9,10 +9,10 @@ import back from '../../images/back2.png'
 
 
 const AllBookReports = ({ bookReportData }) => {
-   
+
     const context = useContext(BookReportContext);
     return (
- 
+
 
         <div style={{ backgroundColor: 'rgb(253, 162, 22)' }}>
             <NavBar />
@@ -27,44 +27,36 @@ const AllBookReports = ({ bookReportData }) => {
                             {bookReportData.map((bookReport) => (
 
                                 <div key={bookReport.id} className="one-bookReport">
-                                    <Row style={{  width:'auto', backgroundColor: 'rgb(255, 255, 255)'}}>
-                                        
-                                        {/* <Col xs='12' sm='6' md='6' lg='6' xl='6' >
-                                           <Row  xs='12' sm='12' md='12' lg='12' xl='12' style={{}} > <h3>{bookReport.title}</h3></Row>
-                                        </Col>    */}
-                                        {/* <Col xs='11' sm='5' md='5' lg='5' xl='5' style={{margin:'10px'}}>
-                                            <Row xs='2' sm='1' md='8' lg='8' xl='8' style={{}} className='reportPreview'><p>{bookReport.report}</p> </Row>
-                                        </Col> */}
-                                    {/* buttons */}
-                                    <Col xs='12' sm='6' md='6' lg='6' xl='6' style={{margin:'10px'}}>
-                                    
-                                           <Row  xs='12' sm='12' md='12' lg='12' xl='12' style={{}} > <h3>{bookReport.title}</h3></Row>
-                                      
+                                    <Row style={{ width: 'auto', backgroundColor: 'rgb(255, 255, 255)' }}>
 
-                                        <Row xs='12' sm='12' md='12' lg='12' xl='12' style={{display:'flex'}}>
+                                        <Col xs='12' sm='6' md='6' lg='6' xl='6' style={{ margin: '10px' }}>
 
+                                            <Row xs='12' sm='12' md='12' lg='12' xl='12' style={{}} > <h3>{bookReport.title}</h3></Row>
+                                
+                                {/* <buttons> */}
+                                            <Row xs='12' sm='12' md='12' lg='12' xl='12' style={{ display: 'flex' }}>
+                                                <Col xs='4' sm='4' md='4' lg='4' xl='4' >
+                                                    <Button variant="primary" className="button" href={`one-bookreport/${bookReport.id}`}>{" "}View{" "}</Button>
+                                                </Col>
 
-                                            
-                                        <Col xs='4' sm='4' md='4' lg='4' xl='4' >
-                                           <Button variant="primary" className="button" href={`one-bookreport/${bookReport.id}`}>{" "}View{" "}</Button>
+                                                <Col xs='4' sm='4' md='4' lg='4' xl='4' style={{ textAlign: 'center' }} >
+                                                    <Button variant="dark" className="button" href={`update-bookreport/${bookReport.id}`}>{" "}Update{" "}</Button>
+                                                </Col>
+
+                                                <Col xs='4' sm='4' md='4' lg='4' xl='4' style={{ textAlign: 'center' }} >
+                                                    <Button variant="danger" className="button" onClick={() => context.handleDelete(bookReport.id)}>Delete</Button>
+                                                </Col>
+                                            </Row>
+
                                         </Col>
 
-                                        <Col xs='4' sm='4' md='4' lg='4' xl='4' style={{  textAlign: 'center'  }} >
-                                            <Button variant="dark" className="button" href={`update-bookreport/${bookReport.id}`}>{" "}Update{" "}</Button>
-                                        </Col>
-
-                                        <Col xs='4' sm='4' md='4' lg='4' xl='4' style={{ textAlign: 'center'  }} >
-                                            <Button variant="danger" className="button" onClick={() => context.handleDelete(bookReport.id)}>Delete</Button>
-                                        </Col>
-                                        </Row>   
-                                        </Col>
-                                        <Col xs='11' sm='5' md='5' lg='5' xl='5' style={{margin:'10px'}}>
+                                        <Col xs='11' sm='5' md='5' lg='5' xl='5' style={{ margin: '10px' }}>
                                             <Row xs='2' sm='1' md='8' lg='8' xl='8' style={{}} className='reportPreview'><p>{bookReport.report}</p> </Row>
                                         </Col>
+
                                         <hr></hr>
+
                                     </Row>
-
-
                                 </div>
 
                             ))}
@@ -79,7 +71,7 @@ const AllBookReports = ({ bookReportData }) => {
                         width="200"
                         style={{ paddingTop: "20px", paddingBottom: "40px" }}
                     ></img>
-                    </a>
+                </a>
                 </Row>
             </Container>
             <Footer />
