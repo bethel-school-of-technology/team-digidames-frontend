@@ -249,11 +249,25 @@ input.invalid + p {
 
 }
 /* table styling */
+
+.tableHeader{
+  background-color: rgba(119,148,73);
+  color: white;
+
+}
+
+
+.table-data {
+  background-color: rgba(52,52,52);
+  color: white;
+  
+}
+
 .table.table-bordered{
   color: black;
   text-align: center;
   
-  background-color: rgba(119,148,73);
+  /* background-color: rgba(119,148,73); */
   font-family: 'Amaranth';
   padding: 25px
 }

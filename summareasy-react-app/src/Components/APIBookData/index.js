@@ -89,8 +89,8 @@ class APIBookData extends React.Component {
                         {
                             this.state.books.length > 0
                                 ?
-                                <table xs='2' sm='2' md='4' lg='12' xl='12' className="table table-bordered">
-                                    <tr  >
+                                <table xs='2' sm='2' md='4' lg='12' xl='12' className="table table-bordered" >
+                                    <tr  className='tableHeader' >
 
                                         <th>Book Title</th>
                                         <th>Author</th>
@@ -99,7 +99,7 @@ class APIBookData extends React.Component {
 
                                     </tr>
                                     {books && books.map((book) => (
-                                        <tr  xs='2' sm='2' md='4' lg='12' xl='12' key={book.id} className="table-data">
+                                        <tr  xs='2' sm='2' md='4' lg='12' xl='12' key={book.id} className="table-data" >
                                             {/* <td>{book.id}</td> */}
                                             <td>{book.volumeInfo.title}</td>
                                             <td>{book.volumeInfo.authors}</td>
