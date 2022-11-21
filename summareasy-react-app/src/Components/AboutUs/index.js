@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import logo from '../../images/Logo.png';
 import lori from '../../images/Lori2.jpg';
-import jess from '../../images/JessPlaceHolder.jpg';
+import jess from '../../images/Jess.jpg';
 import back from '../../images/back2.png'
 import Footer from '../Footer';
 
@@ -44,8 +44,8 @@ function AboutUs() {
     }
 
     return (
-        <div style={{ backgroundColor: 'rgba(121,136,100)' }} >
-            <Container  style={{ backgroundColor: 'rgba(174, 152, 219)' }} >
+        <div style={{ backgroundColor: 'rgba(21,67,80)' }} >
+            <Container  style={{ backgroundColor: 'rgba(185, 190, 186)' }} >
                 <Row style={{ paddingTop: '25px', textAlign: 'center' }}>
                     <Col xs='12' sm='12' md='12' lg='12' xl='12' style={{ paddingBottom: '20px', paddingTop: '15px' }}>
                     <a href={`/`} >
