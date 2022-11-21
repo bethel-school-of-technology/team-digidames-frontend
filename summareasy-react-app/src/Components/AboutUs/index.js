@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import logo from '../../images/Logo.png';
 import lori from '../../images/Lori2.jpg';
-import jess from '../../images/JessPlaceHolder.jpg';
+import jess from '../../images/Jess.jpg';
 import back from '../../images/back2.png'
 import Footer from '../Footer';
 
@@ -21,7 +21,7 @@ function AboutUs() {
         {
             name: 'Lori Hutchins',
             role: 'Christ-Follower, Wife, Mother and Full Stack Developer Student',
-            about: 'My name is Lori Hutchins. I am a Christ-follower, wife, and mother of two teenagers. I have been a part of the Indiana Wesleyan University community since 1998 when I began my college journey as a traditional student. My college journey was delayed because I was unsure what degree to pursue and was planning a wedding.  After getting married, my husband and I moved to Oregon and began our family. Nineteen years after beginning college, I find myself with the opportunity to pursue my degree again, but this time in a field that I am excited about and was not available back in 1998. I am thankful!',
+            about: 'I am a Christ-follower, wife, and mother of two teenagers. I have been a part of the Indiana Wesleyan University community since 1998 when I began my college journey as a traditional student. My college journey was delayed because I was unsure what degree to pursue and was planning a wedding.  After getting married, my husband and I moved to Oregon and began our family. Nineteen years after delaying college, I find myself with the opportunity to pursue my degree again, but this time in a field that I am excited about and was not available back in 1998. I am grateful!',
             image: lori
         }
     ]
@@ -44,8 +44,8 @@ function AboutUs() {
     }
 
     return (
-        <div style={{ backgroundColor: 'rgba(121,136,100)' }} >
-            <Container  style={{ backgroundColor: 'rgba(174, 152, 219)' }} >
+        <div style={{ backgroundColor: 'rgba(21,67,80)' }} >
+            <Container  style={{ backgroundColor: 'rgba(185, 190, 186)' }} >
                 <Row style={{ paddingTop: '25px', textAlign: 'center' }}>
                     <Col xs='12' sm='12' md='12' lg='12' xl='12' style={{ paddingBottom: '20px', paddingTop: '15px' }}>
                     <a href={`/`} >
@@ -63,7 +63,7 @@ function AboutUs() {
                 </Row>
                 <Row>
                     <div className="d-flex justify-content-center">
-                        <p style={{ fontSize: '20px', width: '750px', textAlign: 'left', fontFamily: 'Teko' }}>Write a Paragraph about us.  Digital.....Dame is "the title given to a woman equivalent to the rank of knight.".... Knighted by the Lord ???</p>
+                        <p style={{ fontSize: '20px', width: '750px', textAlign: 'left', fontFamily: 'Teko' }}></p>
                     </div>
                 </Row>
 

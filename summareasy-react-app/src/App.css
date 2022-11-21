@@ -45,15 +45,6 @@ input.invalid + p {
   margin-bottom: 20px;
 }
 
-/* .background {
-  background-image: url(./images/schoolbus.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: auto;
-
-  background-attachment: fixed;
-} */
-
 .icon-buttons {
   display: flex;
   justify-content: flex-start;
@@ -102,6 +93,7 @@ input.invalid + p {
   font: bold 20px Arial;
   text-decoration: none;
   width: 80px;
+  margin-bottom: 15px;
   
 }
 
@@ -238,7 +230,7 @@ input.invalid + p {
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: baseline; */
-    height: 50px;
+    height: 75px;
     /* width: auto;  */
     overflow: auto;
     
@@ -257,11 +249,25 @@ input.invalid + p {
 
 }
 /* table styling */
+
+.tableHeader{
+  background-color: rgba(119,148,73);
+  color: white;
+
+}
+
+
+.table-data {
+  background-color: rgba(52,52,52);
+  color: white;
+  
+}
+
 .table.table-bordered{
   color: black;
   text-align: center;
   
-  background-color: rgba(119,148,73);
+  /* background-color: rgba(119,148,73); */
   font-family: 'Amaranth';
   padding: 25px
 }

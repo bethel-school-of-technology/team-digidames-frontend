@@ -13,15 +13,11 @@ const API = {
         // load book from local storage
         const myBook = JSON.parse(localStorage.getItem('myBook'));
 
-        // TODO check if the book exist in database
-
-        // TODO if not, create the book
-
-        // create the book report
+  
         return axios.post(baseURL, {
             title: myBook.volumeInfo.title,
             author: myBook.volumeInfo.authors,
-            cover: localStorage.getItem("myBookCover"), //TODO do we need to handle this differently since it is an image?
+            cover: localStorage.getItem("myBookCover"), 
             writtenBy: localStorage.getItem('firstName'),
             userId: localStorage.getItem('userId'),
             bookId: myBook.id,
@@ -41,7 +37,7 @@ const API = {
             
             title: myBook.volumeInfo.title,
             author: myBook.volumeInfo.authors,
-            cover: localStorage.getItem("myBookCover"), //TODO do we need to handle this differently since it is an image?
+            cover: localStorage.getItem("myBookCover"), 
             writtenBy: localStorage.getItem('firstName'),
             userId: localStorage.getItem('userId'),
             bookId: myBook.id,
