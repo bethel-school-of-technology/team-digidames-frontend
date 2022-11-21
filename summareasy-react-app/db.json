@@ -4,7 +4,8 @@
       "email": "demo@gmail.com",
       "password": "$2a$10$a.Dw6ez.0FfGMYTyMnONDucX3FVyUbAP30mSSpTKwoECUhZUsLo0O",
       "firstName": "Lorica",
-      "lastName": "Motchins"
+      "lastName": "Motchins",
+      "id": 1
     }
   ],
   "BookReports": [
@@ -18,6 +19,7 @@
       "userId": "1",
       "bookId": "TswcHOQRDQkC",
       "report": "This book is about a mother who tell her first born that another child is going to join their family and both children are a gift from out Lord.",
+      "id": 1
     },
     {
       "title": "Reading is Fun with Dr. Seuss",
@@ -57,7 +59,7 @@
       "userId": "1",
       "bookId": "tf5aPQAACAAJ",
       "report": "This was my son's favorite book to recite before he could read words.",
-       "id": 4
+      "id": 4
     }
   ]
 }
