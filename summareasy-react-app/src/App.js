@@ -96,14 +96,6 @@ function App() {
           {/* Start Private Routes */}
           <Route element={<PrivateRoutes/>}>
                            
-          <Route
-            path="/about"
-            exact
-            element={
-              <AboutUs
-                bookReportData={allBookReports} />
-            }
-          />
 
          
           <Route
